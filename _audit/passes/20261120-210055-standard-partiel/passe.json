@@ -1,0 +1,20 @@
+{
+ "id": "20261120-210055-standard-partiel",
+ "date": "2026-11-20T21:14:44.297Z",
+ "niveau": "standard",
+ "pages": "toutes",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "films",
+  "bords",
+  "parcours",
+  "mouvement"
+ ],
+ "version": "1",
+ "echecs": 1,
+ "aRegarder": 12,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

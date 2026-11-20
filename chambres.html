@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les chambres du Relais de Gascogne : 17 chambres dès 53 €</title>
+<meta name="description" content="17 chambres équipées (douche, WC, TV, wifi) à Mézin : tarifs basse et haute saison, soirée étape, demi-pension et pension.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<link rel="alternate" hreflang="fr" href="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<link rel="alternate" hreflang="en" href="https://relais-de-gascogne-maquette.vercel.app/en/chambres">
+<link rel="alternate" hreflang="x-default" href="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<style>:root{--fond:#f6f0e4;--texte:#1c2433;--voile-fond:#1f3566;--ouverture-fond:#1f3566;--menu-fond:#f6f0e4}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f0e4">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Relais de Gascogne">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Les chambres du Relais de Gascogne : 17 chambres dès 53 €">
+<meta property="og:description" content="17 chambres équipées (douche, WC, TV, wifi) à Mézin : tarifs basse et haute saison, soirée étape, demi-pension et pension.">
+<meta property="og:url" content="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<meta property="og:image" content="https://relais-de-gascogne-maquette.vercel.app/assets/partage/chambres-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Les chambres du Relais de Gascogne, dès 53 € la nuit">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hotel","name":"Le Relais de Gascogne","url":"https://relais-de-gascogne-maquette.vercel.app/","telephone":"+33553657988","email":"sarllesgasconsgourmets@bbox.fr","numberOfRooms":17,"priceRange":"53 € – 98 €","address":{"@type":"PostalAddress","streetAddress":"Avenue Max Grosselle","postalCode":"47170","addressLocality":"Mézin","addressCountry":"FR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wifi","value":true},{"@type":"LocationFeatureSpecification","name":"TV","value":true},{"@type":"LocationFeatureSpecification","name":"Parking (salle de réception)","value":true}],"sameAs":["https://www.facebook.com/lerelaisdegascogne47170"],"description":"Hôtel-restaurant à Mézin, au pays de l'Armagnac : 17 chambres, cuisine gasconne de saison, salle de réception de 120 places."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.png" alt="" width="1000" height="125"><span data-voile-libelle>Les chambres</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#1f3566">
+  <div class="volet volet--g" data-effet="volets"></div><div class="volet volet--d"></div>
+  <div class="ouverture-centre">
+    <img class="ouverture-logo" src="/assets/images/logo-clair.png" alt="" width="1000" height="125" data-ouverture-objet>
+    <span class="ouverture-trait"></span>
+    <p class="ouverture-ligne">Hôtel · Restaurant · Mézin</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" aria-label="Le Relais de Gascogne" href="/" data-libelle="Accueil">
+      <img class="entete-logo-img" src="/assets/images/logo.png" alt="Le Relais de Gascogne" width="1000" height="125">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres" aria-current="page">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en/chambres" hreflang="en" lang="en" data-langue="en" aria-label="English version">en</a>
+      <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-table" class="menu-lien" data-libelle="La table">La table</a></li><li style="--i:2"><a href="/chambres" class="menu-lien" data-libelle="Les chambres" aria-current="page">Les chambres</a></li><li style="--i:3"><a href="/groupes" class="menu-lien" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li></ul>
+  <p><a class="bouton" href="tel:+33553657988">Appeler 05 53 65 79 88</a></p>
+  <p><a class="entete-langue" href="/en/chambres" hreflang="en" lang="en" data-langue="en">English version</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--bandeau" id="debut">
+  <div class="conteneur ouv-texte ouv-texte--bandeau">
+    <div>
+      <p class="surtitre ouv-anim">L&#39;hôtel</p>
+      <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">17 chambres pour l'étape</span></span> <span class="l"><span class="li"><em>ou le séjour</em></span></span></h1>
+    </div>
+    <div class="ouv-cote">
+      <p class="ouv-intro ouv-anim masque-ecran-bas">Une petite hôtellerie de campagne, toute équipée et soignée, pour une nuit sur la route ou une semaine en Gascogne.</p>
+      <p class="ouv-info ouv-anim" data-info-cle>Dès 53 € la nuit · petit-déjeuner 8,50 €</p>
+      <p class="ouv-actions ouv-anim"><a href="/reserver?objet=chambre#demande" class="bouton" data-libelle="Réserver &amp; venir" data-action-principale data-survol="magnetique">Demander une chambre</a></p>
+    </div>
+  </div>
+  <figure class="media ouv-bande ph-chambres-ouverture" data-grok data-fx="parallaxe" data-fx-force="8" data-iris-centre style="--cadrage:50% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/chambres-ouverture-mobile-640.webp 640w, /assets/images/grok/chambres-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/chambres-ouverture-1280.webp" srcset="/assets/images/grok/chambres-ouverture-640.webp 640w, /assets/images/grok/chambres-ouverture-1280.webp 1280w, /assets/images/grok/chambres-ouverture-1920.webp 1920w" sizes="100vw" alt="Lumière du matin à travers des volets bleus sur un lit blanc" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="sec conteneur" id="equipements">
+  <div class="equip-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>Dans chaque chambre</p>
+      <h2 data-anime="lignes">Toute équipée, soignée</h2>
+      <blockquote class="citation" data-anime="mots">« Petite hôtellerie en milieu rural toute équipée, soignée. »</blockquote>
+      <p class="note-douce" data-anime>Une chambre accessible aux personnes à mobilité réduite est en préparation.</p>
+    </div>
+    <ul class="equipements" data-anime="cascade">
+      <li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M8 40 V 14 C 8 9, 12 6, 17 6 H 30 C 35 6, 38 10, 38 14"/><path d="M30 16 H 46 L 42 22 H 34 Z"/><path d="M36 28 v4 M40 30 v5 M44 28 v4 M38 36 v4 M42 37 v4"/></svg><span>Douche</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M14 8 H 26 V 26 H 14 Z"/><path d="M10 26 H 40 C 40 34, 34 38, 26 38 H 20 L 22 44 H 14 L 16 36 C 12 34, 10 30, 10 26 Z"/></svg><span>WC</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M8 22 H 42 C 42 32, 34 38, 25 38 C 16 38, 8 32, 8 22 Z"/><path d="M25 22 V 10 C 25 7, 30 7, 30 10 V 12"/><path d="M25 38 V 46"/></svg><span>Lavabo</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><rect x="6" y="10" width="38" height="26" rx="3"/><path d="M18 44 H 32 M25 36 V 44"/></svg><span>Télévision</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 20 C 16 10, 34 10, 44 20"/><path d="M12 27 C 19 20, 31 20, 38 27"/><path d="M18 34 C 22 30, 28 30, 32 34"/><circle cx="25" cy="40" r="2.5"/></svg><span>Wifi</span></li>
+    </ul>
+  </div>
+  <div class="vignettes" role="list" aria-label="Quelques chambres du Relais" data-anime="cascade">
+    <div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-1-510.webp" srcset="/assets/images/chambre-1-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Chambre double au couvre-lit bleu" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-2-510.webp" srcset="/assets/images/chambre-2-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Chambre aux murs mauves et lit double" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-3-510.webp" srcset="/assets/images/chambre-3-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Chambre lumineuse avec télévision" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-4-504.webp" srcset="/assets/images/chambre-4-504.webp 504w" sizes="(max-width: 760px) 45vw, 22vw" alt="Chambre aux murs verts" width="504" height="378" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+  </div>
+</section>
+<section class="sec sec--sable" id="tarifs">
+  <div class="conteneur tarifs-grille">
+    <div>
+      <p class="surtitre" data-anime>Tarifs</p>
+      <h2 data-anime="lignes">Le prix de la nuit, saison par saison</h2>
+      <div class="saison" role="group" aria-label="Saison affichée" data-anime>
+        <button type="button" class="saison-btn" aria-pressed="true" data-saison="basse">Basse saison</button>
+        <button type="button" class="saison-btn" aria-pressed="false" data-saison="haute">Haute saison</button>
+      </div>
+      <table class="tarifs" data-anime="cascade">
+        <caption class="visuellement-cache">Tarifs « à partir de », par nuit.</caption>
+        <thead><tr><th scope="col">Chambre</th><th scope="col">Prix</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Chambre 1 personne</th><td><span class="tarif" data-prix data-basse="53" data-haute="55">53 €</span></td></tr><tr><th scope="row">Chambre 2 personnes, lit double</th><td><span class="tarif" data-prix data-basse="63" data-haute="65">63 €</span></td></tr><tr><th scope="row">Chambre 2 personnes, lits simples</th><td><span class="tarif" data-prix data-basse="73" data-haute="75">73 €</span></td></tr>
+          <tr><th scope="row">Demi-pension <small>par personne</small></th><td><span class="tarif" data-prix data-basse="76" data-haute="78">76 €</span></td></tr><tr><th scope="row">Pension complète <small>par personne</small></th><td><span class="tarif" data-prix data-basse="89" data-haute="98">89 €</span></td></tr>
+        </tbody>
+      </table>
+      <p class="note-douce" data-anime>Tarifs « à partir de », par nuit.</p>
+    </div>
+    <form class="estimateur" data-effet="estimateur" data-anime aria-labelledby="estim-titre" onsubmit="return false">
+      <h3 id="estim-titre">Estimez votre séjour</h3>
+      <div class="champ"><label for="e-chambre">Type de chambre</label>
+        <select id="e-chambre" name="chambre"><option value="simple" data-basse="53" data-haute="55" data-personnes="1">Chambre 1 personne</option><option value="double" data-basse="63" data-haute="65" data-personnes="2" selected>Chambre 2 personnes, lit double</option><option value="twin" data-basse="73" data-haute="75" data-personnes="2">Chambre 2 personnes, lits simples</option></select></div>
+      <div class="champ"><span class="champ-libelle" id="e-nuits-l">Nombre de nuits</span>
+        <div class="pas" role="group" aria-labelledby="e-nuits-l">
+          <button type="button" data-pas="-1" aria-label="Une nuit de moins">−</button>
+          <output id="e-nuits" aria-live="polite">2</output>
+          <button type="button" data-pas="1" aria-label="Une nuit de plus">+</button>
+        </div></div>
+      <label class="case"><input type="checkbox" id="e-petitdej" checked> <span>Avec le petit-déjeuner (8,50 € par personne)</span></label>
+      <p class="estim-total"><span>Total estimé</span> <strong id="e-total" data-prix aria-live="polite">160 €</strong></p>
+      <p class="note-douce">Estimation indicative, hors taxe de séjour. Les dates de basse et haute saison vous sont données au téléphone.</p>
+      <p><a href="/reserver?objet=chambre#demande" class="bouton" data-libelle="Réserver &amp; venir" data-estim-lien>Demander ces dates</a></p>
+    </form>
+  </div>
+</section>
+<section class="sec conteneur" id="formules">
+  <div class="sec-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>Formules</p>
+      <h2 data-anime="lignes">Pour une nuit ou pour la semaine</h2>
+      <ul class="formules" data-anime="cascade">
+        <li><strong data-prix>80 €</strong><span><b>Soirée étape</b> La formule des voyageurs de passage.</span></li>
+        <li><strong data-prix>76 € / 78 €</strong><span><b>Demi-pension</b> basse / haute saison. Par personne et par jour, comptées à partir du 3e jour.</span></li>
+        <li><strong data-prix>89 € / 98 €</strong><span><b>Pension complète</b> basse / haute saison. Par personne et par jour, comptées à partir du 3e jour.</span></li>
+        <li><strong data-prix>8,50 €</strong><span><b>Petit-déjeuner</b> Par personne.</span></li>
+      </ul>
+    </div>
+    <figure class="media img-portrait" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/chambres-petitdej-1600.webp" srcset="/assets/images/grok/chambres-petitdej-1024.webp 1024w, /assets/images/grok/chambres-petitdej-1168.webp 1168w, /assets/images/grok/chambres-petitdej-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 38vw" alt="Plateau de petit-déjeuner près d&#39;une fenêtre aux volets bleus" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="appel" id="fin">
+  <div class="conteneur appel-grille">
+    <div>
+      <h2 data-anime="lignes">Une chambre pour ce soir ?</h2>
+      <p data-anime>Appelez-nous pour connaître les disponibilités.</p>
+      <p class="appel-actions" data-anime><a href="/reserver?objet=chambre#demande" class="bouton bouton--clair" data-libelle="Réserver &amp; venir" data-survol="magnetique">Demander une chambre</a></p>
+    </div>
+    <div class="appel-tel" data-visuel>
+      <a href="tel:+33553657988">05 53 65 79 88</a>
+      <svg class="appel-trait" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M4 16 C 90 4, 180 22, 260 10 S 360 6, 396 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+      <p>Avenue Max Grosselle, 47170 Mézin</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Le Relais de Gascogne" width="1000" height="125" loading="lazy">
+      <p>Hôtel-restaurant au pays de l&#39;Armagnac, à l&#39;entrée de Mézin, en venant de Nérac par la RD 656.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous trouver</p>
+      <p>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></p>
+      <p><a href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">Le Relais sur Facebook</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres" aria-current="page">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette : demandes simulées, rien n&#39;est envoyé.</p><p>© Le Relais de Gascogne</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33553657988">Appeler</a>
+  <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+[
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "nom": "grok/accueil-ouverture",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "alt": "Fenêtre ouverte aux volets bleus sur les collines de Gascogne",
+  "alt_en": "Open window with blue shutters over the Gascony hills",
+  "page": "Accueil",
+  "emplacement": "Ouverture plein cadre (ordinateur)",
+  "priorite": "Indispensable",
+  "consigne_scene": "View from inside a cream lime-plastered room through a tall open window framed by a pair of open deep-blue louvered wooden shutters, a window box of red geraniums on the stone sill in the foreground, looking out over gently rolling hills of autumn vineyards and pale wheat stubble fields, a distant hilltop village with terracotta roofs, soft golden late-afternoon sky, the left third of the frame is the calm cream wall, nobody",
+  "beaute": 4,
+  "zone_texte": "gauche",
+  "mobile": true,
+  "source_mobile": "recu/grok/accueil-ouverture-mobile.jpg",
+  "scene_mobile": "Vertical view through a tall open window framed by open deep-blue louvered wooden shutters, a window box of red geraniums at the bottom of the frame, gently rolling autumn vineyard hills and a distant village with terracotta roofs in the lower half, a calm pale golden sky filling the upper half, nobody"
+ },
+ {
+  "source": "recu/grok/accueil-table.jpg",
+  "nom": "grok/accueil-table",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Pruneaux, noix, pain de campagne et verre d'armagnac sur une table de bois",
+  "alt_en": "Prunes, walnuts, country bread and a glass of Armagnac on a wooden table",
+  "page": "Accueil",
+  "emplacement": "Carte « La table » et section La table",
+  "priorite": "Indispensable",
+  "consigne_scene": "Still life on a worn oak table by a sunny window: a stoneware bowl of dark glossy prunes, a few walnuts, a crusty country loaf on a folded linen cloth, and a small tulip glass of amber brandy catching the light, no bottle, no label, no plated dish, no hands",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/accueil-terroir.jpg",
+  "nom": "grok/accueil-terroir",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "alt": "Collines de vignes d'automne en Gascogne",
+  "alt_en": "Autumn vineyard hills in Gascony",
+  "page": "Accueil",
+  "emplacement": "Image qui s'ouvre en plein écran (Au pays de l'Armagnac)",
+  "priorite": "Indispensable",
+  "consigne_scene": "Wide view over softly rolling hills of autumn vineyards turning gold and copper, rows of vines leading toward a small hilltop village with terracotta roofs, scattered oak woods, light haze in the valleys, nobody, no road",
+  "beaute": 4,
+  "zone_texte": "centre",
+  "mobile": true,
+  "source_mobile": "recu/grok/accueil-terroir-mobile.jpg",
+  "scene_mobile": "Vertical view of rows of autumn vines turning gold and copper climbing a gentle hill toward a small village with terracotta roofs, light haze, calm sky in the upper half, nobody, no road",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-chambre.jpg",
+  "nom": "grok/accueil-chambre",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Lit fait de draps blancs, rayé de soleil par des volets bleus",
+  "alt_en": "Bed made with white linen, striped with sunlight through blue shutters",
+  "page": "Accueil",
+  "emplacement": "Section Les chambres",
+  "priorite": "Indispensable",
+  "consigne_scene": "Close-up of a freshly made bed with crisp white linen and a folded deep-blue wool throw, morning sun entering through half-closed blue louvered shutters and drawing stripes of light across the sheets, a small bedside table with a glass carafe of water, nobody",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/accueil-terrasse.jpg",
+  "nom": "grok/accueil-terrasse",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "alt": "Terrasse de village sous les platanes, tables dressées",
+  "alt_en": "Village terrace under plane trees, tables set",
+  "page": "Accueil",
+  "emplacement": "Appel final (fond)",
+  "priorite": "Conseillée",
+  "consigne_scene": "An empty village restaurant terrace in the shade of large plane trees at golden hour, square tables dressed with white and blue linen, simple glasses, closed deep-blue parasols, dappled sunlight on pale gravel, nobody, the left half calm and softly out of focus for a title",
+  "beaute": 4,
+  "zone_texte": "gauche",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/table-ouverture.jpg",
+  "nom": "grok/table-ouverture",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Légumes et champignons de saison sur une table de cuisine",
+  "alt_en": "Seasonal vegetables and mushrooms on a kitchen table",
+  "page": "La table",
+  "emplacement": "Ouverture (image à droite du titre)",
+  "priorite": "Indispensable",
+  "consigne_scene": "Seasonal market produce on a rustic wooden kitchen table in soft window light: a wicker basket of leeks, a small pumpkin, wild mushrooms, chestnuts and shallots, a bunch of thyme, a copper pan softly blurred in the background, no plated dish, no hands",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/table-potage.jpg",
+  "nom": "grok/table-potage",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Soupière fumante sur une nappe blanche",
+  "alt_en": "Steaming soup tureen on a white tablecloth",
+  "page": "La table",
+  "emplacement": "Section Spécialités de saison",
+  "priorite": "Conseillée",
+  "consigne_scene": "A steaming earthenware soup tureen with its lid slightly lifted on a white linen tablecloth, a ladle resting beside it, two empty soup plates and a small basket of sliced country bread, warm side light, wisps of steam rising, no food visible in the plates, nobody",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/chambres-ouverture.jpg",
+  "nom": "grok/chambres-ouverture",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "alt": "Lumière du matin à travers des volets bleus sur un lit blanc",
+  "alt_en": "Morning light through blue shutters on a white bed",
+  "page": "Les chambres",
+  "emplacement": "Ouverture (bandeau sous le titre)",
+  "priorite": "Indispensable",
+  "consigne_scene": "Calm bright detail of a simple country inn bedroom: louvered deep-blue shutters half open on a sunny morning, stripes of light falling across a neatly made bed with white linen, a cream lime-plastered wall, a small wooden chair, minimal and serene, main subject in the central area, nobody",
+  "beaute": 4,
+  "mobile": "4:5",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/chambres-petitdej.jpg",
+  "nom": "grok/chambres-petitdej",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Plateau de petit-déjeuner près d'une fenêtre aux volets bleus",
+  "alt_en": "Breakfast tray by a window with blue shutters",
+  "page": "Les chambres",
+  "emplacement": "Section Formules (petit-déjeuner)",
+  "priorite": "Conseillée",
+  "consigne_scene": "A breakfast tray on a small round table by an open window with blue shutters: a white coffee pot, a cup of coffee, a glass of orange juice, small jars of jam and honey without labels, a bread basket covered with a linen napkin, morning sun, nobody, no hands",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/groupes-ouverture.jpg",
+  "nom": "grok/groupes-ouverture",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "alt": "Longue table dressée pour une fête de famille",
+  "alt_en": "Long table set for a family celebration",
+  "page": "Groupes & réceptions",
+  "emplacement": "Ouverture (bandeau sous le grand chiffre)",
+  "priorite": "Indispensable",
+  "consigne_scene": "A long banquet table dressed for a family celebration in a bright countryside reception hall: white tablecloths, deep red runners and napkins, rows of sparkling wine glasses, small bouquets of white and red flowers, chairs neatly aligned, soft daylight from tall windows, main subject in the central area, nobody",
+  "beaute": 4,
+  "mobile": "4:5",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/groupes-route.jpg",
+  "nom": "grok/groupes-route",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "alt": "Route de campagne entre les vignes, vers un village perché",
+  "alt_en": "Country road between vineyards toward a hilltop village",
+  "page": "Groupes & réceptions",
+  "emplacement": "Section Autour du Relais",
+  "priorite": "Conseillée",
+  "consigne_scene": "A quiet country road winding between autumn vineyards and plane trees toward a small hilltop village with terracotta roofs, warm late-afternoon light, soft haze, no vehicles, no road markings, no signs, nobody",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/reserver-ouverture.jpg",
+  "nom": "grok/reserver-ouverture",
+  "role": "galerie",
+  "ratio": "4:5",
+  "alt": "Sonnette de comptoir en laiton et clé de chambre sur un comptoir de bois",
+  "alt_en": "Brass service bell and room key on a wooden counter",
+  "page": "Réserver & venir",
+  "emplacement": "Ouverture (image à droite du numéro)",
+  "priorite": "Indispensable",
+  "consigne_scene": "On a worn wooden reception counter, an old brass service bell next to a single vintage room key with a wooden fob, a small pot of red geraniums, a cream wall and a deep-blue door softly blurred behind, warm light, nobody, no text, no numbers on the key",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/404.jpg",
+  "nom": "grok/404",
+  "role": "404",
+  "ratio": "16:9",
+  "alt": "Volets bleus fermés sur un mur crème ensoleillé",
+  "alt_en": "Closed blue shutters on a sunny cream wall",
+  "page": "404",
+  "emplacement": "Ouverture de la page introuvable",
+  "priorite": "Conseillée",
+  "consigne_scene": "A pair of closed deep-blue louvered wooden shutters on a sunny cream lime-plastered wall, a single pot of red geraniums on the stone sill, a gentle touch of humour, the left third of the frame is the calm sunny wall, nobody",
+  "beaute": 4,
+  "zone_texte": "gauche"
+ },
+ {
+  "source": "recu/chaud/facade-01.jpg",
+  "nom": "maison-facade",
+  "role": "galerie",
+  "alt": "Façade du Relais de Gascogne, volets bleus et géraniums",
+  "alt_en": "Front of the Relais de Gascogne, blue shutters and geraniums",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/relais-gascogne-hotel-restaurant-4.jpg",
+  "nom": "maison-balcon",
+  "role": "galerie",
+  "alt": "Balcon fleuri et volets bleus de la façade",
+  "alt_en": "Flowered balcony and blue shutters on the front",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/restauration-2.jpg",
+  "nom": "terrasse",
+  "role": "galerie",
+  "alt": "La terrasse ombragée et ses parasols bleus",
+  "alt_en": "The shaded terrace and its blue parasols",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/restauration-3.jpg",
+  "nom": "salle",
+  "role": "vignette",
+  "alt": "La salle du restaurant, nappes bleues",
+  "alt_en": "The restaurant dining room, blue tablecloths",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/salle-banquet-2.jpg",
+  "nom": "banquet-salle",
+  "role": "galerie",
+  "alt": "La salle de banquet dressée, lustres et chaises rouges",
+  "alt_en": "The banquet hall set with chandeliers and red chairs",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/salle-banquet.jpg",
+  "nom": "banquet-verres",
+  "role": "galerie",
+  "alt": "Verres alignés sur la table de banquet",
+  "alt_en": "Glasses lined up on the banquet table",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/salle-banquet-3.jpg",
+  "nom": "banquet-tables",
+  "role": "galerie",
+  "alt": "Tables rondes dressées dans la salle de banquet",
+  "alt_en": "Round tables set in the banquet hall",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/hotel-01.jpg",
+  "nom": "chambre-1",
+  "role": "vignette",
+  "alt": "Chambre double au couvre-lit bleu",
+  "alt_en": "Double room with a blue bedspread",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/hotel-02.jpg",
+  "nom": "chambre-2",
+  "role": "vignette",
+  "alt": "Chambre aux murs mauves et lit double",
+  "alt_en": "Room with mauve walls and a double bed",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/hotel-03.jpg",
+  "nom": "chambre-3",
+  "role": "vignette",
+  "alt": "Chambre lumineuse avec télévision",
+  "alt_en": "Bright room with a television",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/hotel-04.jpg",
+  "nom": "chambre-4",
+  "role": "vignette",
+  "alt": "Chambre aux murs verts",
+  "alt_en": "Room with green walls",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/13h-repas-gastronomique-relais.jpg",
+  "nom": "alambic",
+  "role": "galerie",
+  "alt": "Alambic à armagnac",
+  "alt_en": "Armagnac still",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/circuit-autocar.jpg",
+  "nom": "petit-train",
+  "role": "vignette",
+  "alt": "Le petit train touristique de l'Albret",
+  "alt_en": "The Albret tourist train",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/relais-gascogne-hotel-restaurant-3.jpg",
+  "nom": "mezin-panorama",
+  "role": "vignette",
+  "alt": "Grande maison blanche dans la campagne de Mézin",
+  "alt_en": "Large white house in the Mézin countryside",
+  "beaute": 3
+ },
+ {
+  "source": "recu/chaud/decouvrir-05.jpg",
+  "nom": "liege",
+  "role": "vignette",
+  "alt": "Bouchons de liège",
+  "alt_en": "Cork stoppers",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/decouvrir-07.jpg",
+  "nom": "nerac",
+  "role": "vignette",
+  "alt": "Château Henri IV de Nérac",
+  "alt_en": "Henri IV castle in Nérac",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/decouvrir-02.jpg",
+  "nom": "eglise",
+  "role": "vignette",
+  "alt": "Église de Mézin",
+  "alt_en": "Church in Mézin",
+  "beaute": 2
+ },
+ {
+  "source": "recu/chaud/logo-sombre.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "Le Relais de Gascogne"
+ }
+]

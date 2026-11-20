@@ -1,0 +1,395 @@
+{
+  "commun": {
+    "navigation": "Main navigation",
+    "menu": "Menu",
+    "fermer": "Close",
+    "langueAutre": "Version française",
+    "actionEntete": "Book",
+    "appeler": "Call",
+    "sommaire": "Contents",
+    "retourHaut": "Back to top",
+    "maquette": "Mock-up: simulated requests, nothing is sent.",
+    "mentions": "Legal notice · Privacy policy: to be completed",
+    "evitement": "Skip to content",
+    "mentionIa": "AI-generated illustration",
+    "pause": "Pause",
+    "lecture": "Play",
+    "introLigne": "Hotel · Restaurant · Mézin",
+    "piedAccroche": "Hotel and restaurant in Armagnac country, at the entrance to Mézin, coming from Nérac on the RD 656.",
+    "piedContact": "Find us",
+    "facebook": "The Relais on Facebook",
+    "parPersonne": "per person",
+    "euros": "€"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Le Relais de Gascogne: hotel and restaurant in Mézin, Armagnac country",
+      "description": "17 rooms, seasonal Gascon cooking and a 120-seat function room at the entrance to Mézin (Lot-et-Garonne). Menus from €16.50, rooms from €53.",
+      "nav": "Home",
+      "partageAlt": "Le Relais de Gascogne: a window with blue shutters open onto the hills",
+      "accroche": "A table and rooms in Armagnac country"
+    },
+    "la-table": {
+      "titre": "The table at Le Relais de Gascogne: menus and Gascon specialities",
+      "description": "Menu of the day €16.50, small evening menu €18.50, menus at €26 and €33: seasonal soup, duck confit, duck breast, Gascon salad.",
+      "nav": "The table",
+      "partageAlt": "The table at Le Relais de Gascogne, menus from €16.50 to €33",
+      "accroche": "Seasonal Gascon cooking, menus from €16.50 to €33"
+    },
+    "chambres": {
+      "titre": "Rooms at Le Relais de Gascogne: 17 rooms from €53",
+      "description": "17 equipped rooms (shower, WC, TV, wifi) in Mézin: low and high season rates, overnight stopover, half board and full board.",
+      "nav": "Rooms",
+      "partageAlt": "Rooms at Le Relais de Gascogne, from €53 a night",
+      "accroche": "17 rooms for a stopover or a stay, from €53"
+    },
+    "groupes": {
+      "titre": "Groups and functions at Le Relais de Gascogne: a 120-seat room",
+      "description": "A 120-seat function room with parking: family meals, weddings, seminars. Coach day trips around Mézin, group menus at €26 and €31.",
+      "nav": "Groups & functions",
+      "partageAlt": "Groups and functions at Le Relais de Gascogne, a 120-seat room",
+      "accroche": "A 120-seat room for your celebrations and groups"
+    },
+    "reserver": {
+      "titre": "Book at Le Relais de Gascogne: table, room or group",
+      "description": "Call +33 5 53 65 79 88 or leave a request for a table, a room or a group. Avenue Max Grosselle, 47170 Mézin.",
+      "nav": "Book & find us",
+      "partageAlt": "Book at Le Relais de Gascogne, in Mézin",
+      "accroche": "A table, a room, a function room: book on +33 5 53 65 79 88"
+    },
+    "404": {
+      "titre": "Page not found: Le Relais de Gascogne",
+      "description": "This page does not exist, or no longer exists.",
+      "nav": "Page not found",
+      "partageAlt": "Page not found",
+      "accroche": "Shutters closed"
+    }
+  },
+  "ouvertures": {
+    "accueil": {
+      "surtitre": "Hotel · Restaurant · Mézin",
+      "l1": "A table and rooms",
+      "l2": "in <em>Armagnac</em> country",
+      "texte": "17 rooms, seasonal Gascon cooking and a 120-seat function room, at the entrance to Mézin.",
+      "action": "Book a table",
+      "info": "Menus from €16.50 · Rooms from €53"
+    },
+    "table": {
+      "surtitre": "The table at the Relais",
+      "l1": "Gascon cooking,",
+      "l2": "<em>in season</em>",
+      "texte": "Seasonal soup with every menu, duck, fish from the market and the chef's suggestions with the produce of the moment.",
+      "prixDe": "Menus from",
+      "prixA": "to",
+      "action": "Book a table"
+    },
+    "chambres": {
+      "surtitre": "The hotel",
+      "l1": "17 rooms for a stopover",
+      "l2": "<em>or a stay</em>",
+      "texte": "A small country hotel, fully equipped and well kept, for one night on the road or a week in Gascony.",
+      "info": "From €53 a night · breakfast €8.50",
+      "action": "Ask for a room"
+    },
+    "groupes": {
+      "surtitre": "Groups & functions",
+      "places": "seats in our function room, with parking",
+      "l1": "Celebrations, banquets",
+      "l2": "and <em>group days</em>",
+      "texte": "Family meals, weddings, seminars or a coach day trip: the room, the menus and the programme are prepared with you.",
+      "action": "Ask for a proposal"
+    },
+    "reserver": {
+      "surtitre": "Book & find us",
+      "l1": "A table, a room,",
+      "l2": "<em>a function room</em>",
+      "texte": "The simplest way is to call us. You can also leave a request: we will call you back to confirm.",
+      "action": "Make a request",
+      "telLibelle": "By phone"
+    }
+  },
+  "accueil": {
+    "table": {
+      "surtitre": "The table",
+      "titre": "Gascon cooking that follows the seasons",
+      "texte": "Gascon salad, the gourmet plate, duck breast and duck confit depending on the season, soup with every menu and fish fresh from the market.",
+      "enfant": "Children's menu",
+      "lien": "See the menus in detail",
+      "legende": "The terrace, on sunny days"
+    },
+    "saveurs": {
+      "titre": "Flavours of the region",
+      "r1": "Armagnac · Foie gras · Duck · Prunes ·",
+      "r2": "Duck breast · Confit · Gascon salad · Croustade ·"
+    },
+    "chambres": {
+      "surtitre": "The rooms",
+      "titre": "Sleep at the Relais, <em>shutters open</em> on the village",
+      "texte": "17 equipped rooms for a stopover or a stay, room only, half board or full board.",
+      "chiffre": "rooms",
+      "des": "from",
+      "nuit": "a night",
+      "etape": "Overnight stopover",
+      "petitdej": "Breakfast",
+      "lien": "Rates and packages"
+    },
+    "maison": {
+      "surtitre": "The house",
+      "titre": "A village house at the entrance to Mézin",
+      "texte": "Le Relais de Gascogne is run by Valérie and Etienne Soufflet. White front, blue shutters and geraniums: you will find it on avenue Max Grosselle, as you arrive from Nérac on the RD 656.",
+      "salle": "covers or so in the dining room",
+      "terrasse": "covers or so on the terrace, on sunny days",
+      "chambres": "rooms",
+      "reception": "seats in the function room",
+      "lien": "How to get here"
+    },
+    "pays": {
+      "g": "In Armagnac",
+      "d": "country",
+      "titre": "In the land of Armagnac, foie gras and prunes",
+      "texte": "At the southern tip of Lot-et-Garonne, Mézin is 10 km from the Gers and the Landes. Around the Relais: abbeys, castles and museums, including the Armagnac museum in Condom.",
+      "gers": "to the Gers",
+      "landes": "to the Landes",
+      "ocean": "to the ocean",
+      "lourdes": "to Lourdes",
+      "km": "km",
+      "visites": "Cork museum in Mézin · Henri IV castle in Nérac · Flaran Abbey · Séviac Gallo-Roman villa · Armagnac museum in Condom · The Way of St James",
+      "lien": "Ideas for visits and group days"
+    },
+    "groupes": {
+      "surtitre": "Groups & functions",
+      "titre": "A 120-seat room for your celebrations",
+      "texte": "Family meals, dinner dances, cold buffets, work meetings and seminars, birthdays, weddings and christenings. Menus and prices to be worked out together.",
+      "places": "seats",
+      "lien": "Discover the room"
+    },
+    "fin": {
+      "titre": "A table, a room? <em>Give us a call</em>",
+      "texte": "Avenue Max Grosselle, 47170 Mézin, France.",
+      "demande": "Leave a request"
+    }
+  },
+  "table": {
+    "menus": {
+      "surtitre": "The menus",
+      "titre": "Four menus, from lunch to dinner",
+      "ou": "or",
+      "enfantNom": "Children's menu",
+      "enfantTexte": "Dish of the day and dessert",
+      "couvertNom": "Child's place setting without a meal",
+      "potage": "A seasonal soup opens every menu."
+    },
+    "specialites": {
+      "surtitre": "Depending on the season",
+      "titre": "The house specialities",
+      "s1": "Gascon salad",
+      "s2": "Gourmet plate",
+      "s3": "Duck breast",
+      "s4": "Duck confit",
+      "note": "And every day, the chef's suggestion with seasonal produce."
+    },
+    "salle": {
+      "surtitre": "Dining room & terrace",
+      "titre": "Indoors or under the trees",
+      "salle": "covers or so in the dining room",
+      "terrasse": "covers or so on the terrace, on sunny days",
+      "allergenes": "Allergen information available on request.",
+      "chiens": "Sorry, dogs are not allowed.",
+      "horaires": "Service days and times: call +33 5 53 65 79 88.",
+      "legendeSalle": "The restaurant dining room",
+      "legendeTerrasse": "The terrace"
+    },
+    "fin": {
+      "titre": "Book a table",
+      "texte": "For lunch or dinner, one call is enough.",
+      "demande": "Leave a request"
+    }
+  },
+  "chambres": {
+    "equipements": {
+      "surtitre": "In every room",
+      "titre": "Fully equipped, well kept",
+      "citation": "“A small rural hotel, fully equipped and well kept.”",
+      "douche": "Shower",
+      "wc": "WC",
+      "lavabo": "Washbasin",
+      "tv": "Television",
+      "wifi": "Wifi",
+      "pmr": "A room accessible to guests with reduced mobility is being prepared.",
+      "photos": "A few rooms at the Relais"
+    },
+    "tarifs": {
+      "surtitre": "Rates",
+      "titre": "The price of a night, season by season",
+      "basse": "Low season",
+      "haute": "High season",
+      "choix": "Season shown",
+      "aPartir": "“From” rates, per night.",
+      "chambre": "Room",
+      "prix": "Price",
+      "estimTitre": "Estimate your stay",
+      "estimChambre": "Room type",
+      "estimNuits": "Number of nights",
+      "moins": "One night less",
+      "plus": "One night more",
+      "estimPetitdej": "With breakfast (€8.50 per person)",
+      "estimTotal": "Estimated total",
+      "estimNote": "Indicative estimate, excluding tourist tax. Low and high season dates are given by phone.",
+      "estimAction": "Ask for these dates"
+    },
+    "formules": {
+      "surtitre": "Packages",
+      "titre": "For one night or for the week",
+      "etapeNom": "Overnight stopover",
+      "etapeTexte": "The package for travellers passing through.",
+      "demiNom": "Half board",
+      "pensionNom": "Full board",
+      "pensionTexte": "Per person per day, from the 3rd day.",
+      "petitdejNom": "Breakfast",
+      "petitdejTexte": "Per person.",
+      "des": "from",
+      "basseHaute": "low / high season"
+    },
+    "fin": {
+      "titre": "A room for tonight?",
+      "texte": "Call us to check availability.",
+      "demande": "Ask for a room"
+    }
+  },
+  "groupes": {
+    "salle": {
+      "surtitre": "The function room",
+      "titre": "Fully equipped, with parking",
+      "texte": "Menus and prices to be worked out together, as you wish.",
+      "e1": "Family meals",
+      "e2": "Dinner dances",
+      "e3": "Cold buffets",
+      "e4": "Work meetings",
+      "e5": "Seminars",
+      "e6": "Birthdays",
+      "e7": "Weddings",
+      "e8": "Christenings"
+    },
+    "journee": {
+      "surtitre": "Coach day trip",
+      "titre": "A day in Mézin, from morning to teatime",
+      "matin": "Morning",
+      "midi": "1 pm: lunch at the Relais",
+      "apresMidi": "Afternoon, your choice",
+      "menu": "Menu",
+      "fromage": "Cheese supplement: €3 per person.",
+      "texte": "For coach operators, clubs and associations: programme and prices to be put together with you."
+    },
+    "autour": {
+      "surtitre": "Around the Relais",
+      "titre": "To discover in our lovely region",
+      "texte": "For clubs and associations, in a group or on your own.",
+      "a1": "The church of Saint-Jean-Baptiste in Mézin",
+      "a2": "Nérac and its Henri IV castle",
+      "a3": "Agen",
+      "a4": "The Way of St James",
+      "a5": "Mountain biking, cycling and canoeing",
+      "a6": "Heated swimming pool 100 m away",
+      "a7": "The Landes forest",
+      "automneTitre": "In autumn",
+      "automne": "Hunters head for the wood-pigeon hides, the stags bell and people go mushroom picking. The low season brings you a preferential rate.",
+      "legendeTrain": "The Albret tourist train",
+      "legendeAlambic": "Armagnac still",
+      "legendeNerac": "Nérac castle",
+      "legendeLiege": "Cork stoppers"
+    },
+    "fin": {
+      "titre": "Let's talk about your group",
+      "texte": "Date, number of guests, menu: we prepare a proposal with you.",
+      "demande": "Ask for a proposal"
+    }
+  },
+  "reserver": {
+    "demande": {
+      "surtitre": "Your request",
+      "titre": "In three steps",
+      "deroule": "1. Your request · 2. The details · 3. Your contact details",
+      "etape": "Step",
+      "sur": "of",
+      "objetTitre": "What would you like to book?",
+      "table": "A table",
+      "tableTexte": "Lunch or dinner",
+      "chambre": "A room",
+      "chambreTexte": "One night or a stay",
+      "groupe": "A group or a celebration",
+      "groupeTexte": "120-seat room, coach day trip",
+      "detailsTitre": "The details",
+      "date": "Preferred date",
+      "service": "Service",
+      "midi": "Lunch",
+      "soir": "Dinner",
+      "personnes": "Number of guests",
+      "arrivee": "Arrival date",
+      "nuits": "Number of nights",
+      "typeChambre": "Room type",
+      "petitdej": "With breakfast",
+      "formule": "Package",
+      "formuleChambre": "Room only",
+      "evenement": "Type of event",
+      "coordTitre": "Your contact details",
+      "nom": "Full name",
+      "tel": "Phone",
+      "email": "E-mail (optional)",
+      "message": "Message (optional)",
+      "donnees": "Your details are only used to call you back about this request. <a href=\"#pied\" data-sans-transition>Privacy policy: to be completed</a>.",
+      "precedent": "Back",
+      "suivant": "Continue",
+      "envoyer": "Send the request",
+      "recapTitre": "Summary",
+      "recapVide": "Choose what you would like to book.",
+      "envoye": "Simulated request: nothing has been sent. On the final site, it will go to the Relais, who will call you back."
+    },
+    "acces": {
+      "surtitre": "Getting here",
+      "titre": "At the entrance to Mézin, on the RD 656",
+      "texte": "Coming from Nérac on the RD 656, the Relais is at the entrance to the village, on avenue Max Grosselle.",
+      "parking": "Parking for the function room.",
+      "horaires": "Opening days and times: call +33 5 53 65 79 88.",
+      "carteTitre": "Mézin and its surroundings (diagram)",
+      "carteNote": "Indicative diagram, distances given by the Relais."
+    }
+  },
+  "introuvable": {
+    "surtitre": "Error 404",
+    "titre": "Shutters closed",
+    "texte": "This page does not exist, or no longer exists. The house, however, is still expecting you.",
+    "retour": "Back to the home page"
+  },
+  "alts": {
+    "accueil-ouverture": "Open window with blue shutters over the Gascony hills",
+    "accueil-table": "Prunes, walnuts, country bread and a glass of Armagnac on a wooden table",
+    "accueil-terroir": "Autumn vineyard hills in Gascony",
+    "accueil-chambre": "Bed made with white linen, striped with sunlight through blue shutters",
+    "accueil-terrasse": "Village terrace under plane trees, tables set",
+    "table-ouverture": "Seasonal vegetables and mushrooms on a kitchen table",
+    "table-potage": "Steaming soup tureen on a white tablecloth",
+    "chambres-ouverture": "Morning light through blue shutters on a white bed",
+    "chambres-petitdej": "Breakfast tray by a window with blue shutters",
+    "groupes-ouverture": "Long table set for a family celebration",
+    "groupes-route": "Country road between vineyards toward a hilltop village",
+    "reserver-ouverture": "Brass service bell and room key on a wooden counter",
+    "404": "Closed blue shutters on a sunny cream wall",
+    "maison-facade": "Front of the Relais de Gascogne, blue shutters and geraniums",
+    "maison-balcon": "Flowered balcony and blue shutters on the front",
+    "terrasse": "The shaded terrace and its blue parasols",
+    "salle": "The restaurant dining room, blue tablecloths",
+    "banquet-salle": "The banquet hall set with chandeliers and red chairs",
+    "banquet-verres": "Glasses lined up on the banquet table",
+    "banquet-tables": "Round tables set in the banquet hall",
+    "chambre-1": "Double room with a blue bedspread",
+    "chambre-2": "Room with mauve walls and a double bed",
+    "chambre-3": "Bright room with a television",
+    "chambre-4": "Room with green walls",
+    "alambic": "Armagnac still",
+    "petit-train": "The Albret tourist train",
+    "mezin-panorama": "Large white house in the Mézin countryside",
+    "liege": "Cork stoppers",
+    "nerac": "Henri IV castle in Nérac",
+    "eglise": "Church in Mézin"
+  }
+}

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Groupes et réceptions au Relais de Gascogne : salle de 120 places</title>
+<meta name="description" content="Salle de réception de 120 places avec parking : repas de famille, mariages, séminaires. Journées en autocar autour de Mézin, menus de groupe à 26 € et 31 €.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://relais-de-gascogne-maquette.vercel.app/groupes">
+<link rel="alternate" hreflang="fr" href="https://relais-de-gascogne-maquette.vercel.app/groupes">
+<link rel="alternate" hreflang="en" href="https://relais-de-gascogne-maquette.vercel.app/en/groupes">
+<link rel="alternate" hreflang="x-default" href="https://relais-de-gascogne-maquette.vercel.app/groupes">
+<style>:root{--fond:#f6f0e4;--texte:#1c2433;--voile-fond:#1f3566;--ouverture-fond:#1f3566;--menu-fond:#f6f0e4}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f0e4">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Relais de Gascogne">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Groupes et réceptions au Relais de Gascogne : salle de 120 places">
+<meta property="og:description" content="Salle de réception de 120 places avec parking : repas de famille, mariages, séminaires. Journées en autocar autour de Mézin, menus de groupe à 26 € et 31 €.">
+<meta property="og:url" content="https://relais-de-gascogne-maquette.vercel.app/groupes">
+<meta property="og:image" content="https://relais-de-gascogne-maquette.vercel.app/assets/partage/groupes-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Groupes et réceptions au Relais de Gascogne, salle de 120 places">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hotel","name":"Le Relais de Gascogne","url":"https://relais-de-gascogne-maquette.vercel.app/","telephone":"+33553657988","email":"sarllesgasconsgourmets@bbox.fr","numberOfRooms":17,"priceRange":"53 € – 98 €","address":{"@type":"PostalAddress","streetAddress":"Avenue Max Grosselle","postalCode":"47170","addressLocality":"Mézin","addressCountry":"FR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wifi","value":true},{"@type":"LocationFeatureSpecification","name":"TV","value":true},{"@type":"LocationFeatureSpecification","name":"Parking (salle de réception)","value":true}],"sameAs":["https://www.facebook.com/lerelaisdegascogne47170"],"description":"Hôtel-restaurant à Mézin, au pays de l'Armagnac : 17 chambres, cuisine gasconne de saison, salle de réception de 120 places."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.png" alt="" width="1000" height="125"><span data-voile-libelle>Groupes &amp; réceptions</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#1f3566">
+  <div class="volet volet--g" data-effet="volets"></div><div class="volet volet--d"></div>
+  <div class="ouverture-centre">
+    <img class="ouverture-logo" src="/assets/images/logo-clair.png" alt="" width="1000" height="125" data-ouverture-objet>
+    <span class="ouverture-trait"></span>
+    <p class="ouverture-ligne">Hôtel · Restaurant · Mézin</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" aria-label="Le Relais de Gascogne" href="/" data-libelle="Accueil">
+      <img class="entete-logo-img" src="/assets/images/logo.png" alt="Le Relais de Gascogne" width="1000" height="125">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions" aria-current="page">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en/groupes" hreflang="en" lang="en" data-langue="en" aria-label="English version">en</a>
+      <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-table" class="menu-lien" data-libelle="La table">La table</a></li><li style="--i:2"><a href="/chambres" class="menu-lien" data-libelle="Les chambres">Les chambres</a></li><li style="--i:3"><a href="/groupes" class="menu-lien" data-libelle="Groupes &amp; réceptions" aria-current="page">Groupes &amp; réceptions</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li></ul>
+  <p><a class="bouton" href="tel:+33553657988">Appeler 05 53 65 79 88</a></p>
+  <p><a class="entete-langue" href="/en/groupes" hreflang="en" lang="en" data-langue="en">English version</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--chiffre" id="debut">
+  <div class="conteneur ouv-chiffre-grille">
+    <p class="ouv-nombre ouv-anim" data-info-cle><strong>120</strong><span>places assises dans notre salle de réception, avec parking</span></p>
+    <div class="ouv-texte">
+      <p class="surtitre ouv-anim">Groupes &amp; réceptions</p>
+      <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">Fêtes, banquets</span></span> <span class="l"><span class="li">et <em>journées de groupe</em></span></span></h1>
+      <p class="ouv-intro ouv-anim masque-ecran-bas">Repas de famille, mariages, séminaires ou journée en autocar : la salle, les menus et le programme se préparent avec vous.</p>
+      <p class="ouv-actions ouv-anim"><a href="/reserver?objet=groupe#demande" class="bouton" data-libelle="Réserver &amp; venir" data-action-principale data-survol="magnetique">Demander une proposition</a></p>
+    </div>
+  </div>
+  <figure class="media ouv-bande ouv-bande--basse ph-groupes-ouverture" data-grok data-fx="parallaxe" data-fx-force="8" data-iris-centre style="--cadrage:55% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/groupes-ouverture-mobile-640.webp 640w, /assets/images/grok/groupes-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/groupes-ouverture-1280.webp" srcset="/assets/images/grok/groupes-ouverture-640.webp 640w, /assets/images/grok/groupes-ouverture-1280.webp 1280w, /assets/images/grok/groupes-ouverture-1920.webp 1920w" sizes="100vw" alt="Longue table dressée pour une fête de famille" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="sec conteneur" id="salle">
+  <div class="sec-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>La salle de réception</p>
+      <h2 data-anime="lignes">Toute équipée, avec parking</h2>
+      <p data-anime>Menus et tarifs à étudier ensemble, selon votre choix.</p>
+      <ul class="pastilles" data-anime="cascade"><li>Repas de famille</li><li>Repas dansant</li><li>Buffet froid</li><li>Réunions de travail</li><li>Séminaires</li><li>Anniversaires</li><li>Mariages</li><li>Baptêmes</li></ul>
+    </div>
+    <div class="trio">
+      <figure class="media trio-1" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/banquet-salle-819.webp" srcset="/assets/images/banquet-salle-819.webp 819w" sizes="(max-width: 760px) 90vw, 30vw" alt="La salle de banquet dressée, lustres et chaises rouges" width="819" height="1025" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media trio-2" data-fx="vitesse" data-fx-force="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/banquet-tables-768.webp" srcset="/assets/images/banquet-tables-768.webp 768w" sizes="(max-width: 760px) 45vw, 15vw" alt="Tables rondes dressées dans la salle de banquet" width="768" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media trio-3" data-fx="vitesse" data-fx-force="4" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/banquet-verres-1024.webp" srcset="/assets/images/banquet-verres-1024.webp 1024w" sizes="(max-width: 760px) 45vw, 15vw" alt="Verres alignés sur la table de banquet" width="1024" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="sec sec--bleu" id="journee">
+  <div class="conteneur">
+    <div class="journee-tete">
+      <p class="surtitre" data-anime>Circuit autocar</p>
+      <h2 data-anime="lignes">Une journée à Mézin, du matin au goûter</h2>
+      <p data-anime>Pour les autocaristes, clubs et associations : programme et tarifs à composer ensemble.</p>
+    </div>
+    <ol class="frise" data-effet="journee" data-visuel>
+      <li class="frise-etape">
+        <span class="frise-point" aria-hidden="true"></span>
+        <h3>Matinée</h3>
+        <ul><li>Visite du musée du liège : Mézin en fut la capitale</li><li>Sur les pas du président Armand Fallières</li><li>L&#39;église fortifiée et la table d&#39;orientation, pour la vue</li></ul>
+      </li>
+      <li class="frise-etape">
+        <span class="frise-point" aria-hidden="true"></span>
+        <h3>13 h : repas au Relais</h3>
+        <div class="frise-menus">
+          <div class="frise-menu"><p class="menu-prix" data-prix>26 €</p><ul><li>Potage du chef</li><li>Mousse de foie de canard et son pain, ou grillon de canard</li><li>Longe de porc aux pruneaux, ou poule façon Henri IV revisitée</li><li>Légumes de saison</li><li>Croustade aux pommes</li><li>¼ de vin et café compris</li></ul></div><div class="frise-menu"><p class="menu-prix" data-prix>31 €</p><ul><li>Potage du chef</li><li>Salade de gésiers, ou terrine de la mer sauce suprême</li><li>Confit de canard, ou demi-magret de canard au floc et échalotes</li><li>Légumes de saison</li><li>Croustade aux pommes</li><li>¼ de vin et café compris</li></ul></div>
+        </div>
+        <p class="note-douce">Supplément fromage : 3 € par personne.</p>
+      </li>
+      <li class="frise-etape">
+        <span class="frise-point" aria-hidden="true"></span>
+        <h3>Après-midi, au choix</h3>
+        <ul class="frise-choix"><li>Abbaye de Flaran</li><li>Chocolaterie de Nérac : visite et dégustation</li><li>Villa gallo-romaine de Séviac</li><li>Musée de l&#39;Armagnac à Condom</li><li>Château Henri IV à Nérac</li><li>Petit train touristique de l&#39;Albret, départ Mézin ou Nérac</li><li>Après-midi dansante, musette et goûter</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="sec conteneur" id="autour">
+  <div class="autour-grille">
+    <figure class="media autour-image" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/groupes-route-mobile-640.webp 640w" sizes="(max-width: 760px) 100vw, 50vw">
+    <img src="/assets/images/grok/groupes-route-1280.webp" srcset="/assets/images/grok/groupes-route-640.webp 640w, /assets/images/grok/groupes-route-1280.webp 1280w, /assets/images/grok/groupes-route-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 50vw" alt="Route de campagne entre les vignes, vers un village perché" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>Autour du Relais</p>
+      <h2 data-anime="lignes">À découvrir dans notre belle région</h2>
+      <p data-anime>Pour les clubs, les associations, en groupe ou seul.</p>
+      <ul class="liste-points" data-anime="cascade"><li>L&#39;église Saint-Jean-Baptiste de Mézin</li><li>Nérac et son château Henri IV</li><li>Agen</li><li>Le chemin de Saint-Jacques-de-Compostelle</li><li>VTT, VTC et canoë-kayak</li><li>Piscine chauffée à 100 m</li><li>La forêt landaise</li></ul>
+    </div>
+  </div>
+  <div class="autour-bas">
+    <div class="automne" data-anime>
+      <h3>En automne</h3>
+      <p>Les chasseurs rejoignent les palombières, le cerf brame et l&#39;on part aux champignons. La basse saison vous fait profiter d&#39;un tarif préférentiel.</p>
+    </div>
+    <div class="cartes-photo" data-anime="cascade">
+      <figure class="media carte-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/petit-train-640.webp" srcset="/assets/images/petit-train-640.webp 640w" sizes="(max-width: 760px) 45vw, 16vw" alt="Le petit train touristique de l&#39;Albret" width="640" height="480" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Le petit train de l&#39;Albret</figcaption>
+</figure>
+      <figure class="media carte-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/alambic-965.webp" srcset="/assets/images/alambic-965.webp 965w" sizes="(max-width: 760px) 45vw, 16vw" alt="Alambic à armagnac" width="965" height="1207" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Alambic à armagnac</figcaption>
+</figure>
+      <figure class="media carte-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/nerac-380.webp" srcset="/assets/images/nerac-380.webp 380w" sizes="(max-width: 760px) 45vw, 16vw" alt="Château Henri IV de Nérac" width="380" height="285" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Château de Nérac</figcaption>
+</figure>
+      <figure class="media carte-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/liege-480.webp" srcset="/assets/images/liege-480.webp 480w" sizes="(max-width: 760px) 45vw, 16vw" alt="Bouchons de liège" width="480" height="360" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Bouchons de liège</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="appel" id="fin">
+  <div class="conteneur appel-grille">
+    <div>
+      <h2 data-anime="lignes">Parlons de votre groupe</h2>
+      <p data-anime>Date, nombre de personnes, menu : nous préparons une proposition avec vous.</p>
+      <p class="appel-actions" data-anime><a href="/reserver?objet=groupe#demande" class="bouton bouton--clair" data-libelle="Réserver &amp; venir" data-survol="magnetique">Demander une proposition</a></p>
+    </div>
+    <div class="appel-tel" data-visuel>
+      <a href="tel:+33553657988">05 53 65 79 88</a>
+      <svg class="appel-trait" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M4 16 C 90 4, 180 22, 260 10 S 360 6, 396 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+      <p>Avenue Max Grosselle, 47170 Mézin</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Le Relais de Gascogne" width="1000" height="125" loading="lazy">
+      <p>Hôtel-restaurant au pays de l&#39;Armagnac, à l&#39;entrée de Mézin, en venant de Nérac par la RD 656.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous trouver</p>
+      <p>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></p>
+      <p><a href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">Le Relais sur Facebook</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions" aria-current="page">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir">Réserver &amp; venir</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette : demandes simulées, rien n&#39;est envoyé.</p><p>© Le Relais de Gascogne</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33553657988">Appeler</a>
+  <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+</div>
+</body>
+</html>

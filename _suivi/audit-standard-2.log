@@ -1,0 +1,44 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 33 s
+… mesures
+  22/121
+  42/121
+  64/121
+  86/121
+  108/121
+  fait en 167 s
+… mesures:balayage
+  fait en 59 s
+… films
+  fait en 132 s
+… bords
+  fait en 78 s
+… parcours:intro
+  fait en 59 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 161 s
+… parcours:hauteur
+  fait en 40 s
+… parcours:projet
+  fait en 11 s
+… ecran
+  fait en 62 s
+… fluidite
+  fait en 172 s
+… mouvement
+  fait en 127 s
+… vitesse
+  fait en 34 s
+… captures
+  fait en 172 s
+… safari
+  fait en 0 s
+
+Échecs : 7 · À regarder : 20 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/,/en/groupes,/groupes,/chambres --seulement=fichiers,mesures,films,bords,parcours
+Rapport : /home/claude/relais-de-gascogne-maquette/_audit/rapport/rapport.md (passe 20261120-203725-standard)
+FIN 1

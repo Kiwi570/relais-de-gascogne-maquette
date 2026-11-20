@@ -1,0 +1,27 @@
+… mesures
+  19/429
+  45/429
+  77/429
+  98/429
+  124/429
+  147/429
+  169/429
+  199/429
+  223/429
+  246/429
+  277/429
+  303/429
+  327/429
+  357/429
+  381/429
+  405/429
+  fait en 504 s
+… mesures:balayage
+  fait en 91 s
+… ecran
+  fait en 86 s
+
+Échecs : 2 · À regarder : 6 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/reserver --seulement=fichiers,mesures
+Rapport : /home/claude/relais-de-gascogne-maquette/_audit/rapport/rapport.md (passe 20261120-211729-complet-partiel)
+FIN 1

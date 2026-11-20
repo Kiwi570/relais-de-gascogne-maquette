@@ -1,0 +1,150 @@
+[
+ {
+  "id": "jour",
+  "prix": "16,50",
+  "nom": {
+   "fr": "Menu du jour",
+   "en": "Menu of the day"
+  },
+  "note": {
+   "fr": "Quart de vin compris",
+   "en": "Quarter-litre of wine included"
+  },
+  "plats": [
+   {
+    "fr": "Potage selon la saison",
+    "en": "Soup, depending on the season"
+   },
+   {
+    "fr": "Entrée",
+    "en": "Starter"
+   },
+   {
+    "fr": "Plat",
+    "en": "Main course"
+   },
+   {
+    "fr": "Dessert",
+    "en": "Dessert"
+   },
+   {
+    "fr": "¼ de vin",
+    "en": "¼ litre of wine"
+   }
+  ],
+  "court": {
+   "fr": "Menu du jour",
+   "en": "Menu of the day"
+  }
+ },
+ {
+  "id": "soir",
+  "prix": "18,50",
+  "nom": {
+   "fr": "Petit menu du soir",
+   "en": "Small evening menu"
+  },
+  "note": {
+   "fr": "Le soir",
+   "en": "In the evening"
+  },
+  "plats": [
+   {
+    "fr": "Potage selon la saison",
+    "en": "Soup, depending on the season"
+   },
+   {
+    "fr": "Entrée",
+    "en": "Starter"
+   },
+   {
+    "fr": "Plat",
+    "en": "Main course"
+   },
+   {
+    "fr": "Dessert",
+    "en": "Dessert"
+   }
+  ],
+  "court": {
+   "fr": "Petit menu du soir",
+   "en": "Small evening menu"
+  }
+ },
+ {
+  "id": "m26",
+  "prix": "26",
+  "nom": {
+   "fr": "Le menu à 26 €",
+   "en": "The €26 menu"
+  },
+  "note": {
+   "fr": "Poisson « retour de marché »",
+   "en": "Fish fresh from the market"
+  },
+  "plats": [
+   {
+    "fr": "Potage de saison",
+    "en": "Seasonal soup"
+   },
+   {
+    "fr": "Entrée du jour, salade de gésiers ou assiette fine de canard",
+    "en": "Starter of the day, gizzard salad or fine duck plate"
+   },
+   {
+    "fr": "Pièce de bœuf grillée, suprême de volaille à la crème ou poisson du marché",
+    "en": "Grilled beef, chicken supreme with cream or fish from the market"
+   },
+   {
+    "fr": "Légumes",
+    "en": "Vegetables"
+   },
+   {
+    "fr": "Dessert",
+    "en": "Dessert"
+   }
+  ],
+  "court": {
+   "fr": "Menu, entrée et plat au choix",
+   "en": "Menu, choice of starter and main"
+  }
+ },
+ {
+  "id": "m33",
+  "prix": "33",
+  "nom": {
+   "fr": "Le menu à 33 €",
+   "en": "The €33 menu"
+  },
+  "note": {
+   "fr": "Suggestion du chef selon les produits de saison",
+   "en": "Chef's suggestion with seasonal produce"
+  },
+  "plats": [
+   {
+    "fr": "Potage de saison",
+    "en": "Seasonal soup"
+   },
+   {
+    "fr": "Gratin de fruits de mer, salade gasconne, entrée du jour ou suggestions",
+    "en": "Seafood gratin, Gascon salad, starter of the day or suggestions"
+   },
+   {
+    "fr": "Confit de canard, demi-magret du moment ou pièce de bœuf",
+    "en": "Duck confit, half duck breast of the moment or beef"
+   },
+   {
+    "fr": "Légumes",
+    "en": "Vegetables"
+   },
+   {
+    "fr": "Dessert",
+    "en": "Dessert"
+   }
+  ],
+  "court": {
+   "fr": "Menu gascon : confit, magret ou bœuf",
+   "en": "Gascon menu: confit, duck breast or beef"
+  }
+ }
+]

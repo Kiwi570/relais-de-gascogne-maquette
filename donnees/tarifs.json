@@ -1,0 +1,13 @@
+{
+  "chambres": [
+    { "id": "simple", "basse": 53, "haute": 55, "personnes": 1, "nom": { "fr": "Chambre 1 personne", "en": "Single room" } },
+    { "id": "double", "basse": 63, "haute": 65, "personnes": 2, "nom": { "fr": "Chambre 2 personnes, lit double", "en": "Double room, double bed" } },
+    { "id": "twin", "basse": 73, "haute": 75, "personnes": 2, "nom": { "fr": "Chambre 2 personnes, lits simples", "en": "Twin room, single beds" } }
+  ],
+  "formules": [
+    { "id": "demi", "basse": 76, "haute": 78, "nom": { "fr": "Demi-pension", "en": "Half board" }, "unite": { "fr": "par personne", "en": "per person" } },
+    { "id": "pension", "basse": 89, "haute": 98, "nom": { "fr": "Pension complète", "en": "Full board" }, "unite": { "fr": "par personne", "en": "per person" } }
+  ],
+  "petitDejeuner": 8.5,
+  "soireeEtape": 80
+}

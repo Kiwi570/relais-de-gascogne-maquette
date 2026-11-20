@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rooms at Le Relais de Gascogne: 17 rooms from €53</title>
+<meta name="description" content="17 equipped rooms (shower, WC, TV, wifi) in Mézin: low and high season rates, overnight stopover, half board and full board.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://relais-de-gascogne-maquette.vercel.app/en/chambres">
+<link rel="alternate" hreflang="fr" href="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<link rel="alternate" hreflang="en" href="https://relais-de-gascogne-maquette.vercel.app/en/chambres">
+<link rel="alternate" hreflang="x-default" href="https://relais-de-gascogne-maquette.vercel.app/chambres">
+<style>:root{--fond:#f6f0e4;--texte:#1c2433;--voile-fond:#1f3566;--ouverture-fond:#1f3566;--menu-fond:#f6f0e4}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f0e4">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Relais de Gascogne">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Rooms at Le Relais de Gascogne: 17 rooms from €53">
+<meta property="og:description" content="17 equipped rooms (shower, WC, TV, wifi) in Mézin: low and high season rates, overnight stopover, half board and full board.">
+<meta property="og:url" content="https://relais-de-gascogne-maquette.vercel.app/en/chambres">
+<meta property="og:image" content="https://relais-de-gascogne-maquette.vercel.app/assets/partage/chambres-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rooms at Le Relais de Gascogne, from €53 a night">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hotel","name":"Le Relais de Gascogne","url":"https://relais-de-gascogne-maquette.vercel.app/","telephone":"+33553657988","email":"sarllesgasconsgourmets@bbox.fr","numberOfRooms":17,"priceRange":"53 € – 98 €","address":{"@type":"PostalAddress","streetAddress":"Avenue Max Grosselle","postalCode":"47170","addressLocality":"Mézin","addressCountry":"FR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wifi","value":true},{"@type":"LocationFeatureSpecification","name":"TV","value":true},{"@type":"LocationFeatureSpecification","name":"Parking (salle de réception)","value":true}],"sameAs":["https://www.facebook.com/lerelaisdegascogne47170"],"description":"Hotel and restaurant in Mézin, in Armagnac country: 17 rooms, seasonal Gascon cooking, a 120-seat function room."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.png" alt="" width="1000" height="125"><span data-voile-libelle>Rooms</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#1f3566">
+  <div class="volet volet--g" data-effet="volets"></div><div class="volet volet--d"></div>
+  <div class="ouverture-centre">
+    <img class="ouverture-logo" src="/assets/images/logo-clair.png" alt="" width="1000" height="125" data-ouverture-objet>
+    <span class="ouverture-trait"></span>
+    <p class="ouverture-ligne">Hotel · Restaurant · Mézin</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" aria-label="Le Relais de Gascogne" href="/en" data-libelle="Home">
+      <img class="entete-logo-img" src="/assets/images/logo.png" alt="Le Relais de Gascogne" width="1000" height="125">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/la-table" data-libelle="The table">The table</a></li><li><a href="/en/chambres" data-libelle="Rooms" aria-current="page">Rooms</a></li><li><a href="/en/groupes" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li><a href="/en/reserver" data-libelle="Book &amp; find us">Book &amp; find us</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/chambres" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">fr</a>
+      <a class="bouton" href="/en/reserver#demande" data-libelle="Book &amp; find us">Book</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Close</a></p>
+  <ul><li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/en/la-table" class="menu-lien" data-libelle="The table">The table</a></li><li style="--i:2"><a href="/en/chambres" class="menu-lien" data-libelle="Rooms" aria-current="page">Rooms</a></li><li style="--i:3"><a href="/en/groupes" class="menu-lien" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li style="--i:4"><a href="/en/reserver" class="menu-lien" data-libelle="Book &amp; find us">Book &amp; find us</a></li></ul>
+  <p><a class="bouton" href="tel:+33553657988">Call 05 53 65 79 88</a></p>
+  <p><a class="entete-langue" href="/chambres" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--bandeau" id="debut">
+  <div class="conteneur ouv-texte ouv-texte--bandeau">
+    <div>
+      <p class="surtitre ouv-anim">The hotel</p>
+      <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">17 rooms for a stopover</span></span> <span class="l"><span class="li"><em>or a stay</em></span></span></h1>
+    </div>
+    <div class="ouv-cote">
+      <p class="ouv-intro ouv-anim masque-ecran-bas">A small country hotel, fully equipped and well kept, for one night on the road or a week in Gascony.</p>
+      <p class="ouv-info ouv-anim" data-info-cle>From €53 a night · breakfast €8.50</p>
+      <p class="ouv-actions ouv-anim"><a href="/en/reserver?objet=chambre#demande" class="bouton" data-libelle="Book &amp; find us" data-action-principale data-survol="magnetique">Ask for a room</a></p>
+    </div>
+  </div>
+  <figure class="media ouv-bande ph-chambres-ouverture" data-grok data-fx="parallaxe" data-fx-force="8" data-iris-centre style="--cadrage:50% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/chambres-ouverture-mobile-640.webp 640w, /assets/images/grok/chambres-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/chambres-ouverture-1280.webp" srcset="/assets/images/grok/chambres-ouverture-640.webp 640w, /assets/images/grok/chambres-ouverture-1280.webp 1280w, /assets/images/grok/chambres-ouverture-1920.webp 1920w" sizes="100vw" alt="Morning light through blue shutters on a white bed" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+</section>
+<section class="sec conteneur" id="equipements">
+  <div class="equip-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>In every room</p>
+      <h2 data-anime="lignes">Fully equipped, well kept</h2>
+      <blockquote class="citation" data-anime="mots">“A small rural hotel, fully equipped and well kept.”</blockquote>
+      <p class="note-douce" data-anime>A room accessible to guests with reduced mobility is being prepared.</p>
+    </div>
+    <ul class="equipements" data-anime="cascade">
+      <li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M8 40 V 14 C 8 9, 12 6, 17 6 H 30 C 35 6, 38 10, 38 14"/><path d="M30 16 H 46 L 42 22 H 34 Z"/><path d="M36 28 v4 M40 30 v5 M44 28 v4 M38 36 v4 M42 37 v4"/></svg><span>Shower</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M14 8 H 26 V 26 H 14 Z"/><path d="M10 26 H 40 C 40 34, 34 38, 26 38 H 20 L 22 44 H 14 L 16 36 C 12 34, 10 30, 10 26 Z"/></svg><span>WC</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M8 22 H 42 C 42 32, 34 38, 25 38 C 16 38, 8 32, 8 22 Z"/><path d="M25 22 V 10 C 25 7, 30 7, 30 10 V 12"/><path d="M25 38 V 46"/></svg><span>Washbasin</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><rect x="6" y="10" width="38" height="26" rx="3"/><path d="M18 44 H 32 M25 36 V 44"/></svg><span>Television</span></li><li><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 20 C 16 10, 34 10, 44 20"/><path d="M12 27 C 19 20, 31 20, 38 27"/><path d="M18 34 C 22 30, 28 30, 32 34"/><circle cx="25" cy="40" r="2.5"/></svg><span>Wifi</span></li>
+    </ul>
+  </div>
+  <div class="vignettes" role="list" aria-label="A few rooms at the Relais" data-anime="cascade">
+    <div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-1-510.webp" srcset="/assets/images/chambre-1-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Double room with a blue bedspread" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-2-510.webp" srcset="/assets/images/chambre-2-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Room with mauve walls and a double bed" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-3-510.webp" srcset="/assets/images/chambre-3-510.webp 510w" sizes="(max-width: 760px) 45vw, 22vw" alt="Bright room with a television" width="510" height="383" loading="lazy" decoding="async">
+  </picture>
+</figure></div><div role="listitem"><figure class="media vignette" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chambre-4-504.webp" srcset="/assets/images/chambre-4-504.webp 504w" sizes="(max-width: 760px) 45vw, 22vw" alt="Room with green walls" width="504" height="378" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+  </div>
+</section>
+<section class="sec sec--sable" id="tarifs">
+  <div class="conteneur tarifs-grille">
+    <div>
+      <p class="surtitre" data-anime>Rates</p>
+      <h2 data-anime="lignes">The price of a night, season by season</h2>
+      <div class="saison" role="group" aria-label="Season shown" data-anime>
+        <button type="button" class="saison-btn" aria-pressed="true" data-saison="basse">Low season</button>
+        <button type="button" class="saison-btn" aria-pressed="false" data-saison="haute">High season</button>
+      </div>
+      <table class="tarifs" data-anime="cascade">
+        <caption class="visuellement-cache">“From” rates, per night.</caption>
+        <thead><tr><th scope="col">Room</th><th scope="col">Price</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Single room</th><td><span class="tarif" data-prix data-basse="53" data-haute="55">€53</span></td></tr><tr><th scope="row">Double room, double bed</th><td><span class="tarif" data-prix data-basse="63" data-haute="65">€63</span></td></tr><tr><th scope="row">Twin room, single beds</th><td><span class="tarif" data-prix data-basse="73" data-haute="75">€73</span></td></tr>
+          <tr><th scope="row">Half board <small>per person</small></th><td><span class="tarif" data-prix data-basse="76" data-haute="78">€76</span></td></tr><tr><th scope="row">Full board <small>per person</small></th><td><span class="tarif" data-prix data-basse="89" data-haute="98">€89</span></td></tr>
+        </tbody>
+      </table>
+      <p class="note-douce" data-anime>“From” rates, per night.</p>
+    </div>
+    <form class="estimateur" data-effet="estimateur" data-anime aria-labelledby="estim-titre" onsubmit="return false">
+      <h3 id="estim-titre">Estimate your stay</h3>
+      <div class="champ"><label for="e-chambre">Room type</label>
+        <select id="e-chambre" name="chambre"><option value="simple" data-basse="53" data-haute="55" data-personnes="1">Single room</option><option value="double" data-basse="63" data-haute="65" data-personnes="2" selected>Double room, double bed</option><option value="twin" data-basse="73" data-haute="75" data-personnes="2">Twin room, single beds</option></select></div>
+      <div class="champ"><span class="champ-libelle" id="e-nuits-l">Number of nights</span>
+        <div class="pas" role="group" aria-labelledby="e-nuits-l">
+          <button type="button" data-pas="-1" aria-label="One night less">−</button>
+          <output id="e-nuits" aria-live="polite">2</output>
+          <button type="button" data-pas="1" aria-label="One night more">+</button>
+        </div></div>
+      <label class="case"><input type="checkbox" id="e-petitdej" checked> <span>With breakfast (€8.50 per person)</span></label>
+      <p class="estim-total"><span>Estimated total</span> <strong id="e-total" data-prix aria-live="polite">€160</strong></p>
+      <p class="note-douce">Indicative estimate, excluding tourist tax. Low and high season dates are given by phone.</p>
+      <p><a href="/en/reserver?objet=chambre#demande" class="bouton" data-libelle="Book &amp; find us" data-estim-lien>Ask for these dates</a></p>
+    </form>
+  </div>
+</section>
+<section class="sec conteneur" id="formules">
+  <div class="sec-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>Packages</p>
+      <h2 data-anime="lignes">For one night or for the week</h2>
+      <ul class="formules" data-anime="cascade">
+        <li><strong data-prix>€80</strong><span><b>Overnight stopover</b> The package for travellers passing through.</span></li>
+        <li><strong data-prix>€76 / €78</strong><span><b>Half board</b> low / high season. Per person per day, from the 3rd day.</span></li>
+        <li><strong data-prix>€89 / €98</strong><span><b>Full board</b> low / high season. Per person per day, from the 3rd day.</span></li>
+        <li><strong data-prix>€8.50</strong><span><b>Breakfast</b> Per person.</span></li>
+      </ul>
+    </div>
+    <figure class="media img-portrait" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/chambres-petitdej-1600.webp" srcset="/assets/images/grok/chambres-petitdej-1024.webp 1024w, /assets/images/grok/chambres-petitdej-1168.webp 1168w, /assets/images/grok/chambres-petitdej-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 38vw" alt="Breakfast tray by a window with blue shutters" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+</section>
+<section class="appel" id="fin">
+  <div class="conteneur appel-grille">
+    <div>
+      <h2 data-anime="lignes">A room for tonight?</h2>
+      <p data-anime>Call us to check availability.</p>
+      <p class="appel-actions" data-anime><a href="/en/reserver?objet=chambre#demande" class="bouton bouton--clair" data-libelle="Book &amp; find us" data-survol="magnetique">Ask for a room</a></p>
+    </div>
+    <div class="appel-tel" data-visuel>
+      <a href="tel:+33553657988">05 53 65 79 88</a>
+      <svg class="appel-trait" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M4 16 C 90 4, 180 22, 260 10 S 360 6, 396 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+      <p>Avenue Max Grosselle, 47170 Mézin</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Le Relais de Gascogne" width="1000" height="125" loading="lazy">
+      <p>Hotel and restaurant in Armagnac country, at the entrance to Mézin, coming from Nérac on the RD 656.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Find us</p>
+      <p>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></p>
+      <p><a href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">The Relais on Facebook</a></p>
+    </div>
+    <nav aria-label="Contents">
+      <p class="pied-titre">Contents</p>
+      <ul><li><a href="/en" data-libelle="Home">Home</a></li><li><a href="/en/la-table" data-libelle="The table">The table</a></li><li><a href="/en/chambres" data-libelle="Rooms" aria-current="page">Rooms</a></li><li><a href="/en/groupes" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li><a href="/en/reserver" data-libelle="Book &amp; find us">Book &amp; find us</a></li><li><a href="#haut" data-sans-transition>Back to top</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas"><p>Legal notice · Privacy policy: to be completed</p><p>Mock-up: simulated requests, nothing is sent.</p><p>© Le Relais de Gascogne</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33553657988">Call</a>
+  <a class="bouton" href="/en/reserver#demande" data-libelle="Book &amp; find us">Book</a>
+</div>
+</body>
+</html>

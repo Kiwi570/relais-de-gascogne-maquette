@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réserver au Relais de Gascogne : table, chambre ou groupe</title>
+<meta name="description" content="Appelez le 05 53 65 79 88 ou laissez une demande pour une table, une chambre ou un groupe. Avenue Max Grosselle, 47170 Mézin.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://relais-de-gascogne-maquette.vercel.app/reserver">
+<link rel="alternate" hreflang="fr" href="https://relais-de-gascogne-maquette.vercel.app/reserver">
+<link rel="alternate" hreflang="en" href="https://relais-de-gascogne-maquette.vercel.app/en/reserver">
+<link rel="alternate" hreflang="x-default" href="https://relais-de-gascogne-maquette.vercel.app/reserver">
+<style>:root{--fond:#f6f0e4;--texte:#1c2433;--voile-fond:#1f3566;--ouverture-fond:#1f3566;--menu-fond:#f6f0e4}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f0e4">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Relais de Gascogne">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Réserver au Relais de Gascogne : table, chambre ou groupe">
+<meta property="og:description" content="Appelez le 05 53 65 79 88 ou laissez une demande pour une table, une chambre ou un groupe. Avenue Max Grosselle, 47170 Mézin.">
+<meta property="og:url" content="https://relais-de-gascogne-maquette.vercel.app/reserver">
+<meta property="og:image" content="https://relais-de-gascogne-maquette.vercel.app/assets/partage/reserver-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Réserver au Relais de Gascogne, à Mézin">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hotel","name":"Le Relais de Gascogne","url":"https://relais-de-gascogne-maquette.vercel.app/","telephone":"+33553657988","email":"sarllesgasconsgourmets@bbox.fr","numberOfRooms":17,"priceRange":"53 € – 98 €","address":{"@type":"PostalAddress","streetAddress":"Avenue Max Grosselle","postalCode":"47170","addressLocality":"Mézin","addressCountry":"FR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wifi","value":true},{"@type":"LocationFeatureSpecification","name":"TV","value":true},{"@type":"LocationFeatureSpecification","name":"Parking (salle de réception)","value":true}],"sameAs":["https://www.facebook.com/lerelaisdegascogne47170"],"description":"Hôtel-restaurant à Mézin, au pays de l'Armagnac : 17 chambres, cuisine gasconne de saison, salle de réception de 120 places."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.png" alt="" width="1000" height="125"><span data-voile-libelle>Réserver &amp; venir</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#1f3566">
+  <div class="volet volet--g" data-effet="volets"></div><div class="volet volet--d"></div>
+  <div class="ouverture-centre">
+    <img class="ouverture-logo" src="/assets/images/logo-clair.png" alt="" width="1000" height="125" data-ouverture-objet>
+    <span class="ouverture-trait"></span>
+    <p class="ouverture-ligne">Hôtel · Restaurant · Mézin</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" aria-label="Le Relais de Gascogne" href="/" data-libelle="Accueil">
+      <img class="entete-logo-img" src="/assets/images/logo.png" alt="Le Relais de Gascogne" width="1000" height="125">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir" aria-current="page">Réserver &amp; venir</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en/reserver" hreflang="en" lang="en" data-langue="en" aria-label="English version">en</a>
+      <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-table" class="menu-lien" data-libelle="La table">La table</a></li><li style="--i:2"><a href="/chambres" class="menu-lien" data-libelle="Les chambres">Les chambres</a></li><li style="--i:3"><a href="/groupes" class="menu-lien" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver &amp; venir" aria-current="page">Réserver &amp; venir</a></li></ul>
+  <p><a class="bouton" href="tel:+33553657988">Appeler 05 53 65 79 88</a></p>
+  <p><a class="entete-langue" href="/en/reserver" hreflang="en" lang="en" data-langue="en">English version</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--scinde ouv--reserver conteneur" id="debut">
+  <div class="ouv-texte">
+    <p class="surtitre ouv-anim">Réserver &amp; venir</p>
+    <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">Une table, une chambre,</span></span> <span class="l"><span class="li"><em>une salle</em></span></span></h1>
+    <p class="ouv-intro ouv-anim masque-ecran-tres-bas">Le plus simple est de nous appeler. Vous pouvez aussi laisser une demande : nous vous rappelons pour confirmer.</p>
+    <p class="ouv-tel ouv-anim" data-info-cle><span>Par téléphone</span> <a href="tel:+33553657988">05 53 65 79 88</a></p>
+    <p class="ouv-actions ouv-anim"><a class="bouton" href="#demande" data-action-principale data-survol="magnetique">Faire une demande</a> <span class="ouv-email">sarllesgasconsgourmets@bbox.fr</span></p>
+  </div>
+  <figure class="media ouv-image ph-reserver-ouverture" data-grok data-fx="parallaxe" data-iris-centre style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/reserver-ouverture-1600.webp" srcset="/assets/images/grok/reserver-ouverture-1024.webp 1024w, /assets/images/grok/reserver-ouverture-1168.webp 1168w, /assets/images/grok/reserver-ouverture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 40vw" alt="Sonnette de comptoir en laiton et clé de chambre sur un comptoir de bois" width="1600" height="2000" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="sec sec--sable" id="demande">
+  <div class="conteneur">
+    <div class="demande-tete">
+      <p class="surtitre" data-anime>Votre demande</p>
+      <h2 data-anime="lignes">En trois étapes</h2>
+      <p class="note-douce" data-anime>1. Votre demande · 2. Les détails · 3. Vos coordonnées</p>
+    </div>
+    <div class="demande-grille">
+      <form class="demande" data-formulaire action="#" novalidate data-anime>
+        <p class="etapes-progres" aria-live="polite"><span data-etape-texte>Étape 1 sur 3</span><span class="etapes-barre" aria-hidden="true"><i></i></span></p>
+        <div class="etapes">
+          <fieldset class="etape" data-etape="1">
+            <legend>Que souhaitez-vous réserver ?</legend>
+            <div class="choix-objet">
+              <label class="choix"><input type="radio" name="objet" value="table" checked><span class="choix-carte"><b>Une table</b><small>Déjeuner ou dîner</small></span></label><label class="choix"><input type="radio" name="objet" value="chambre"><span class="choix-carte"><b>Une chambre</b><small>Une nuit ou un séjour</small></span></label><label class="choix"><input type="radio" name="objet" value="groupe"><span class="choix-carte"><b>Un groupe ou une fête</b><small>Salle de 120 places, journée autocar</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="etape" data-etape="2">
+            <legend>Les détails</legend>
+            <div class="branche" data-pour="table">
+              <div class="champ"><label for="f-date-table">Date souhaitée</label><input id="f-date-table" name="date_table" type="date"></div>
+              <div class="champ"><span class="champ-libelle" id="f-service-l">Service</span>
+                <div class="radios" role="radiogroup" aria-labelledby="f-service-l">
+                  <label class="radio"><input type="radio" name="service" value="midi" checked> Midi</label>
+                  <label class="radio"><input type="radio" name="service" value="soir"> Soir</label>
+                </div></div>
+              <div class="champ"><label for="f-pers-table">Nombre de personnes</label><input id="f-pers-table" name="personnes_table" type="number" min="1" max="45" value="2" inputmode="numeric"></div>
+            </div>
+            <div class="branche" data-pour="chambre">
+              <div class="champ"><label for="f-arrivee">Date d&#39;arrivée</label><input id="f-arrivee" name="arrivee" type="date"></div>
+              <div class="champ"><label for="f-nuits">Nombre de nuits</label><input id="f-nuits" name="nuits" type="number" min="1" max="30" value="1" inputmode="numeric"></div>
+              <div class="champ"><label for="f-type">Type de chambre</label><select id="f-type" name="type_chambre"><option value="simple">Chambre 1 personne</option><option value="double" selected>Chambre 2 personnes, lit double</option><option value="twin">Chambre 2 personnes, lits simples</option></select></div>
+              <div class="champ"><label for="f-formule">Formule</label><select id="f-formule" name="formule"><option value="chambre">Chambre seule</option><option value="demi">Demi-pension</option><option value="pension">Pension complète</option></select></div>
+              <label class="case"><input type="checkbox" name="petitdej" value="oui"> <span>Avec petit-déjeuner</span></label>
+            </div>
+            <div class="branche" data-pour="groupe">
+              <div class="champ"><label for="f-evenement">Type d&#39;événement</label><select id="f-evenement" name="evenement"><option value="e1">Repas de famille</option><option value="e2">Repas dansant</option><option value="e3">Buffet froid</option><option value="e4">Réunions de travail</option><option value="e5">Séminaires</option><option value="e6">Anniversaires</option><option value="e7">Mariages</option><option value="e8">Baptêmes</option><option value="autocar">Circuit autocar</option></select></div>
+              <div class="champ"><label for="f-date-groupe">Date souhaitée</label><input id="f-date-groupe" name="date_groupe" type="date"></div>
+              <div class="champ"><label for="f-pers-groupe">Nombre de personnes</label><input id="f-pers-groupe" name="personnes_groupe" type="number" min="1" max="120" value="30" inputmode="numeric"></div>
+            </div>
+          </fieldset>
+          <fieldset class="etape" data-etape="3">
+            <legend>Vos coordonnées</legend>
+            <div class="champ"><label for="f-nom">Nom et prénom</label><input id="f-nom" name="nom" autocomplete="name" required></div>
+            <div class="champ"><label for="f-tel">Téléphone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" required></div>
+            <div class="champ"><label for="f-email">E-mail (facultatif)</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            <div class="champ"><label for="f-message">Message (facultatif)</label><textarea id="f-message" name="message" rows="3"></textarea></div>
+            <p class="mention-donnees">Vos coordonnées servent seulement à vous rappeler au sujet de cette demande. <a href="#pied" data-sans-transition>Politique de confidentialité : à compléter</a>.</p>
+          </fieldset>
+        </div>
+        <p class="etapes-nav">
+          <button type="button" class="bouton bouton--contour" data-etape-prec hidden>Retour</button>
+          <button type="button" class="bouton" data-etape-suiv hidden>Continuer</button>
+          <button type="submit" class="bouton" data-etape-envoi>Envoyer la demande</button>
+        </p>
+        <p data-message-envoi data-texte="Demande simulée : rien n&#39;a été envoyé. Sur le site final, elle partira vers le Relais, qui vous rappellera." role="status" tabindex="-1" hidden></p>
+      </form>
+      <aside class="recap" aria-labelledby="recap-titre" data-anime>
+        <h3 id="recap-titre">Récapitulatif</h3>
+        <dl data-recap><div><dt>Que souhaitez-vous réserver ?</dt><dd>Une table</dd></div></dl>
+        <p class="recap-tel"><a href="tel:+33553657988">05 53 65 79 88</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="sec conteneur" id="acces">
+  <div class="acces-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>Venir</p>
+      <h2 data-anime="lignes">À l&#39;entrée de Mézin, par la RD 656</h2>
+      <p data-anime>En venant de Nérac par la RD 656, le Relais est à l&#39;entrée du village, avenue Max Grosselle.</p>
+      <address data-anime><strong>Le Relais de Gascogne</strong><br>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></address>
+      <ul class="pratique" data-anime="cascade">
+        <li>Parking pour la salle de réception.</li>
+        <li>Jours et horaires : renseignements au 05 53 65 79 88.</li>
+      </ul>
+      <p data-anime><a class="lien-fleche" href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">Le Relais sur Facebook</a></p>
+    </div>
+    <figure class="carte-acces" data-effet="carte" data-visuel>
+      <svg viewBox="0 0 600 440" role="img" aria-labelledby="carte-titre">
+        <title id="carte-titre">Mézin et ses alentours (schéma)</title>
+        <rect x="0" y="0" width="600" height="440" rx="18" class="carte-fond"/>
+        <path class="carte-zone" d="M0 0 H 150 C 170 120, 130 260, 175 440 H 0 Z"/>
+        <path class="carte-zone carte-zone--est" d="M600 300 C 470 300, 420 360, 390 440 H 600 Z"/>
+        <path class="carte-route carte-route--rd" data-carte-trait d="M300 250 C 318 205, 300 170, 330 135 S 380 80, 410 40"/>
+        <path class="carte-route carte-fleche" data-carte-trait d="M300 250 C 250 262, 205 268, 158 276"/>
+        <path class="carte-route carte-fleche" data-carte-trait d="M300 250 C 340 285, 380 310, 430 330"/>
+        <path class="carte-route carte-fleche carte-fleche--loin" data-carte-trait d="M300 250 C 230 300, 120 330, 30 352"/>
+        <path class="carte-route carte-fleche carte-fleche--loin" data-carte-trait d="M300 250 C 300 320, 296 370, 292 420"/>
+        <circle class="carte-ville" cx="410" cy="40" r="7"/>
+        <text class="carte-texte" x="424" y="45">Nérac</text>
+        <text class="carte-texte carte-texte--route" x="330" y="160">RD 656</text>
+        <text class="carte-texte carte-texte--zone" x="22" y="40">Landes</text>
+        <text class="carte-texte carte-texte--zone" x="470" y="420">Gers</text>
+        <text class="carte-texte" x="176" y="258" data-repere>10 km</text>
+        <text class="carte-texte" x="420" y="312" data-repere>10 km</text>
+        <text class="carte-texte" x="30" y="378" data-repere>Océan · 120 km</text>
+        <text class="carte-texte" x="308" y="410" data-repere>Lourdes · 120 km</text>
+        <g class="carte-mezin">
+          <circle cx="300" cy="250" r="22" class="carte-halo"/>
+          <circle cx="300" cy="250" r="11" class="carte-point" data-repere/>
+          <text class="carte-texte carte-texte--mezin" x="188" y="230">Mézin</text>
+        </g>
+      </svg>
+      <figcaption class="note-douce">Schéma indicatif, distances données par le Relais.</figcaption>
+    </figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Le Relais de Gascogne" width="1000" height="125" loading="lazy">
+      <p>Hôtel-restaurant au pays de l&#39;Armagnac, à l&#39;entrée de Mézin, en venant de Nérac par la RD 656.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous trouver</p>
+      <p>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></p>
+      <p><a href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">Le Relais sur Facebook</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-table" data-libelle="La table">La table</a></li><li><a href="/chambres" data-libelle="Les chambres">Les chambres</a></li><li><a href="/groupes" data-libelle="Groupes &amp; réceptions">Groupes &amp; réceptions</a></li><li><a href="/reserver" data-libelle="Réserver &amp; venir" aria-current="page">Réserver &amp; venir</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette : demandes simulées, rien n&#39;est envoyé.</p><p>© Le Relais de Gascogne</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33553657988">Appeler</a>
+  <a class="bouton" href="/reserver#demande" data-libelle="Réserver &amp; venir">Réserver</a>
+</div>
+</body>
+</html>

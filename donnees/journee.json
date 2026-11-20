@@ -1,0 +1,34 @@
+{
+  "matin": [
+    { "fr": "Visite du musée du liège : Mézin en fut la capitale", "en": "Visit to the cork museum: Mézin was once its capital" },
+    { "fr": "Sur les pas du président Armand Fallières", "en": "In the footsteps of President Armand Fallières" },
+    { "fr": "L'église fortifiée et la table d'orientation, pour la vue", "en": "The fortified church and the viewpoint table" }
+  ],
+  "menus": [
+    { "prix": "26", "plats": [
+      { "fr": "Potage du chef", "en": "Chef's soup" },
+      { "fr": "Mousse de foie de canard et son pain, ou grillon de canard", "en": "Duck liver mousse with bread, or duck grillons" },
+      { "fr": "Longe de porc aux pruneaux, ou poule façon Henri IV revisitée", "en": "Pork loin with prunes, or Henri IV-style chicken, revisited" },
+      { "fr": "Légumes de saison", "en": "Seasonal vegetables" },
+      { "fr": "Croustade aux pommes", "en": "Apple croustade" },
+      { "fr": "¼ de vin et café compris", "en": "¼ litre of wine and coffee included" }
+    ] },
+    { "prix": "31", "plats": [
+      { "fr": "Potage du chef", "en": "Chef's soup" },
+      { "fr": "Salade de gésiers, ou terrine de la mer sauce suprême", "en": "Gizzard salad, or seafood terrine with suprême sauce" },
+      { "fr": "Confit de canard, ou demi-magret de canard au floc et échalotes", "en": "Duck confit, or half duck breast with Floc and shallots" },
+      { "fr": "Légumes de saison", "en": "Seasonal vegetables" },
+      { "fr": "Croustade aux pommes", "en": "Apple croustade" },
+      { "fr": "¼ de vin et café compris", "en": "¼ litre of wine and coffee included" }
+    ] }
+  ],
+  "apresMidi": [
+    { "fr": "Abbaye de Flaran", "en": "Flaran Abbey" },
+    { "fr": "Chocolaterie de Nérac : visite et dégustation", "en": "Nérac chocolate factory: tour and tasting" },
+    { "fr": "Villa gallo-romaine de Séviac", "en": "Séviac Gallo-Roman villa" },
+    { "fr": "Musée de l'Armagnac à Condom", "en": "Armagnac museum in Condom" },
+    { "fr": "Château Henri IV à Nérac", "en": "Henri IV castle in Nérac" },
+    { "fr": "Petit train touristique de l'Albret, départ Mézin ou Nérac", "en": "Albret tourist train, from Mézin or Nérac" },
+    { "fr": "Après-midi dansante, musette et goûter", "en": "Dance afternoon, accordion music and tea" }
+  ]
+}

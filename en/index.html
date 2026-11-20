@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Relais de Gascogne: hotel and restaurant in Mézin, Armagnac country</title>
+<meta name="description" content="17 rooms, seasonal Gascon cooking and a 120-seat function room at the entrance to Mézin (Lot-et-Garonne). Menus from €16.50, rooms from €53.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://relais-de-gascogne-maquette.vercel.app/en">
+<link rel="alternate" hreflang="fr" href="https://relais-de-gascogne-maquette.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://relais-de-gascogne-maquette.vercel.app/en">
+<link rel="alternate" hreflang="x-default" href="https://relais-de-gascogne-maquette.vercel.app/">
+<style>:root{--fond:#f6f0e4;--texte:#1c2433;--voile-fond:#1f3566;--ouverture-fond:#1f3566;--menu-fond:#f6f0e4}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f0e4">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Relais de Gascogne">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Le Relais de Gascogne: hotel and restaurant in Mézin, Armagnac country">
+<meta property="og:description" content="17 rooms, seasonal Gascon cooking and a 120-seat function room at the entrance to Mézin (Lot-et-Garonne). Menus from €16.50, rooms from €53.">
+<meta property="og:url" content="https://relais-de-gascogne-maquette.vercel.app/en">
+<meta property="og:image" content="https://relais-de-gascogne-maquette.vercel.app/assets/partage/accueil-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Le Relais de Gascogne: a window with blue shutters open onto the hills">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hotel","name":"Le Relais de Gascogne","url":"https://relais-de-gascogne-maquette.vercel.app/","telephone":"+33553657988","email":"sarllesgasconsgourmets@bbox.fr","numberOfRooms":17,"priceRange":"53 € – 98 €","address":{"@type":"PostalAddress","streetAddress":"Avenue Max Grosselle","postalCode":"47170","addressLocality":"Mézin","addressCountry":"FR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wifi","value":true},{"@type":"LocationFeatureSpecification","name":"TV","value":true},{"@type":"LocationFeatureSpecification","name":"Parking (salle de réception)","value":true}],"sameAs":["https://www.facebook.com/lerelaisdegascogne47170"],"description":"Hotel and restaurant in Mézin, in Armagnac country: 17 rooms, seasonal Gascon cooking, a 120-seat function room."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.png" alt="" width="1000" height="125"><span data-voile-libelle>Home</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#1f3566">
+  <div class="volet volet--g" data-effet="volets"></div><div class="volet volet--d"></div>
+  <div class="ouverture-centre">
+    <img class="ouverture-logo" src="/assets/images/logo-clair.png" alt="" width="1000" height="125" data-ouverture-objet>
+    <span class="ouverture-trait"></span>
+    <p class="ouverture-ligne">Hotel · Restaurant · Mézin</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" aria-label="Le Relais de Gascogne" href="/en" data-libelle="Home" aria-current="page">
+      <img class="entete-logo-img" src="/assets/images/logo.png" alt="Le Relais de Gascogne" width="1000" height="125">
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/la-table" data-libelle="The table">The table</a></li><li><a href="/en/chambres" data-libelle="Rooms">Rooms</a></li><li><a href="/en/groupes" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li><a href="/en/reserver" data-libelle="Book &amp; find us">Book &amp; find us</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">fr</a>
+      <a class="bouton" href="/en/reserver#demande" data-libelle="Book &amp; find us">Book</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Close</a></p>
+  <ul><li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home" aria-current="page">Home</a></li><li style="--i:1"><a href="/en/la-table" class="menu-lien" data-libelle="The table">The table</a></li><li style="--i:2"><a href="/en/chambres" class="menu-lien" data-libelle="Rooms">Rooms</a></li><li style="--i:3"><a href="/en/groupes" class="menu-lien" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li style="--i:4"><a href="/en/reserver" class="menu-lien" data-libelle="Book &amp; find us">Book &amp; find us</a></li></ul>
+  <p><a class="bouton" href="tel:+33553657988">Call 05 53 65 79 88</a></p>
+  <p><a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--plein" id="debut">
+  <figure class="media ouv-fond ouv--accueil-fond" data-grok data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:62% 50%;--cadrage-mobile:50% 60%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-ouverture-1280.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1280.webp 1280w, /assets/images/grok/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Open window with blue shutters over the Gascony hills" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="ouv-texte conteneur">
+    <p class="surtitre ouv-anim">Hotel · Restaurant · Mézin</p>
+    <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">A table and rooms</span></span> <span class="l"><span class="li">in <em>Armagnac</em> country</span></span></h1>
+    <p class="ouv-intro ouv-anim masque-ecran-tres-bas">17 rooms, seasonal Gascon cooking and a 120-seat function room, at the entrance to Mézin.</p>
+    <p class="ouv-actions ouv-anim">
+      <a href="/en/reserver?objet=table#demande" class="bouton" data-libelle="Book &amp; find us" data-action-principale data-survol="magnetique">Book a table</a>
+      <a class="bouton bouton--contour" href="tel:+33553657988">Call <span class="sans-mobile">05 53 65 79 88</span></a>
+    </p>
+    <p class="ouv-info ouv-anim" data-info-cle>Menus from €16.50 · Rooms from €53</p>
+  </div>
+</section>
+<section class="sec sec--table conteneur" id="table">
+  <div class="sec-texte">
+    <p class="surtitre" data-anime>The table</p>
+    <h2 data-anime="lignes">Gascon cooking that follows the seasons</h2>
+    <p data-anime>Gascon salad, the gourmet plate, duck breast and duck confit depending on the season, soup with every menu and fish fresh from the market.</p>
+    <ul class="ardoise" data-effet="menu-trace">
+      <li><span class="ardoise-nom">Menu of the day</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€16.50</span></li><li><span class="ardoise-nom">Small evening menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€18.50</span></li><li><span class="ardoise-nom">Menu, choice of starter and main</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€26</span></li><li><span class="ardoise-nom">Gascon menu: confit, duck breast or beef</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€33</span></li>
+      <li><span class="ardoise-nom">Children&#39;s menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€11.80</span></li>
+    </ul>
+    <p data-anime><a href="/en/la-table#menus" class="lien-fleche" data-libelle="The table">See the menus in detail</a></p>
+  </div>
+  <div class="sec-images">
+    <figure class="media img-portrait" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-table-1600.webp" srcset="/assets/images/grok/accueil-table-1024.webp 1024w, /assets/images/grok/accueil-table-1168.webp 1168w, /assets/images/grok/accueil-table-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 40vw" alt="Prunes, walnuts, country bread and a glass of Armagnac on a wooden table" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    <figure class="media img-vignette" data-fx="vitesse" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/terrasse-438.webp" srcset="/assets/images/terrasse-438.webp 438w" sizes="(max-width: 760px) 60vw, 22vw" alt="The shaded terrace and its blue parasols" width="438" height="548" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">The terrace, on sunny days</figcaption>
+</figure>
+  </div>
+</section>
+<section class="saveurs" id="saveurs" data-fx="mots-geants" aria-labelledby="saveurs-titre">
+  <h2 class="visuellement-cache" id="saveurs-titre">Flavours of the region</h2>
+  <div aria-hidden="true" data-ruban data-visuel>
+    <p data-fx-rangee>Armagnac · Foie gras · Duck · Prunes · Armagnac · Foie gras · Duck · Prunes ·</p>
+    <p data-fx-rangee data-sens="-1">Duck breast · Confit · Gascon salad · Croustade · Duck breast · Confit · Gascon salad · Croustade ·</p>
+  </div>
+</section>
+<section class="sec sec--bleu" id="chambres">
+  <div class="conteneur sec-grille sec-grille--inverse">
+    <figure class="media img-portrait" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-chambre-1600.webp" srcset="/assets/images/grok/accueil-chambre-1024.webp 1024w, /assets/images/grok/accueil-chambre-1168.webp 1168w, /assets/images/grok/accueil-chambre-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 40vw" alt="Bed made with white linen, striped with sunlight through blue shutters" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>The rooms</p>
+      <h2 data-anime="lignes">Sleep at the Relais, <em>shutters open</em> on the village</h2>
+      <p data-anime>17 equipped rooms for a stopover or a stay, room only, half board or full board.</p>
+      <dl class="chiffres-cles" data-anime="cascade">
+        <div><dt><strong class="grand-chiffre" data-compteur="17">17</strong></dt><dd>rooms</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix>€53</strong></dt><dd>from · a night</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix>€80</strong></dt><dd>Overnight stopover</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix>€8.50</strong></dt><dd>Breakfast</dd></div>
+      </dl>
+      <p data-anime><a href="/en/chambres#tarifs" class="bouton bouton--clair" data-libelle="Rooms" data-survol="magnetique">Rates and packages</a></p>
+    </div>
+  </div>
+</section>
+<section class="sec sec--sable" id="maison">
+  <div class="conteneur sec-grille">
+    <div class="sec-texte">
+      <p class="surtitre" data-anime>The house</p>
+      <h2 data-anime="lignes">A village house at the entrance to Mézin</h2>
+      <p data-anime>Le Relais de Gascogne is run by Valérie and Etienne Soufflet. White front, blue shutters and geraniums: you will find it on avenue Max Grosselle, as you arrive from Nérac on the RD 656.</p>
+      <ul class="capacites" data-anime="cascade">
+        <li><strong data-compteur="45">45</strong> covers or so in the dining room</li>
+        <li><strong data-compteur="40">40</strong> covers or so on the terrace, on sunny days</li>
+        <li><strong data-compteur="120">120</strong> seats in the function room</li>
+      </ul>
+      <p data-anime><a href="/en/reserver#acces" class="lien-fleche" data-libelle="Book &amp; find us">How to get here</a></p>
+    </div>
+    <div class="polaroids">
+      <figure class="media polaroid polaroid--1" data-fx="vitesse" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/maison-facade-321.webp" srcset="/assets/images/maison-facade-321.webp 321w" sizes="(max-width: 760px) 70vw, 26vw" alt="Front of the Relais de Gascogne, blue shutters and geraniums" width="321" height="401" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media polaroid polaroid--2" data-fx="vitesse" data-fx-force="4" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/maison-balcon-864.webp" srcset="/assets/images/maison-balcon-864.webp 864w" sizes="(max-width: 760px) 50vw, 18vw" alt="Flowered balcony and blue shutters on the front" width="864" height="1080" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media polaroid polaroid--3" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/salle-560.webp" srcset="/assets/images/salle-560.webp 560w" sizes="(max-width: 760px) 50vw, 18vw" alt="The restaurant dining room, blue tablecloths" width="560" height="420" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="pays" id="pays" data-fx="plein-ecran" data-entete-cache>
+  <div data-collant>
+    <figure class="media " data-grok style="--cadrage:50% 55%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-terroir-mobile-640.webp 640w, /assets/images/grok/accueil-terroir-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-terroir-1280.webp" srcset="/assets/images/grok/accueil-terroir-640.webp 640w, /assets/images/grok/accueil-terroir-1280.webp 1280w, /assets/images/grok/accueil-terroir-1920.webp 1920w" sizes="100vw" alt="Autumn vineyard hills in Gascony" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">In Armagnac</span> <span data-fx-ecarte="d">country</span></p>
+  </div>
+</section>
+<section class="sec pays-suite conteneur" id="autour">
+  <div class="sec-texte">
+    <h2 data-anime="lignes">In the land of Armagnac, foie gras and prunes</h2>
+    <p data-anime>At the southern tip of Lot-et-Garonne, Mézin is 10 km from the Gers and the Landes. Around the Relais: abbeys, castles and museums, including the Armagnac museum in Condom.</p>
+    <p class="visites" data-anime>Cork museum in Mézin · Henri IV castle in Nérac · Flaran Abbey · Séviac Gallo-Roman villa · Armagnac museum in Condom · The Way of St James</p>
+    <p data-anime><a href="/en/groupes#autour" class="lien-fleche" data-libelle="Groups &amp; functions">Ideas for visits and group days</a></p>
+  </div>
+  <ul class="distances" data-effet="distances">
+    <li><strong><span data-compteur="10">10</span> km</strong> to the Gers</li>
+    <li><strong><span data-compteur="10">10</span> km</strong> to the Landes</li>
+    <li><strong><span data-compteur="120">120</span> km</strong> to the ocean</li>
+    <li><strong><span data-compteur="120">120</span> km</strong> to Lourdes</li>
+  </ul>
+</section>
+<section class="sec sec--salle conteneur" id="salle">
+  <div class="salle-chiffre" aria-hidden="true" data-visuel><span data-compteur="120">120</span></div>
+  <div class="sec-texte">
+    <p class="surtitre" data-anime>Groups &amp; functions</p>
+    <h2 data-anime="lignes">A 120-seat room for your celebrations</h2>
+    <p data-anime>Family meals, dinner dances, cold buffets, work meetings and seminars, birthdays, weddings and christenings. Menus and prices to be worked out together.</p>
+    <p data-anime><a href="/en/groupes" class="bouton" data-libelle="Groups &amp; functions" data-survol="magnetique">Discover the room</a></p>
+  </div>
+  <div class="salle-photos" data-anime="cascade">
+    <figure class="media salle-photo-1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/banquet-salle-819.webp" srcset="/assets/images/banquet-salle-819.webp 819w" sizes="(max-width: 760px) 90vw, 34vw" alt="The banquet hall set with chandeliers and red chairs" width="819" height="1025" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <figure class="media salle-photo-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/banquet-verres-1024.webp" srcset="/assets/images/banquet-verres-1024.webp 1024w" sizes="(max-width: 760px) 45vw, 16vw" alt="Glasses lined up on the banquet table" width="1024" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="fin fin--photo" id="fin">
+  <figure class="media fin-fond" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:60% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-terrasse-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-terrasse-1280.webp" srcset="/assets/images/grok/accueil-terrasse-640.webp 640w, /assets/images/grok/accueil-terrasse-1280.webp 1280w, /assets/images/grok/accueil-terrasse-1920.webp 1920w" sizes="100vw" alt="Village terrace under plane trees, tables set" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  <div class="fin-carte conteneur">
+    <h2 data-anime="lignes">A table, a room? <em>Give us a call</em></h2>
+    <p class="fin-tel" data-anime><a href="tel:+33553657988">05 53 65 79 88</a></p>
+    <p data-anime>Avenue Max Grosselle, 47170 Mézin, France.</p>
+    <p class="fin-actions" data-anime><a href="/en/reserver#demande" class="bouton" data-libelle="Book &amp; find us" data-survol="magnetique">Leave a request</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.png" alt="Le Relais de Gascogne" width="1000" height="125" loading="lazy">
+      <p>Hotel and restaurant in Armagnac country, at the entrance to Mézin, coming from Nérac on the RD 656.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Find us</p>
+      <p>Avenue Max Grosselle, 47170 Mézin<br><a href="tel:+33553657988">05 53 65 79 88</a><br><span class="pied-email">sarllesgasconsgourmets@bbox.fr</span></p>
+      <p><a href="https://www.facebook.com/lerelaisdegascogne47170" target="_blank" rel="noopener">The Relais on Facebook</a></p>
+    </div>
+    <nav aria-label="Contents">
+      <p class="pied-titre">Contents</p>
+      <ul><li><a href="/en" data-libelle="Home" aria-current="page">Home</a></li><li><a href="/en/la-table" data-libelle="The table">The table</a></li><li><a href="/en/chambres" data-libelle="Rooms">Rooms</a></li><li><a href="/en/groupes" data-libelle="Groups &amp; functions">Groups &amp; functions</a></li><li><a href="/en/reserver" data-libelle="Book &amp; find us">Book &amp; find us</a></li><li><a href="#haut" data-sans-transition>Back to top</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas"><p>Legal notice · Privacy policy: to be completed</p><p>Mock-up: simulated requests, nothing is sent.</p><p>© Le Relais de Gascogne</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33553657988">Call</a>
+  <a class="bouton" href="/en/reserver#demande" data-libelle="Book &amp; find us">Book</a>
+</div>
+</body>
+</html>

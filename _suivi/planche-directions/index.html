@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Directions — Le Relais de Gascogne</title>
+<style>
+@font-face{font-family:Fraunces;src:url(f/fraunces-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Fraunces;src:url(f/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}
+@font-face{font-family:Figtree;src:url(f/figtree-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Figtree;src:url(f/figtree-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Playfair;src:url(f/playfair-display-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Playfair;src:url(f/playfair-display-latin-700-italic.woff2);font-weight:700;font-style:italic}
+@font-face{font-family:Karla;src:url(f/karla-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Karla;src:url(f/karla-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Young;src:url(f/young-serif-latin-400-normal.woff2)}
+@font-face{font-family:Work;src:url(f/work-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Work;src:url(f/work-sans-latin-600-normal.woff2);font-weight:600}
+*{box-sizing:border-box;margin:0}
+body{background:#e9e6e0;font-family:Figtree,sans-serif;padding:28px;width:1500px}
+h1{font:600 22px Figtree;color:#222;margin-bottom:4px}
+.sous{font:400 14px Figtree;color:#555;margin-bottom:20px}
+.grille{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.dir{border-radius:14px;overflow:hidden;box-shadow:0 2px 10px #0002}
+.ecran{padding:30px 30px 26px;min-height:430px;position:relative}
+.etiq{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.titre{font-size:52px;line-height:1.02;margin-bottom:16px}
+.texte{font-size:16px;line-height:1.5;max-width:30em;margin-bottom:20px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px}
+.photos{display:flex;gap:10px;margin-top:22px}
+.photos img{height:118px;border-radius:8px;object-fit:cover}
+.info{background:#fff;padding:18px 22px 20px;font-size:14px;line-height:1.5;color:#333}
+.nom{font:600 18px Figtree;margin-bottom:6px;color:#111}
+.nuancier{display:flex;gap:6px;margin:10px 0 12px}
+.nuancier div{flex:1;height:50px;border-radius:6px;font:600 10.5px Figtree;padding:4px 6px;display:flex;align-items:flex-end}
+.reco{display:inline-block;background:#c8372d;color:#fff;font-size:11px;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+/* A */
+.A .ecran{background:#f6f0e4;color:#1c2433}
+.A .etiq{color:#254b96;font-family:Figtree;font-weight:600}
+.A .titre{padding-right:70px;font-family:Fraunces;font-weight:600;color:#1c2433}
+.A .titre em{color:#254b96}
+.A .btn{background:#c8372d;color:#fff}
+.A .volets{position:absolute;right:22px;top:24px;display:flex;gap:4px}
+.A .volets i{width:34px;height:58px;background:#254b96;border-radius:3px;display:block;background-image:repeating-linear-gradient(0deg,#ffffff22 0 2px,transparent 2px 9px)}
+/* B */
+.B .ecran{background:#1f1813;color:#f3e7d3}
+.B .etiq{color:#d99a3e;font-family:Karla;font-weight:600}
+.B .titre{font-family:Playfair;font-weight:700}
+.B .titre em{color:#e2a64a}
+.B .texte{font-family:Karla}
+.B .btn{background:#d99a3e;color:#1f1813;font-family:Karla}
+/* C */
+.C .ecran{background:#f1ead9;color:#2b2a22}
+.C .etiq{color:#56653a;font-family:Work;font-weight:600}
+.C .titre{font-family:Young;font-size:50px}
+.C .titre em{font-style:normal;color:#b5562a}
+.C .texte{font-family:Work}
+.C .btn{background:#56653a;color:#fff;font-family:Work}
+.C svg{position:absolute;right:20px;top:20px}
+</style></head><body>
+<h1>Le Relais de Gascogne — trois directions</h1>
+<p class="sous">Premier écran de l'accueil (esquisse), palette en codes couleur et typographies. Les photos sont celles du site actuel, en petit : les grandes images seront créées avec Grok.</p>
+<div class="grille">
+
+<div class="dir A"><div class="ecran">
+<div class="volets"><i></i><i></i></div>
+<p class="etiq">Hôtel · Restaurant · Mézin</p>
+<p class="titre">Une table et des chambres au pays de <em>l'Armagnac</em></p>
+<p class="texte">17 chambres, une cuisine gasconne de saison et une salle de 120 places, à l'entrée de Mézin.</p>
+<span class="btn">Réserver une table</span>
+<div class="photos"><img src="../../recu/site/facade-01.jpg"><img src="../../recu/site/restauration-2.jpg"><img src="../../recu/site/salle-banquet-2.jpg"></div>
+</div><div class="info"><p class="nom">A. Volets bleus <span class="reco">Recommandée</span></p>
+<div class="nuancier"><div style="background:#f6f0e4;color:#555">#F6F0E4 fond</div><div style="background:#ece2cf;color:#555">#ECE2CF 2e fond</div><div style="background:#1f3566;color:#fff">#1F3566 bleu volet</div><div style="background:#c8372d;color:#fff">#C8372D géranium</div><div style="background:#1c2433;color:#fff">#1C2433 encre</div></div>
+Les couleurs de la vraie maison : façade crème, volets et logo bleus, géraniums rouges. Titres Fraunces (un mot en italique bleu), texte Figtree. Intro et transitions : deux volets bleus qui s'ouvrent sur la page. Proche de Lemoy et Artic par le niveau.</div></div>
+
+<div class="dir B"><div class="ecran">
+<p class="etiq">Hôtel · Restaurant · Gascogne</p>
+<p class="titre">La Gascogne se goûte <em>à la lueur</em> de l'Armagnac</p>
+<p class="texte">Confit, magret, pruneaux et 17 chambres pour s'attarder. À l'entrée de Mézin.</p>
+<span class="btn">Réserver une table</span>
+<div class="photos"><img src="../../recu/site/13h-repas-gastronomique-relais.jpg"><img src="../../recu/site/salle-banquet.jpg"><img src="../../recu/site/restauration-3.jpg"></div>
+</div><div class="info"><p class="nom">B. Ambre d'Armagnac</p>
+<div class="nuancier"><div style="background:#1f1813;color:#ddd">#1F1813 fond</div><div style="background:#2c221b;color:#ddd">#2C221B 2e fond</div><div style="background:#f3e7d3;color:#444">#F3E7D3 sections claires</div><div style="background:#d99a3e;color:#222">#D99A3E ambre</div><div style="background:#7a2e2a;color:#fff">#7A2E2A prune</div></div>
+Soirée au coin de la table : brun profond, lumière ambrée, sections utiles en crème. Titres Playfair Display, texte Karla. Intro : une lumière d'armagnac qui monte dans le verre. Proche d'Ice Attitude. Les photos du client, prises en plein jour, s'y fondent moins bien.</div></div>
+
+<div class="dir C"><div class="ecran">
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" stroke="#b5562a" stroke-width="2"><path d="M6 80 C30 60 40 70 60 45 S95 30 114 8" stroke-dasharray="5 6"/><circle cx="60" cy="45" r="7" fill="#b5562a" stroke="none"/></svg>
+<p class="etiq">Relais d'étape · Mézin</p>
+<p class="titre">Une étape <em>gourmande</em> au cœur de la Gascogne</p>
+<p class="texte">Sur la RD 656, entre Nérac et le Gers : la table, le lit et toute la région autour.</p>
+<span class="btn">Préparer son étape</span>
+<div class="photos"><img src="../../recu/site/decouvrir-07.jpg"><img src="../../recu/site/circuit-autocar.jpg"><img src="../../recu/site/facade-02.jpg"></div>
+</div><div class="info"><p class="nom">C. Carnet d'étape</p>
+<div class="nuancier"><div style="background:#f1ead9;color:#555">#F1EAD9 papier</div><div style="background:#e3d8bf;color:#555">#E3D8BF 2e fond</div><div style="background:#56653a;color:#fff">#56653A olive</div><div style="background:#b5562a;color:#fff">#B5562A brique</div><div style="background:#2b2a22;color:#fff">#2B2A22 encre</div></div>
+Le « relais » comme étape sur la route : carte dessinée de la région (Gers et Landes à 10 km, Nérac, Condom, l'océan), route qui se trace au défilement, carnet de route pour les groupes. Titres Young Serif, texte Work Sans. Proche de Cool Canyoning par l'idée qui relie.</div></div>
+
+</div></body></html>

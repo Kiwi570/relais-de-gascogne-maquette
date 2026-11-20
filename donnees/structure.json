@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Le Relais de Gascogne",
+  "url": "https://relais-de-gascogne-maquette.vercel.app/",
+  "telephone": "+33553657988",
+  "email": "sarllesgasconsgourmets@bbox.fr",
+  "numberOfRooms": 17,
+  "priceRange": "53 € – 98 €",
+  "address": { "@type": "PostalAddress", "streetAddress": "Avenue Max Grosselle", "postalCode": "47170", "addressLocality": "Mézin", "addressCountry": "FR" },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Wifi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "TV", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Parking (salle de réception)", "value": true }
+  ],
+  "sameAs": ["https://www.facebook.com/lerelaisdegascogne47170"],
+  "description": { "fr": "Hôtel-restaurant à Mézin, au pays de l'Armagnac : 17 chambres, cuisine gasconne de saison, salle de réception de 120 places.", "en": "Hotel and restaurant in Mézin, in Armagnac country: 17 rooms, seasonal Gascon cooking, a 120-seat function room." }
+}

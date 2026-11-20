@@ -1,0 +1,32 @@
+… fichiers
+  fait en 0 s
+… mesures
+  23/121
+  42/121
+  64/121
+  86/121
+  108/121
+  fait en 166 s
+… mesures:balayage
+  fait en 59 s
+… films
+  fait en 132 s
+… bords
+  fait en 68 s
+… parcours:intro
+  fait en 59 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 162 s
+… parcours:hauteur
+  fait en 40 s
+… parcours:projet
+  fait en 11 s
+… mouvement
+  fait en 127 s
+
+Échecs : 1 · À regarder : 12 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/,/la-table --seulement=fichiers,films
+Rapport : /home/claude/relais-de-gascogne-maquette/_audit/rapport/rapport.md (passe 20261120-210055-standard-partiel)
+FIN 1

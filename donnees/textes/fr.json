@@ -1,0 +1,395 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Réserver",
+    "appeler": "Appeler",
+    "sommaire": "Sommaire",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : demandes simulées, rien n'est envoyé.",
+    "mentions": "Mentions légales · Politique de confidentialité : à compléter",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Hôtel · Restaurant · Mézin",
+    "piedAccroche": "Hôtel-restaurant au pays de l'Armagnac, à l'entrée de Mézin, en venant de Nérac par la RD 656.",
+    "piedContact": "Nous trouver",
+    "facebook": "Le Relais sur Facebook",
+    "parPersonne": "par personne",
+    "euros": "€"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Le Relais de Gascogne : hôtel-restaurant à Mézin, au pays de l'Armagnac",
+      "description": "17 chambres, une cuisine gasconne de saison et une salle de réception de 120 places à l'entrée de Mézin (Lot-et-Garonne). Menus dès 16,50 €, chambres dès 53 €.",
+      "nav": "Accueil",
+      "partageAlt": "Le Relais de Gascogne : fenêtre aux volets bleus ouverte sur les collines",
+      "accroche": "Une table et des chambres au pays de l'Armagnac"
+    },
+    "la-table": {
+      "titre": "La table du Relais de Gascogne : menus et spécialités gasconnes",
+      "description": "Menu du jour à 16,50 €, petit menu du soir à 18,50 €, menus à 26 € et 33 € : potage de saison, confit, magret, salade gasconne.",
+      "nav": "La table",
+      "partageAlt": "La table du Relais de Gascogne, menus de 16,50 € à 33 €",
+      "accroche": "Cuisine gasconne de saison, menus de 16,50 € à 33 €"
+    },
+    "chambres": {
+      "titre": "Les chambres du Relais de Gascogne : 17 chambres dès 53 €",
+      "description": "17 chambres équipées (douche, WC, TV, wifi) à Mézin : tarifs basse et haute saison, soirée étape, demi-pension et pension.",
+      "nav": "Les chambres",
+      "partageAlt": "Les chambres du Relais de Gascogne, dès 53 € la nuit",
+      "accroche": "17 chambres pour l'étape ou le séjour, dès 53 €"
+    },
+    "groupes": {
+      "titre": "Groupes et réceptions au Relais de Gascogne : salle de 120 places",
+      "description": "Salle de réception de 120 places avec parking : repas de famille, mariages, séminaires. Journées en autocar autour de Mézin, menus de groupe à 26 € et 31 €.",
+      "nav": "Groupes & réceptions",
+      "partageAlt": "Groupes et réceptions au Relais de Gascogne, salle de 120 places",
+      "accroche": "Une salle de 120 places pour vos fêtes et vos groupes"
+    },
+    "reserver": {
+      "titre": "Réserver au Relais de Gascogne : table, chambre ou groupe",
+      "description": "Appelez le 05 53 65 79 88 ou laissez une demande pour une table, une chambre ou un groupe. Avenue Max Grosselle, 47170 Mézin.",
+      "nav": "Réserver & venir",
+      "partageAlt": "Réserver au Relais de Gascogne, à Mézin",
+      "accroche": "Une table, une chambre, une salle : réservez au 05 53 65 79 88"
+    },
+    "404": {
+      "titre": "Page introuvable : Le Relais de Gascogne",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Volets clos"
+    }
+  },
+  "ouvertures": {
+    "accueil": {
+      "surtitre": "Hôtel · Restaurant · Mézin",
+      "l1": "Une table et des chambres",
+      "l2": "au pays de <em>l'Armagnac</em>",
+      "texte": "17 chambres, une cuisine gasconne de saison et une salle de 120 places, à l'entrée de Mézin.",
+      "action": "Réserver une table",
+      "info": "Menus dès 16,50 € · Chambres dès 53 €"
+    },
+    "table": {
+      "surtitre": "La table du Relais",
+      "l1": "Cuisine gasconne,",
+      "l2": "<em>de saison</em>",
+      "texte": "Potage de saison à chaque menu, canard, poisson du marché et suggestions du chef selon les produits du moment.",
+      "prixDe": "Menus de",
+      "prixA": "à",
+      "action": "Réserver une table"
+    },
+    "chambres": {
+      "surtitre": "L'hôtel",
+      "l1": "17 chambres pour l'étape",
+      "l2": "<em>ou le séjour</em>",
+      "texte": "Une petite hôtellerie de campagne, toute équipée et soignée, pour une nuit sur la route ou une semaine en Gascogne.",
+      "info": "Dès 53 € la nuit · petit-déjeuner 8,50 €",
+      "action": "Demander une chambre"
+    },
+    "groupes": {
+      "surtitre": "Groupes & réceptions",
+      "places": "places assises dans notre salle de réception, avec parking",
+      "l1": "Fêtes, banquets",
+      "l2": "et <em>journées de groupe</em>",
+      "texte": "Repas de famille, mariages, séminaires ou journée en autocar : la salle, les menus et le programme se préparent avec vous.",
+      "action": "Demander une proposition"
+    },
+    "reserver": {
+      "surtitre": "Réserver & venir",
+      "l1": "Une table, une chambre,",
+      "l2": "<em>une salle</em>",
+      "texte": "Le plus simple est de nous appeler. Vous pouvez aussi laisser une demande : nous vous rappelons pour confirmer.",
+      "action": "Faire une demande",
+      "telLibelle": "Par téléphone"
+    }
+  },
+  "accueil": {
+    "table": {
+      "surtitre": "La table",
+      "titre": "Une cuisine de Gascogne qui suit les saisons",
+      "texte": "Salade gasconne, assiette gourmande, magret et confit de canard selon la saison, potage à chaque menu et poisson « retour de marché ».",
+      "enfant": "Menu enfant",
+      "lien": "Voir les menus en détail",
+      "legende": "La terrasse, aux beaux jours"
+    },
+    "saveurs": {
+      "titre": "Les saveurs du pays",
+      "r1": "Armagnac · Foie gras · Canard · Pruneaux ·",
+      "r2": "Magret · Confit · Salade gasconne · Croustade ·"
+    },
+    "chambres": {
+      "surtitre": "Les chambres",
+      "titre": "Dormir au Relais, <em>volets ouverts</em> sur le village",
+      "texte": "17 chambres équipées pour l'étape ou le séjour, en chambre seule, demi-pension ou pension.",
+      "chiffre": "chambres",
+      "des": "dès",
+      "nuit": "la nuit",
+      "etape": "Soirée étape",
+      "petitdej": "Petit-déjeuner",
+      "lien": "Tarifs et formules"
+    },
+    "maison": {
+      "surtitre": "La maison",
+      "titre": "Une maison de village, à l'entrée de Mézin",
+      "texte": "Le Relais de Gascogne est tenu par Valérie et Etienne Soufflet. Façade blanche, volets bleus et géraniums : vous la trouverez avenue Max Grosselle, en arrivant de Nérac par la RD 656.",
+      "salle": "couverts environ en salle",
+      "terrasse": "couverts environ en terrasse, aux beaux jours",
+      "chambres": "chambres",
+      "reception": "places en salle de réception",
+      "lien": "Comment venir"
+    },
+    "pays": {
+      "g": "Au pays",
+      "d": "de l'Armagnac",
+      "titre": "Au pays de l'Armagnac, du foie gras et des pruneaux",
+      "texte": "À la pointe sud du Lot-et-Garonne, Mézin est à 10 km du Gers et des Landes. Autour du Relais : abbayes, châteaux et musées, dont celui de l'Armagnac à Condom.",
+      "gers": "du Gers",
+      "landes": "des Landes",
+      "ocean": "de l'océan",
+      "lourdes": "de Lourdes",
+      "km": "km",
+      "visites": "Musée du liège à Mézin · Château Henri IV à Nérac · Abbaye de Flaran · Villa gallo-romaine de Séviac · Musée de l'Armagnac à Condom · Chemin de Saint-Jacques-de-Compostelle",
+      "lien": "Idées de visites et journées de groupe"
+    },
+    "groupes": {
+      "surtitre": "Groupes & réceptions",
+      "titre": "Une salle de 120 places pour vos fêtes",
+      "texte": "Repas de famille, repas dansant, buffet froid, réunions de travail et séminaires, anniversaires, mariages et baptêmes. Menus et tarifs à étudier ensemble.",
+      "places": "places",
+      "lien": "Découvrir la salle"
+    },
+    "fin": {
+      "titre": "Une table, une chambre ? <em>Appelez-nous</em>",
+      "texte": "Avenue Max Grosselle, 47170 Mézin.",
+      "demande": "Laisser une demande"
+    }
+  },
+  "table": {
+    "menus": {
+      "surtitre": "Les menus",
+      "titre": "Quatre menus, du déjeuner au dîner",
+      "ou": "ou",
+      "enfantNom": "Menu enfant",
+      "enfantTexte": "Plat du jour et dessert",
+      "couvertNom": "Couvert enfant sans repas",
+      "potage": "Un potage de saison ouvre chaque menu."
+    },
+    "specialites": {
+      "surtitre": "Selon la saison",
+      "titre": "Les spécialités de la maison",
+      "s1": "Salade gasconne",
+      "s2": "Assiette gourmande",
+      "s3": "Magret de canard",
+      "s4": "Confit de canard",
+      "note": "Et chaque jour, la suggestion du chef selon les produits de saison."
+    },
+    "salle": {
+      "surtitre": "La salle & la terrasse",
+      "titre": "À l'intérieur ou sous les arbres",
+      "salle": "couverts environ en salle",
+      "terrasse": "couverts environ en terrasse, aux beaux jours",
+      "allergenes": "Informations sur les allergènes disponibles sur demande.",
+      "chiens": "Nos amis les chiens ne sont pas admis.",
+      "horaires": "Jours et horaires du service : renseignements au 05 53 65 79 88.",
+      "legendeSalle": "La salle du restaurant",
+      "legendeTerrasse": "La terrasse"
+    },
+    "fin": {
+      "titre": "Réserver une table",
+      "texte": "Pour le déjeuner ou le dîner, un appel suffit.",
+      "demande": "Laisser une demande"
+    }
+  },
+  "chambres": {
+    "equipements": {
+      "surtitre": "Dans chaque chambre",
+      "titre": "Toute équipée, soignée",
+      "citation": "« Petite hôtellerie en milieu rural toute équipée, soignée. »",
+      "douche": "Douche",
+      "wc": "WC",
+      "lavabo": "Lavabo",
+      "tv": "Télévision",
+      "wifi": "Wifi",
+      "pmr": "Une chambre accessible aux personnes à mobilité réduite est en préparation.",
+      "photos": "Quelques chambres du Relais"
+    },
+    "tarifs": {
+      "surtitre": "Tarifs",
+      "titre": "Le prix de la nuit, saison par saison",
+      "basse": "Basse saison",
+      "haute": "Haute saison",
+      "choix": "Saison affichée",
+      "aPartir": "Tarifs « à partir de », par nuit.",
+      "chambre": "Chambre",
+      "prix": "Prix",
+      "estimTitre": "Estimez votre séjour",
+      "estimChambre": "Type de chambre",
+      "estimNuits": "Nombre de nuits",
+      "moins": "Une nuit de moins",
+      "plus": "Une nuit de plus",
+      "estimPetitdej": "Avec le petit-déjeuner (8,50 € par personne)",
+      "estimTotal": "Total estimé",
+      "estimNote": "Estimation indicative, hors taxe de séjour. Les dates de basse et haute saison vous sont données au téléphone.",
+      "estimAction": "Demander ces dates"
+    },
+    "formules": {
+      "surtitre": "Formules",
+      "titre": "Pour une nuit ou pour la semaine",
+      "etapeNom": "Soirée étape",
+      "etapeTexte": "La formule des voyageurs de passage.",
+      "demiNom": "Demi-pension",
+      "pensionNom": "Pension complète",
+      "pensionTexte": "Par personne et par jour, comptées à partir du 3e jour.",
+      "petitdejNom": "Petit-déjeuner",
+      "petitdejTexte": "Par personne.",
+      "des": "dès",
+      "basseHaute": "basse / haute saison"
+    },
+    "fin": {
+      "titre": "Une chambre pour ce soir ?",
+      "texte": "Appelez-nous pour connaître les disponibilités.",
+      "demande": "Demander une chambre"
+    }
+  },
+  "groupes": {
+    "salle": {
+      "surtitre": "La salle de réception",
+      "titre": "Toute équipée, avec parking",
+      "texte": "Menus et tarifs à étudier ensemble, selon votre choix.",
+      "e1": "Repas de famille",
+      "e2": "Repas dansant",
+      "e3": "Buffet froid",
+      "e4": "Réunions de travail",
+      "e5": "Séminaires",
+      "e6": "Anniversaires",
+      "e7": "Mariages",
+      "e8": "Baptêmes"
+    },
+    "journee": {
+      "surtitre": "Circuit autocar",
+      "titre": "Une journée à Mézin, du matin au goûter",
+      "matin": "Matinée",
+      "midi": "13 h : repas au Relais",
+      "apresMidi": "Après-midi, au choix",
+      "menu": "Menu",
+      "fromage": "Supplément fromage : 3 € par personne.",
+      "texte": "Pour les autocaristes, clubs et associations : programme et tarifs à composer ensemble."
+    },
+    "autour": {
+      "surtitre": "Autour du Relais",
+      "titre": "À découvrir dans notre belle région",
+      "texte": "Pour les clubs, les associations, en groupe ou seul.",
+      "a1": "L'église Saint-Jean-Baptiste de Mézin",
+      "a2": "Nérac et son château Henri IV",
+      "a3": "Agen",
+      "a4": "Le chemin de Saint-Jacques-de-Compostelle",
+      "a5": "VTT, VTC et canoë-kayak",
+      "a6": "Piscine chauffée à 100 m",
+      "a7": "La forêt landaise",
+      "automneTitre": "En automne",
+      "automne": "Les chasseurs rejoignent les palombières, le cerf brame et l'on part aux champignons. La basse saison vous fait profiter d'un tarif préférentiel.",
+      "legendeTrain": "Le petit train de l'Albret",
+      "legendeAlambic": "Alambic à armagnac",
+      "legendeNerac": "Château de Nérac",
+      "legendeLiege": "Bouchons de liège"
+    },
+    "fin": {
+      "titre": "Parlons de votre groupe",
+      "texte": "Date, nombre de personnes, menu : nous préparons une proposition avec vous.",
+      "demande": "Demander une proposition"
+    }
+  },
+  "reserver": {
+    "demande": {
+      "surtitre": "Votre demande",
+      "titre": "En trois étapes",
+      "deroule": "1. Votre demande · 2. Les détails · 3. Vos coordonnées",
+      "etape": "Étape",
+      "sur": "sur",
+      "objetTitre": "Que souhaitez-vous réserver ?",
+      "table": "Une table",
+      "tableTexte": "Déjeuner ou dîner",
+      "chambre": "Une chambre",
+      "chambreTexte": "Une nuit ou un séjour",
+      "groupe": "Un groupe ou une fête",
+      "groupeTexte": "Salle de 120 places, journée autocar",
+      "detailsTitre": "Les détails",
+      "date": "Date souhaitée",
+      "service": "Service",
+      "midi": "Midi",
+      "soir": "Soir",
+      "personnes": "Nombre de personnes",
+      "arrivee": "Date d'arrivée",
+      "nuits": "Nombre de nuits",
+      "typeChambre": "Type de chambre",
+      "petitdej": "Avec petit-déjeuner",
+      "formule": "Formule",
+      "formuleChambre": "Chambre seule",
+      "evenement": "Type d'événement",
+      "coordTitre": "Vos coordonnées",
+      "nom": "Nom et prénom",
+      "tel": "Téléphone",
+      "email": "E-mail (facultatif)",
+      "message": "Message (facultatif)",
+      "donnees": "Vos coordonnées servent seulement à vous rappeler au sujet de cette demande. <a href=\"#pied\" data-sans-transition>Politique de confidentialité : à compléter</a>.",
+      "precedent": "Retour",
+      "suivant": "Continuer",
+      "envoyer": "Envoyer la demande",
+      "recapTitre": "Récapitulatif",
+      "recapVide": "Choisissez ce que vous souhaitez réserver.",
+      "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers le Relais, qui vous rappellera."
+    },
+    "acces": {
+      "surtitre": "Venir",
+      "titre": "À l'entrée de Mézin, par la RD 656",
+      "texte": "En venant de Nérac par la RD 656, le Relais est à l'entrée du village, avenue Max Grosselle.",
+      "parking": "Parking pour la salle de réception.",
+      "horaires": "Jours et horaires : renseignements au 05 53 65 79 88.",
+      "carteTitre": "Mézin et ses alentours (schéma)",
+      "carteNote": "Schéma indicatif, distances données par le Relais."
+    }
+  },
+  "introuvable": {
+    "surtitre": "Erreur 404",
+    "titre": "Volets clos",
+    "texte": "Cette page n'existe pas, ou plus. La maison, elle, vous attend toujours.",
+    "retour": "Revenir à l'accueil"
+  },
+  "alts": {
+    "accueil-ouverture": "Fenêtre ouverte aux volets bleus sur les collines de Gascogne",
+    "accueil-table": "Pruneaux, noix, pain de campagne et verre d'armagnac sur une table de bois",
+    "accueil-terroir": "Collines de vignes d'automne en Gascogne",
+    "accueil-chambre": "Lit fait de draps blancs, rayé de soleil par des volets bleus",
+    "accueil-terrasse": "Terrasse de village sous les platanes, tables dressées",
+    "table-ouverture": "Légumes et champignons de saison sur une table de cuisine",
+    "table-potage": "Soupière fumante sur une nappe blanche",
+    "chambres-ouverture": "Lumière du matin à travers des volets bleus sur un lit blanc",
+    "chambres-petitdej": "Plateau de petit-déjeuner près d'une fenêtre aux volets bleus",
+    "groupes-ouverture": "Longue table dressée pour une fête de famille",
+    "groupes-route": "Route de campagne entre les vignes, vers un village perché",
+    "reserver-ouverture": "Sonnette de comptoir en laiton et clé de chambre sur un comptoir de bois",
+    "404": "Volets bleus fermés sur un mur crème ensoleillé",
+    "maison-facade": "Façade du Relais de Gascogne, volets bleus et géraniums",
+    "maison-balcon": "Balcon fleuri et volets bleus de la façade",
+    "terrasse": "La terrasse ombragée et ses parasols bleus",
+    "salle": "La salle du restaurant, nappes bleues",
+    "banquet-salle": "La salle de banquet dressée, lustres et chaises rouges",
+    "banquet-verres": "Verres alignés sur la table de banquet",
+    "banquet-tables": "Tables rondes dressées dans la salle de banquet",
+    "chambre-1": "Chambre double au couvre-lit bleu",
+    "chambre-2": "Chambre aux murs mauves et lit double",
+    "chambre-3": "Chambre lumineuse avec télévision",
+    "chambre-4": "Chambre aux murs verts",
+    "alambic": "Alambic à armagnac",
+    "petit-train": "Le petit train touristique de l'Albret",
+    "mezin-panorama": "Grande maison blanche dans la campagne de Mézin",
+    "liege": "Bouchons de liège",
+    "nerac": "Château Henri IV de Nérac",
+    "eglise": "Église de Mézin"
+  }
+}

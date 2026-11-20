@@ -1,0 +1,505 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#debut > div.conteneur.ouv-chiffre-grille > p.ouv-nombre.ouv-anim > span « seats in our function room, with parking »",
+      "etape": "mesures",
+      "page": "/en/groupes",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.ouv-chiffre-grille > p.ouv-nombre.ouv-anim > strong « 120 »",
+      "lieux": [
+        "1920×1080 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#debut > div.conteneur.ouv-chiffre-grille > p.ouv-nombre.ouv-anim > span « places assises dans notre salle de réception, avec »",
+      "etape": "mesures",
+      "page": "/groupes",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.ouv-chiffre-grille > p.ouv-nombre.ouv-anim > strong « 120 »",
+      "lieux": [
+        "1920×1080 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "retour arrière : image isolée différente (flash)",
+      "detail": "à 60 ms (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant l’intro",
+      "detail": "bande d’environ 14 px en rgb(246, 240, 228) à côté de l’intro en rgb(34, 61, 117), sur 2 image(s) sur 113 (films/bords-intro-1366.png)",
+      "etape": "bords",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant l’intro",
+      "detail": "bande d’environ 14 px en rgb(246, 240, 228) à côté de l’intro en rgb(34, 61, 117), sur 2 image(s) sur 132 (films/bords-intro-groupes-1366.png)",
+      "etape": "bords",
+      "page": "/groupes",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant l’intro",
+      "detail": "bande d’environ 14 px en rgb(246, 239, 230) à côté de l’intro en rgb(34, 61, 117), sur 17 image(s) sur 85 (films/bords-intro-1920.png)",
+      "etape": "bords",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1920×1080 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "positions non recalculées après un changement de hauteur",
+      "detail": "décalage de 14 px",
+      "etape": "parcours",
+      "page": "/chambres",
+      "taille": "1366×768",
+      "selecteur": "Basse saison",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "en/reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : effet signature qui ne se manipule pas (point 1)",
+      "detail": "aucun élément data-grille=\"manipuler\" sur l’accueil : objet à attraper, faire tourner ou glisser (module objet-a-faire-tourner, lumiere-au-pointeur…)",
+      "etape": "grille",
+      "page": "/",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : l’intro ne finit pas sur la page (point 2)",
+      "detail": "versObjet(tl, …) absent de assets/js : l’intro doit finir sur l’objet d’ouverture (socle : import { versObjet } from './socle/index.js')",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "sur aucune page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "sur aucune page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : action principale sans retour physique (point 7)",
+      "detail": "ajout au panier, réservation, envoi ou filtre : quelque chose de l’objet part, se pose ou se transforme (module envol-vers-le-panier, tampon « reçu »), marqué data-grille=\"retour\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#autour « Au pays de l'Armagnac, du foie gras et des pruneau »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/chambres",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#tarifs « TARIFS Le prix de la nuit, saison par saison Basse »",
+      "lieux": [
+        "390×844 normal",
+        "768×1024 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/en",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#autour « In the land of Armagnac, foie gras and prunes At t »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/en/chambres",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#tarifs « RATES The price of a night, season by season Low s »",
+      "lieux": [
+        "320×568 normal",
+        "390×844 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/en/reserver",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#demande « YOUR REQUEST In three steps 1. Your request · 2. T »",
+      "lieux": [
+        "390×844 normal",
+        "768×1024 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/reserver",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#demande « VOTRE DEMANDE En trois étapes 1. Votre demande · 2 »",
+      "lieux": [
+        "320×568 normal",
+        "390×844 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 108 ms (différence 21 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 59 ms (différence 26 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/la-table",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 33 ms (différence 24 %) (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/la-table",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant l’intro",
+      "detail": "bande d’environ 14 px en rgb(246, 240, 228) à côté de l’intro en rgb(34, 61, 117), sur 1 image(s) sur 133 (films/bords-intro-la-table-1366.png)",
+      "etape": "bords",
+      "page": "/la-table",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant l’intro",
+      "detail": "bande d’environ 14 px en rgb(246, 240, 228) à côté de l’intro en rgb(34, 61, 117), sur 1 image(s) sur 130 (films/bords-intro-reserver-1366.png)",
+      "etape": "bords",
+      "page": "/reserver",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (5.3 %), voir comparaisons/rechargement-groupes-*.png",
+      "etape": "parcours",
+      "page": "/groupes",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (13.2 %), voir comparaisons/rechargement-la-table-*.png",
+      "etape": "parcours",
+      "page": "/la-table",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 2,
+    "mesures": 121,
+    "balayage": 10,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "bords de l’écran": 6,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 11,
+    "liens et boutons": 11,
+    "liens profonds": 16,
+    "liens vers la page en cours": 10,
+    "changements de hauteur": 5,
+    "parcours du projet": 1,
+    "tient dans l’écran": 10,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5,
+    "mouvement": 10,
+    "effets du plan": 6,
+    "souris immobile": 5,
+    "vitesse": 10,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 6 étape(s) notée(s), 36 min de travail pour 115 min de budget, 8 min d’attente de l’utilisateur.",
+    "Audit standard : étapes lourdes sur /, /chambres, /groupes, /la-table, /reserver.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2641 ms depuis le premier octet",
+    "Ouverture /chambres (1366×768) : 2620 ms depuis le premier octet",
+    "film de l'ouverture /chambres 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /groupes (1366×768) : 2596 ms depuis le premier octet",
+    "Ouverture /la-table (1366×768) : 2621 ms depuis le premier octet",
+    "Ouverture /reserver (1366×768) : 2574 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2617 ms depuis le premier octet",
+    "film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /chambres (390×844) : 2561 ms depuis le premier octet",
+    "Ouverture /groupes (390×844) : 2588 ms depuis le premier octet",
+    "Ouverture /la-table (390×844) : 2591 ms depuis le premier octet",
+    "Ouverture /reserver (390×844) : 2582 ms depuis le premier octet",
+    "Bords de l’écran : 726 images d’intro, 17 de voile et 133 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran /chambres : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /en/chambres : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /en/groupes : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /en/la-table : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /en/reserver : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /groupes : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /la-table : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /reserver : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 370, tâche la plus longue 0 ms",
+    "Fluidité /chambres 1366×768 (molette) : 0 % d'images lentes sur 219, tâche la plus longue 0 ms",
+    "Fluidité /groupes 1366×768 (molette) : 0 % d'images lentes sur 233, tâche la plus longue 0 ms",
+    "Fluidité /la-table 1366×768 (molette) : 0 % d'images lentes sur 216, tâche la plus longue 0 ms",
+    "Fluidité /reserver 1366×768 (molette) : 0 % d'images lentes sur 174, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1344, tâche la plus longue 53 ms",
+    "Fluidité /chambres 390×844 (doigt) : 0 % d'images lentes sur 1337, tâche la plus longue 0 ms",
+    "Fluidité /groupes 390×844 (doigt) : 0 % d'images lentes sur 1344, tâche la plus longue 0 ms",
+    "Fluidité /la-table 390×844 (doigt) : 0 % d'images lentes sur 1338, tâche la plus longue 0 ms",
+    "Fluidité /reserver 390×844 (doigt) : 0 % d'images lentes sur 1340, tâche la plus longue 0 ms",
+    "Vitesse / : 0.29 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /chambres : 0.28 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /en : 0.39 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /en/chambres : 0.27 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /en/groupes : 0.35 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /en/la-table : 0.41 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /en/reserver : 0.26 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /groupes : 0.29 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /la-table : 0.31 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /reserver : 0.35 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "absent",
+      "detail": "aucun data-grille=\"manipuler\" sur l’accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "absent",
+      "detail": "versObjet absent"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en rideau"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    }
+  ]
+}

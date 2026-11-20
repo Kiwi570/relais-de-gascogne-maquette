@@ -1,0 +1,42 @@
+{
+  "nom": "Le Relais de Gascogne",
+  "adresse": "https://relais-de-gascogne-maquette.vercel.app",
+  "siteActuel": "relaisdegascogne.wixsite.com",
+  "version": 1,
+  "langues": [
+    "fr",
+    "en"
+  ],
+  "navigation": [
+    "accueil",
+    "la-table",
+    "chambres",
+    "groupes",
+    "reserver"
+  ],
+  "actionEntete": {
+    "page": "reserver",
+    "ancre": "demande"
+  },
+  "couleurs": {
+    "fond": "#f6f0e4",
+    "texte": "#1c2433",
+    "voile": "#1f3566",
+    "ouverture": "#1f3566",
+    "menu": "#f6f0e4",
+    "theme": "#f6f0e4"
+  },
+  "formeVoile": "rideau",
+  "contact": {
+    "telephone": "05 53 65 79 88",
+    "telephoneLien": "+33553657988",
+    "email": "sarllesgasconsgourmets@bbox.fr",
+    "adresse": "Avenue Max Grosselle, 47170 Mézin"
+  },
+  "polices": [
+    "/assets/fonts/fraunces-latin-600-normal.woff2",
+    "/assets/fonts/figtree-latin-400-normal.woff2"
+  ],
+  "imagePartage": "grok/accueil-ouverture-1280.webp",
+  "curseur": false
+}

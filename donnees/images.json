@@ -1,0 +1,2237 @@
+{
+  "grok/accueil-ouverture": {
+    "nom": "grok/accueil-ouverture",
+    "source": "recu/grok/accueil-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Fenêtre ouverte aux volets bleus sur les collines de Gascogne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "0be6e77b15e75381",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "73% 50%",
+    "sujet": {
+      "x": 12.5,
+      "y": 0,
+      "l": 87.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.68,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 47,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-ouverture-640.webp",
+      "grok/accueil-ouverture-1280.webp",
+      "grok/accueil-ouverture-1920.webp",
+      "grok/accueil-ouverture-mobile-640.webp",
+      "grok/accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accueil-ouverture-640.webp": 29008,
+      "grok/accueil-ouverture-1280.webp": 103000,
+      "grok/accueil-ouverture-1920.webp": 171034,
+      "grok/accueil-ouverture-mobile-640.webp": 98970,
+      "grok/accueil-ouverture-mobile-1080.webp": 194790
+    },
+    "media": "c.media({ nom: 'grok/accueil-ouverture', alt: \"Fenêtre ouverte aux volets bleus sur les collines de Gascogne\", cadrage: '73% 50%', cadrageMobile: '50% 47%', sizes: '100vw', priorite: true })"
+  },
+  "grok/accueil-table": {
+    "nom": "grok/accueil-table",
+    "source": "recu/grok/accueil-table.jpg",
+    "role": "galerie",
+    "alt": "Pruneaux, noix, pain de campagne et verre d'armagnac sur une table de bois",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "73f7baf62087a688",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "40% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 98,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-table-1024.webp",
+      "grok/accueil-table-1168.webp",
+      "grok/accueil-table-1600.webp"
+    ],
+    "poids": {
+      "grok/accueil-table-1024.webp": 140512,
+      "grok/accueil-table-1168.webp": 165268,
+      "grok/accueil-table-1600.webp": 230376
+    },
+    "media": "c.media({ nom: 'grok/accueil-table', alt: \"Pruneaux, noix, pain de campagne et verre d'armagnac sur une table de bois\", cadrage: '40% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-terroir": {
+    "nom": "grok/accueil-terroir",
+    "source": "recu/grok/accueil-terroir.jpg",
+    "role": "section-fond",
+    "alt": "Collines de vignes d'automne en Gascogne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "2ee41a5146e9658e",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 53%"
+    },
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "centre",
+    "recadrage": {
+      "left": 0,
+      "top": 127,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-terroir-640.webp",
+      "grok/accueil-terroir-1280.webp",
+      "grok/accueil-terroir-1920.webp",
+      "grok/accueil-terroir-mobile-640.webp",
+      "grok/accueil-terroir-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accueil-terroir-640.webp": 40266,
+      "grok/accueil-terroir-1280.webp": 112022,
+      "grok/accueil-terroir-1920.webp": 179108,
+      "grok/accueil-terroir-mobile-640.webp": 123820,
+      "grok/accueil-terroir-mobile-1080.webp": 234718
+    },
+    "media": "c.media({ nom: 'grok/accueil-terroir', alt: \"Collines de vignes d'automne en Gascogne\", cadrage: '51% 50%', cadrageMobile: '50% 53%', sizes: '100vw' })"
+  },
+  "grok/accueil-chambre": {
+    "nom": "grok/accueil-chambre",
+    "source": "recu/grok/accueil-chambre.jpg",
+    "role": "galerie",
+    "alt": "Lit fait de draps blancs, rayé de soleil par des volets bleus",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "219488d7483941cd",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "42% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 92.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 311,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-chambre-1024.webp",
+      "grok/accueil-chambre-1168.webp",
+      "grok/accueil-chambre-1600.webp"
+    ],
+    "poids": {
+      "grok/accueil-chambre-1024.webp": 113998,
+      "grok/accueil-chambre-1168.webp": 134592,
+      "grok/accueil-chambre-1600.webp": 193032
+    },
+    "media": "c.media({ nom: 'grok/accueil-chambre', alt: \"Lit fait de draps blancs, rayé de soleil par des volets bleus\", cadrage: '42% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-terrasse": {
+    "nom": "grok/accueil-terrasse",
+    "source": "recu/grok/accueil-terrasse.jpg",
+    "role": "section-fond",
+    "alt": "Terrasse de village sous les platanes, tables dressées",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "a40bcc606d9dc20b",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 46%"
+    },
+    "cadrage": "53% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 47,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-terrasse-640.webp",
+      "grok/accueil-terrasse-1280.webp",
+      "grok/accueil-terrasse-1920.webp",
+      "grok/accueil-terrasse-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/accueil-terrasse-640.webp": 74964,
+      "grok/accueil-terrasse-1280.webp": 184874,
+      "grok/accueil-terrasse-1920.webp": 285890,
+      "grok/accueil-terrasse-mobile-640.webp": 123124
+    },
+    "media": "c.media({ nom: 'grok/accueil-terrasse', alt: \"Terrasse de village sous les platanes, tables dressées\", cadrage: '53% 50%', cadrageMobile: '50% 46%', sizes: '100vw' })"
+  },
+  "grok/table-ouverture": {
+    "nom": "grok/table-ouverture",
+    "source": "recu/grok/table-ouverture.jpg",
+    "role": "galerie",
+    "alt": "Légumes et champignons de saison sur une table de cuisine",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "81c46f4f034aafb6",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 175,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/table-ouverture-1024.webp",
+      "grok/table-ouverture-1168.webp",
+      "grok/table-ouverture-1600.webp"
+    ],
+    "poids": {
+      "grok/table-ouverture-1024.webp": 151350,
+      "grok/table-ouverture-1168.webp": 176932,
+      "grok/table-ouverture-1600.webp": 247514
+    },
+    "media": "c.media({ nom: 'grok/table-ouverture', alt: \"Légumes et champignons de saison sur une table de cuisine\", cadrage: '47% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/table-potage": {
+    "nom": "grok/table-potage",
+    "source": "recu/grok/table-potage.jpg",
+    "role": "galerie",
+    "alt": "Soupière fumante sur une nappe blanche",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "d0403ae51162cbd2",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "40% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 292,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/table-potage-1024.webp",
+      "grok/table-potage-1168.webp",
+      "grok/table-potage-1600.webp"
+    ],
+    "poids": {
+      "grok/table-potage-1024.webp": 97592,
+      "grok/table-potage-1168.webp": 114518,
+      "grok/table-potage-1600.webp": 166964
+    },
+    "media": "c.media({ nom: 'grok/table-potage', alt: \"Soupière fumante sur une nappe blanche\", cadrage: '40% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/chambres-ouverture": {
+    "nom": "grok/chambres-ouverture",
+    "source": "recu/grok/chambres-ouverture.jpg",
+    "role": "section-fond",
+    "alt": "Lumière du matin à travers des volets bleus sur un lit blanc",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "bf0530ab474a2a88",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 54%"
+    },
+    "cadrage": "40% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 99.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 138,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/chambres-ouverture-640.webp",
+      "grok/chambres-ouverture-1280.webp",
+      "grok/chambres-ouverture-1920.webp",
+      "grok/chambres-ouverture-mobile-640.webp",
+      "grok/chambres-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/chambres-ouverture-640.webp": 22574,
+      "grok/chambres-ouverture-1280.webp": 79312,
+      "grok/chambres-ouverture-1920.webp": 138192,
+      "grok/chambres-ouverture-mobile-640.webp": 45630,
+      "grok/chambres-ouverture-mobile-1080.webp": 95252
+    },
+    "media": "c.media({ nom: 'grok/chambres-ouverture', alt: \"Lumière du matin à travers des volets bleus sur un lit blanc\", cadrage: '40% 50%', cadrageMobile: '50% 54%', sizes: '100vw' })"
+  },
+  "grok/chambres-petitdej": {
+    "nom": "grok/chambres-petitdej",
+    "source": "recu/grok/chambres-petitdej.jpg",
+    "role": "galerie",
+    "alt": "Plateau de petit-déjeuner près d'une fenêtre aux volets bleus",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "3f321b697fbcc297",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 40,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/chambres-petitdej-1024.webp",
+      "grok/chambres-petitdej-1168.webp",
+      "grok/chambres-petitdej-1600.webp"
+    ],
+    "poids": {
+      "grok/chambres-petitdej-1024.webp": 153328,
+      "grok/chambres-petitdej-1168.webp": 177578,
+      "grok/chambres-petitdej-1600.webp": 252724
+    },
+    "media": "c.media({ nom: 'grok/chambres-petitdej', alt: \"Plateau de petit-déjeuner près d'une fenêtre aux volets bleus\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/groupes-ouverture": {
+    "nom": "grok/groupes-ouverture",
+    "source": "recu/grok/groupes-ouverture.jpg",
+    "role": "section-fond",
+    "alt": "Longue table dressée pour une fête de famille",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "5f31a2bf13b20a08",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 51%"
+    },
+    "cadrage": "56% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 104,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/groupes-ouverture-640.webp",
+      "grok/groupes-ouverture-1280.webp",
+      "grok/groupes-ouverture-1920.webp",
+      "grok/groupes-ouverture-mobile-640.webp",
+      "grok/groupes-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/groupes-ouverture-640.webp": 30374,
+      "grok/groupes-ouverture-1280.webp": 74836,
+      "grok/groupes-ouverture-1920.webp": 120694,
+      "grok/groupes-ouverture-mobile-640.webp": 42460,
+      "grok/groupes-ouverture-mobile-1080.webp": 78062
+    },
+    "media": "c.media({ nom: 'grok/groupes-ouverture', alt: \"Longue table dressée pour une fête de famille\", cadrage: '56% 50%', cadrageMobile: '50% 51%', sizes: '100vw' })"
+  },
+  "grok/groupes-route": {
+    "nom": "grok/groupes-route",
+    "source": "recu/grok/groupes-route.jpg",
+    "role": "section-fond",
+    "alt": "Route de campagne entre les vignes, vers un village perché",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "856759fa3d00c9eb",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 48%"
+    },
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 70,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/groupes-route-640.webp",
+      "grok/groupes-route-1280.webp",
+      "grok/groupes-route-1920.webp",
+      "grok/groupes-route-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/groupes-route-640.webp": 48722,
+      "grok/groupes-route-1280.webp": 151202,
+      "grok/groupes-route-1920.webp": 249300,
+      "grok/groupes-route-mobile-640.webp": 100320
+    },
+    "media": "c.media({ nom: 'grok/groupes-route', alt: \"Route de campagne entre les vignes, vers un village perché\", cadrage: '52% 50%', cadrageMobile: '50% 48%', sizes: '100vw' })"
+  },
+  "grok/reserver-ouverture": {
+    "nom": "grok/reserver-ouverture",
+    "source": "recu/grok/reserver-ouverture.jpg",
+    "role": "galerie",
+    "alt": "Sonnette de comptoir en laiton et clé de chambre sur un comptoir de bois",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "3b1fa4c3292e831e",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "58% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 59,
+      "width": 1300,
+      "height": 1625,
+      "source": [
+        1300,
+        1937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,23 fois (source de 1300 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/reserver-ouverture-1024.webp",
+      "grok/reserver-ouverture-1168.webp",
+      "grok/reserver-ouverture-1600.webp"
+    ],
+    "poids": {
+      "grok/reserver-ouverture-1024.webp": 95432,
+      "grok/reserver-ouverture-1168.webp": 112712,
+      "grok/reserver-ouverture-1600.webp": 160728
+    },
+    "media": "c.media({ nom: 'grok/reserver-ouverture', alt: \"Sonnette de comptoir en laiton et clé de chambre sur un comptoir de bois\", cadrage: '58% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/404": {
+    "nom": "grok/404",
+    "source": "recu/grok/404.jpg",
+    "role": "404",
+    "alt": "Volets bleus fermés sur un mur crème ensoleillé",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "6442b3f2c1f2a518",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "63% 50%",
+    "sujet": {
+      "x": 28.1,
+      "y": 1.7,
+      "l": 71.9,
+      "h": 98.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.6,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 35,
+      "width": 1700,
+      "height": 956,
+      "source": [
+        1700,
+        1141
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1700 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/404-640.webp",
+      "grok/404-1280.webp",
+      "grok/404-1920.webp"
+    ],
+    "poids": {
+      "grok/404-640.webp": 47132,
+      "grok/404-1280.webp": 172522,
+      "grok/404-1920.webp": 274572
+    },
+    "media": "c.media({ nom: 'grok/404', alt: \"Volets bleus fermés sur un mur crème ensoleillé\", cadrage: '63% 50%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "maison-facade": {
+    "nom": "maison-facade",
+    "source": "recu/chaud/facade-01.jpg",
+    "role": "galerie",
+    "alt": "Façade du Relais de Gascogne, volets bleus et géraniums",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c78e65fd97c3189b",
+    "ratio": "4:5",
+    "largeurs": [
+      321
+    ],
+    "mobile": null,
+    "cadrage": "50% 20%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 43.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 59,
+      "top": 0,
+      "width": 214,
+      "height": 267,
+      "source": [
+        353,
+        267
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "353 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 214 px après recadrage)"
+    ],
+    "fichiers": [
+      "maison-facade-321.webp"
+    ],
+    "poids": {
+      "maison-facade-321.webp": 23280
+    },
+    "media": "c.media({ nom: 'maison-facade', alt: \"Façade du Relais de Gascogne, volets bleus et géraniums\", cadrage: '50% 20%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "maison-balcon": {
+    "nom": "maison-balcon",
+    "source": "recu/chaud/relais-gascogne-hotel-restaurant-4.jpg",
+    "role": "galerie",
+    "alt": "Balcon fleuri et volets bleus de la façade",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "385f50b3ae982163",
+    "ratio": "4:5",
+    "largeurs": [
+      864
+    ],
+    "mobile": null,
+    "cadrage": "53% 43%",
+    "sujet": {
+      "x": 35.1,
+      "y": 10.3,
+      "l": 37.2,
+      "h": 53.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 576,
+      "height": 720,
+      "source": [
+        576,
+        768
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "576 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 576 px après recadrage)"
+    ],
+    "fichiers": [
+      "maison-balcon-864.webp"
+    ],
+    "poids": {
+      "maison-balcon-864.webp": 126404
+    },
+    "media": "c.media({ nom: 'maison-balcon', alt: \"Balcon fleuri et volets bleus de la façade\", cadrage: '53% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "terrasse": {
+    "nom": "terrasse",
+    "source": "recu/chaud/restauration-2.jpg",
+    "role": "galerie",
+    "alt": "La terrasse ombragée et ses parasols bleus",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "92474939c7645eef",
+    "ratio": "4:5",
+    "largeurs": [
+      438
+    ],
+    "mobile": null,
+    "cadrage": "52% 73%",
+    "sujet": {
+      "x": 0,
+      "y": 63.6,
+      "l": 72.9,
+      "h": 36.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 54,
+      "top": 0,
+      "width": 292,
+      "height": 365,
+      "source": [
+        487,
+        365
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "487 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 292 px après recadrage)"
+    ],
+    "fichiers": [
+      "terrasse-438.webp"
+    ],
+    "poids": {
+      "terrasse-438.webp": 38376
+    },
+    "media": "c.media({ nom: 'terrasse', alt: \"La terrasse ombragée et ses parasols bleus\", cadrage: '52% 73%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "salle": {
+    "nom": "salle",
+    "source": "recu/chaud/restauration-3.jpg",
+    "role": "vignette",
+    "alt": "La salle du restaurant, nappes bleues",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "bef8364042c17728",
+    "ratio": "4:3",
+    "largeurs": [
+      560
+    ],
+    "mobile": null,
+    "cadrage": "54% 47%",
+    "sujet": {
+      "x": 23.9,
+      "y": 35.3,
+      "l": 64.6,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.62,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.42,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.39,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 47,
+      "top": 0,
+      "width": 373,
+      "height": 280,
+      "source": [
+        420,
+        280
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "420 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 373 px après recadrage)"
+    ],
+    "fichiers": [
+      "salle-560.webp"
+    ],
+    "poids": {
+      "salle-560.webp": 21448
+    },
+    "media": "c.media({ nom: 'salle', alt: \"La salle du restaurant, nappes bleues\", cadrage: '54% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "banquet-salle": {
+    "nom": "banquet-salle",
+    "source": "recu/chaud/salle-banquet-2.jpg",
+    "role": "galerie",
+    "alt": "La salle de banquet dressée, lustres et chaises rouges",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9ad91fa3a1cf4d0c",
+    "ratio": "4:5",
+    "largeurs": [
+      819
+    ],
+    "mobile": null,
+    "cadrage": "50% 46%",
+    "sujet": {
+      "x": 3.4,
+      "y": 30.9,
+      "l": 88.3,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.41,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.33,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 208,
+      "top": 0,
+      "width": 546,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 546 px après recadrage)"
+    ],
+    "fichiers": [
+      "banquet-salle-819.webp"
+    ],
+    "poids": {
+      "banquet-salle-819.webp": 59706
+    },
+    "media": "c.media({ nom: 'banquet-salle', alt: \"La salle de banquet dressée, lustres et chaises rouges\", cadrage: '50% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "banquet-verres": {
+    "nom": "banquet-verres",
+    "source": "recu/chaud/salle-banquet.jpg",
+    "role": "galerie",
+    "alt": "Verres alignés sur la table de banquet",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "60621a5326847de6",
+    "ratio": "4:5",
+    "largeurs": [
+      1024
+    ],
+    "mobile": null,
+    "cadrage": "48% 46%",
+    "sujet": {
+      "x": 0,
+      "y": 13,
+      "l": 92.5,
+      "h": 77
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.48,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 712,
+      "height": 890,
+      "source": [
+        712,
+        1068
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1168, 1600",
+      "712 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,44 fois (source de 712 px après recadrage)"
+    ],
+    "fichiers": [
+      "banquet-verres-1024.webp"
+    ],
+    "poids": {
+      "banquet-verres-1024.webp": 104000
+    },
+    "media": "c.media({ nom: 'banquet-verres', alt: \"Verres alignés sur la table de banquet\", cadrage: '48% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "banquet-tables": {
+    "nom": "banquet-tables",
+    "source": "recu/chaud/salle-banquet-3.jpg",
+    "role": "galerie",
+    "alt": "Tables rondes dressées dans la salle de banquet",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4f0f5c013deea92e",
+    "ratio": "4:5",
+    "largeurs": [
+      768
+    ],
+    "mobile": null,
+    "cadrage": "42% 46%",
+    "sujet": {
+      "x": 26.5,
+      "y": 31.8,
+      "l": 33.8,
+      "h": 28.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.44,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 512,
+      "height": 640,
+      "source": [
+        512,
+        768
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "512 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 512 px après recadrage)"
+    ],
+    "fichiers": [
+      "banquet-tables-768.webp"
+    ],
+    "poids": {
+      "banquet-tables-768.webp": 58054
+    },
+    "media": "c.media({ nom: 'banquet-tables', alt: \"Tables rondes dressées dans la salle de banquet\", cadrage: '42% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "chambre-1": {
+    "nom": "chambre-1",
+    "source": "recu/chaud/hotel-01.jpg",
+    "role": "vignette",
+    "alt": "Chambre double au couvre-lit bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "9fd4fc989c09fd14",
+    "ratio": "4:3",
+    "largeurs": [
+      510
+    ],
+    "mobile": null,
+    "cadrage": "41% 52%",
+    "sujet": {
+      "x": 2.4,
+      "y": 36.9,
+      "l": 55.5,
+      "h": 63
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.69,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 35,
+      "width": 340,
+      "height": 255,
+      "source": [
+        340,
+        290
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "340 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 340 px après recadrage)"
+    ],
+    "fichiers": [
+      "chambre-1-510.webp"
+    ],
+    "poids": {
+      "chambre-1-510.webp": 16534
+    },
+    "media": "c.media({ nom: 'chambre-1', alt: \"Chambre double au couvre-lit bleu\", cadrage: '41% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "chambre-2": {
+    "nom": "chambre-2",
+    "source": "recu/chaud/hotel-02.jpg",
+    "role": "vignette",
+    "alt": "Chambre aux murs mauves et lit double",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "32a87b7931959a9a",
+    "ratio": "4:3",
+    "largeurs": [
+      510
+    ],
+    "mobile": null,
+    "cadrage": "46% 58%",
+    "sujet": {
+      "x": 22.1,
+      "y": 44.3,
+      "l": 67.4,
+      "h": 55.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.65,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.6,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.42,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 35,
+      "width": 340,
+      "height": 255,
+      "source": [
+        340,
+        290
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "340 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 340 px après recadrage)"
+    ],
+    "fichiers": [
+      "chambre-2-510.webp"
+    ],
+    "poids": {
+      "chambre-2-510.webp": 11338
+    },
+    "media": "c.media({ nom: 'chambre-2', alt: \"Chambre aux murs mauves et lit double\", cadrage: '46% 58%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "chambre-3": {
+    "nom": "chambre-3",
+    "source": "recu/chaud/hotel-03.jpg",
+    "role": "vignette",
+    "alt": "Chambre lumineuse avec télévision",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "d8f0f00dac918528",
+    "ratio": "4:3",
+    "largeurs": [
+      510
+    ],
+    "mobile": null,
+    "cadrage": "50% 32%",
+    "sujet": {
+      "x": 39.7,
+      "y": 13.5,
+      "l": 22.1,
+      "h": 40.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.56,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 340,
+      "height": 255,
+      "source": [
+        340,
+        260
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "340 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 340 px après recadrage)"
+    ],
+    "fichiers": [
+      "chambre-3-510.webp"
+    ],
+    "poids": {
+      "chambre-3-510.webp": 17344
+    },
+    "media": "c.media({ nom: 'chambre-3', alt: \"Chambre lumineuse avec télévision\", cadrage: '50% 32%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "chambre-4": {
+    "nom": "chambre-4",
+    "source": "recu/chaud/hotel-04.jpg",
+    "role": "vignette",
+    "alt": "Chambre aux murs verts",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "aa1cb020ae3534a3",
+    "ratio": "4:3",
+    "largeurs": [
+      504
+    ],
+    "mobile": null,
+    "cadrage": "61% 64%",
+    "sujet": {
+      "x": 27.7,
+      "y": 51.4,
+      "l": 60.6,
+      "h": 48.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 7,
+      "width": 336,
+      "height": 252,
+      "source": [
+        336,
+        259
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "336 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 336 px après recadrage)"
+    ],
+    "fichiers": [
+      "chambre-4-504.webp"
+    ],
+    "poids": {
+      "chambre-4-504.webp": 13436
+    },
+    "media": "c.media({ nom: 'chambre-4', alt: \"Chambre aux murs verts\", cadrage: '61% 64%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "alambic": {
+    "nom": "alambic",
+    "source": "recu/chaud/13h-repas-gastronomique-relais.jpg",
+    "role": "galerie",
+    "alt": "Alambic à armagnac",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "6fd8377efd71a443",
+    "ratio": "4:5",
+    "largeurs": [
+      965
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 20.1,
+      "y": 25.7,
+      "l": 44.3,
+      "h": 59.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.45,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 16,
+      "top": 0,
+      "width": 643,
+      "height": 804,
+      "source": [
+        1024,
+        804
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1024, 1168, 1600",
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 643 px après recadrage)"
+    ],
+    "fichiers": [
+      "alambic-965.webp"
+    ],
+    "poids": {
+      "alambic-965.webp": 120820
+    },
+    "media": "c.media({ nom: 'alambic', alt: \"Alambic à armagnac\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "petit-train": {
+    "nom": "petit-train",
+    "source": "recu/chaud/circuit-autocar.jpg",
+    "role": "vignette",
+    "alt": "Le petit train touristique de l'Albret",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2af460eaad50b266",
+    "ratio": "4:3",
+    "largeurs": [
+      640
+    ],
+    "mobile": null,
+    "cadrage": "47% 43%",
+    "sujet": {
+      "x": 23.8,
+      "y": 24.7,
+      "l": 47.7,
+      "h": 45.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.29,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.15,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 500,
+      "height": 375,
+      "source": [
+        500,
+        375
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 800",
+      "500 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 500 px après recadrage)"
+    ],
+    "fichiers": [
+      "petit-train-640.webp"
+    ],
+    "poids": {
+      "petit-train-640.webp": 66224
+    },
+    "media": "c.media({ nom: 'petit-train', alt: \"Le petit train touristique de l'Albret\", cadrage: '47% 43%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "mezin-panorama": {
+    "nom": "mezin-panorama",
+    "source": "recu/chaud/relais-gascogne-hotel-restaurant-3.jpg",
+    "role": "vignette",
+    "alt": "Grande maison blanche dans la campagne de Mézin",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ae4c85ca622bdeb8",
+    "ratio": "4:3",
+    "largeurs": [
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 19.9,
+      "l": 98.5,
+      "h": 70.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.4,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 458,
+      "top": 0,
+      "width": 500,
+      "height": 375,
+      "source": [
+        1200,
+        375
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 800",
+      "1200 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 500 px après recadrage)",
+      "recadrage fort : 42 % de l'image gardée"
+    ],
+    "fichiers": [
+      "mezin-panorama-640.webp"
+    ],
+    "poids": {
+      "mezin-panorama-640.webp": 72266
+    },
+    "media": "c.media({ nom: 'mezin-panorama', alt: \"Grande maison blanche dans la campagne de Mézin\", cadrage: '50% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "liege": {
+    "nom": "liege",
+    "source": "recu/chaud/decouvrir-05.jpg",
+    "role": "vignette",
+    "alt": "Bouchons de liège",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "a80e0a8c0660f1a9",
+    "ratio": "4:3",
+    "largeurs": [
+      480
+    ],
+    "mobile": null,
+    "cadrage": "53% 44%",
+    "sujet": {
+      "x": 25.5,
+      "y": 21.4,
+      "l": 61,
+      "h": 51.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.44,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.37,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 320,
+      "height": 240,
+      "source": [
+        320,
+        240
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "320 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 320 px après recadrage)"
+    ],
+    "fichiers": [
+      "liege-480.webp"
+    ],
+    "poids": {
+      "liege-480.webp": 13100
+    },
+    "media": "c.media({ nom: 'liege', alt: \"Bouchons de liège\", cadrage: '53% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "nerac": {
+    "nom": "nerac",
+    "source": "recu/chaud/decouvrir-07.jpg",
+    "role": "vignette",
+    "alt": "Château Henri IV de Nérac",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "c979001b0096fedc",
+    "ratio": "4:3",
+    "largeurs": [
+      380
+    ],
+    "mobile": null,
+    "cadrage": "50% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 12.9,
+      "l": 94.6,
+      "h": 76.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 39,
+      "top": 0,
+      "width": 253,
+      "height": 190,
+      "source": [
+        300,
+        190
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "300 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 253 px après recadrage)"
+    ],
+    "fichiers": [
+      "nerac-380.webp"
+    ],
+    "poids": {
+      "nerac-380.webp": 13294
+    },
+    "media": "c.media({ nom: 'nerac', alt: \"Château Henri IV de Nérac\", cadrage: '50% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "eglise": {
+    "nom": "eglise",
+    "source": "recu/chaud/decouvrir-02.jpg",
+    "role": "vignette",
+    "alt": "Église de Mézin",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "96224e533ec347ae",
+    "ratio": "4:3",
+    "largeurs": [
+      389
+    ],
+    "mobile": null,
+    "cadrage": "46% 40%",
+    "sujet": {
+      "x": 27.7,
+      "y": 4.1,
+      "l": 36.6,
+      "h": 53.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.44,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 259,
+      "height": 194,
+      "source": [
+        259,
+        194
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 800",
+      "259 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 259 px après recadrage)"
+    ],
+    "fichiers": [
+      "eglise-389.webp"
+    ],
+    "poids": {
+      "eglise-389.webp": 13866
+    },
+    "media": "c.media({ nom: 'eglise', alt: \"Église de Mézin\", cadrage: '46% 40%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "logo": {
+    "nom": "logo",
+    "source": "recu/chaud/logo-sombre.png",
+    "role": "logo",
+    "alt": "Le Relais de Gascogne",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "11691ab5ad65d4a4",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 4250,
+      "logo-480.webp": 10158
+    },
+    "media": "c.media({ nom: 'logo', alt: \"Le Relais de Gascogne\", sizes: '240px' })"
+  }
+}

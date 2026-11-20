@@ -1,0 +1,16 @@
+{
+ "id": "20261120-211516-standard-cible-partiel",
+ "date": "2026-11-20T21:17:29.115Z",
+ "niveau": "standard",
+ "pages": "/,/la-table,/chambres,/groupes,/reserver",
+ "etapes": [
+  "fichiers",
+  "films"
+ ],
+ "version": "1",
+ "echecs": 0,
+ "aRegarder": 4,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

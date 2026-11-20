@@ -1,0 +1,255 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "restauration"
+ ],
+ "metier": "hôtel restaurant auberge",
+ "besoin": [],
+ "ton": [
+  "chaleureux"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "relais-de-gascogne-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "artic-maquette",
+   "client": "conseil en hôtellerie-restauration (stratégie, transformation, transmission) d'un ancien cuisinier et directeur F&B, à Orbe",
+   "metier": "conseil en hôtellerie-restauration",
+   "pourquoi": "Conseil en hôtellerie-restauration : revue éditoriale crème et encre, rouge réservé au « ! », cycle en anneau WebGL.",
+   "proche": [
+    "même activité",
+    "ambiance chaleureux"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 85,
+   "en_ligne": "https://artic-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "artic-maquette/debut",
+     "note_section": 4,
+     "titre": "L’Art de l’Intelligence Commerciale en Hospitalité !",
+     "capture": "medias/artic-maquette/debut-p1440.jpg",
+     "video": "medias/artic-maquette/debut-p720.mp4",
+     "fiche": "sections/artic-maquette/debut.json",
+     "en_ligne": "https://artic-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "méthode",
+     "id": "artic-maquette/cycle",
+     "note_section": 5,
+     "titre": "De la conception à la transmission",
+     "capture": "medias/artic-maquette/cycle-p1440.jpg",
+     "video": "medias/artic-maquette/cycle-p720.mp4",
+     "fiche": "sections/artic-maquette/cycle.json",
+     "en_ligne": "https://artic-maquette.vercel.app"
+    },
+    {
+     "page": "a-propos",
+     "role": "ouverture",
+     "id": "artic-maquette/a-propos-debut",
+     "note_section": 3,
+     "titre": "Michel Grand",
+     "capture": "medias/artic-maquette/a-propos-debut-p1440.jpg",
+     "video": null,
+     "fiche": "sections/artic-maquette/a-propos-debut.json",
+     "en_ligne": "https://artic-maquette.vercel.app/a-propos"
+    },
+    {
+     "page": "projets/distribotion",
+     "role": "étapes",
+     "id": "artic-maquette/projets-distribotion-produits",
+     "note_section": 5,
+     "titre": "Cinq étapes, un verre à remplir",
+     "capture": "medias/artic-maquette/projets-distribotion-produits-p1440.jpg",
+     "video": "medias/artic-maquette/projets-distribotion-produits-p720.mp4",
+     "fiche": "sections/artic-maquette/projets-distribotion-produits.json",
+     "en_ligne": "https://artic-maquette.vercel.app/projets/distribotion"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "lemoy-premium-maquette",
+   "client": "pâtisserie, chocolaterie, boulangerie et traiteur rue François de Curel à Metz, commande en ligne et retrait en boutique",
+   "metier": "pâtissier chocolatier",
+   "pourquoi": "Pâtisserie à Metz : cacao, crème et or, superbes photos de produits, vitrine claire et utile, commande en ligne.",
+   "proche": [
+    "même activité",
+    "ambiance chaleureux"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 84,
+   "en_ligne": "https://lemoy-premium-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "lemoy-premium-maquette/heros",
+     "note_section": 3,
+     "titre": "Les grands classiques, revisités.",
+     "capture": "medias/lemoy-premium-maquette/heros-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/heros.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "produits",
+     "id": "lemoy-premium-maquette/vitrine",
+     "note_section": 4,
+     "titre": "Sous les cloches, ce matin",
+     "capture": "medias/lemoy-premium-maquette/vitrine-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/vitrine.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app"
+    },
+    {
+     "page": "boulangerie",
+     "role": "ouverture",
+     "id": "lemoy-premium-maquette/boulangerie-tete",
+     "note_section": 3,
+     "titre": "Pains au levain, viennoiseries pur beurre",
+     "capture": "medias/lemoy-premium-maquette/boulangerie-tete-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/boulangerie-tete.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app/boulangerie"
+    },
+    {
+     "page": "carte-cadeau",
+     "role": "outil-interactif",
+     "id": "lemoy-premium-maquette/carte-cadeau-cc-titre",
+     "note_section": 4,
+     "titre": "Votre carte",
+     "capture": "medias/lemoy-premium-maquette/carte-cadeau-cc-titre-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/carte-cadeau-cc-titre.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app/carte-cadeau"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "ice-attitude-maquette",
+   "client": "association de team building survie douce, stages de survie, anniversaires et EVG en forêt, à Marly-le-Roi et partout en France",
+   "metier": "stages de survie en forêt",
+   "pourquoi": "Survie en forêt : nuit de forêt et braise orange, feu WebGL qu'on attise, journée où le soleil tourne, équipe autour du feu.",
+   "proche": [
+    "activité proche",
+    "ambiance chaleureux"
+   ],
+   "lumiere": "sombre",
+   "note_maquette": 87,
+   "en_ligne": "https://ice-attitude-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "ice-attitude-maquette/ouverture",
+     "note_section": 5,
+     "titre": "ICE Attitude, ICE Attitude",
+     "capture": "medias/ice-attitude-maquette/ouverture-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/ouverture-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/ouverture.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "étapes",
+     "id": "ice-attitude-maquette/journee",
+     "note_section": 5,
+     "titre": "Une journée en forêt",
+     "capture": "medias/ice-attitude-maquette/journee-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/journee-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/journee.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app"
+    },
+    {
+     "page": "stage-survie",
+     "role": "ouverture",
+     "id": "ice-attitude-maquette/stage-survie-ouverture",
+     "note_section": 4,
+     "titre": "Les bases de la survie",
+     "capture": "medias/ice-attitude-maquette/stage-survie-ouverture-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/stage-survie-ouverture-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/stage-survie-ouverture.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app/stage-survie"
+    },
+    {
+     "page": "team-building",
+     "role": "manifeste",
+     "id": "ice-attitude-maquette/team-building-objectifs",
+     "note_section": 4,
+     "titre": "Ce que vos équipes y gagnent",
+     "capture": "medias/ice-attitude-maquette/team-building-objectifs-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/team-building-objectifs-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/team-building-objectifs.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app/team-building"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "pourquoi": "Agence de communication : beige, éventail de couleurs, cartes nettes, sommaire des métiers.",
+   "proche": [],
+   "lumiere": "clair",
+   "note_maquette": 86,
+   "en_ligne": "https://nolanis-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "nolanis-maquette/debut",
+     "note_section": 5,
+     "titre": "Votre agence de communication visuelle à Strasbourg",
+     "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "services",
+     "id": "nolanis-maquette/services",
+     "note_section": 4,
+     "titre": "La liasse des épreuves",
+     "capture": "medias/nolanis-maquette/services-p1440.jpg",
+     "video": "medias/nolanis-maquette/services-p720.mp4",
+     "fiche": "sections/nolanis-maquette/services.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "formations",
+     "role": "ouverture",
+     "id": "nolanis-maquette/formations-debut",
+     "note_section": 4,
+     "titre": "Choisir l’image juste",
+     "capture": "medias/nolanis-maquette/formations-debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/formations-debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/formations-debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/formations"
+    },
+    {
+     "page": "contact",
+     "role": "outil-interactif",
+     "id": "nolanis-maquette/contact-devis",
+     "note_section": 4,
+     "titre": "Votre demande, en trois étapes",
+     "capture": "medias/nolanis-maquette/contact-devis-p1440.jpg",
+     "video": "medias/nolanis-maquette/contact-devis-p720.mp4",
+     "fiche": "sections/nolanis-maquette/contact-devis.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/contact"
+    }
+   ]
+  }
+ ]
+}
