@@ -131,7 +131,9 @@
       "nuit": "la nuit",
       "etape": "Soirée étape",
       "petitdej": "Petit-déjeuner",
-      "lien": "Tarifs et formules"
+      "lien": "Tarifs et formules",
+      "nuitDes": "la nuit",
+      "prefixe": "dès"
     },
     "maison": {
       "surtitre": "La maison",
@@ -141,7 +143,8 @@
       "terrasse": "couverts environ en terrasse, aux beaux jours",
       "chambres": "chambres",
       "reception": "places en salle de réception",
-      "lien": "Comment venir"
+      "lien": "Comment venir",
+      "astuce": "Touchez une photo pour la passer devant."
     },
     "pays": {
       "g": "Au pays",
@@ -154,7 +157,8 @@
       "lourdes": "de Lourdes",
       "km": "km",
       "visites": "Musée du liège à Mézin · Château Henri IV à Nérac · Abbaye de Flaran · Villa gallo-romaine de Séviac · Musée de l'Armagnac à Condom · Chemin de Saint-Jacques-de-Compostelle",
-      "lien": "Idées de visites et journées de groupe"
+      "lien": "Idées de visites et journées de groupe",
+      "panneau": "Distances depuis Mézin"
     },
     "groupes": {
       "surtitre": "Groupes & réceptions",
@@ -177,7 +181,11 @@
       "enfantNom": "Menu enfant",
       "enfantTexte": "Plat du jour et dessert",
       "couvertNom": "Couvert enfant sans repas",
-      "potage": "Un potage de saison ouvre chaque menu."
+      "potage": "Un potage de saison ouvre chaque menu.",
+      "composer": "Composez votre menu : touchez une entrée et un plat.",
+      "ticket": "Votre menu",
+      "reserverMenu": "Réserver avec ce menu",
+      "messageMenu": "Menu à {prix} : {choix}"
     },
     "specialites": {
       "surtitre": "Selon la saison",
@@ -235,7 +243,8 @@
       "estimPetitdej": "Avec le petit-déjeuner (8,50 € par personne)",
       "estimTotal": "Total estimé",
       "estimNote": "Estimation indicative, hors taxe de séjour. Les dates de basse et haute saison vous sont données au téléphone.",
-      "estimAction": "Demander ces dates"
+      "estimAction": "Demander ces dates",
+      "cle": "Clé de chambre"
     },
     "formules": {
       "surtitre": "Formules",
@@ -268,7 +277,9 @@
       "e5": "Séminaires",
       "e6": "Anniversaires",
       "e7": "Mariages",
-      "e8": "Baptêmes"
+      "e8": "Baptêmes",
+      "planTitre": "Schéma indicatif : 120 places assises",
+      "couverts": "couverts"
     },
     "journee": {
       "surtitre": "Circuit autocar",
@@ -342,7 +353,8 @@
       "envoyer": "Envoyer la demande",
       "recapTitre": "Récapitulatif",
       "recapVide": "Choisissez ce que vous souhaitez réserver.",
-      "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers le Relais, qui vous rappellera."
+      "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers le Relais, qui vous rappellera.",
+      "tampon": "Demande simulée"
     },
     "acces": {
       "surtitre": "Venir",

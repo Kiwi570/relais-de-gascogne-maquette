@@ -1,6 +1,23 @@
 {
   "siteActuel": "relaisdegascogne.wixsite.com",
-  "pagesTypes": ["/", "/la-table", "/chambres", "/groupes", "/reserver"],
-  "effets": ["volets", "menu-trace", "estimateur", "journee", "carte", "distances"],
-  "grille": { "dispenses": {} }
+  "pagesTypes": [
+    "/",
+    "/la-table",
+    "/chambres",
+    "/groupes",
+    "/reserver"
+  ],
+  "effets": [
+    "volets",
+    "menu-trace",
+    "estimateur",
+    "journee",
+    "carte",
+    "panneau",
+    "plan-salle",
+    "cle"
+  ],
+  "grille": {
+    "dispenses": {}
+  }
 }

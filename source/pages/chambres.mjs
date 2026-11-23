@@ -51,8 +51,22 @@ export default (c) => {
 <section class="sec sec--sable" id="tarifs">
   <div class="conteneur tarifs-grille">
     <div>
-      <p class="surtitre" data-anime>${c.t('chambres.tarifs.surtitre')}</p>
-      <h2 data-anime="lignes">${c.t('chambres.tarifs.titre')}</h2>
+      <div class="tarifs-tete">
+        <div>
+          <p class="surtitre" data-anime>${c.t('chambres.tarifs.surtitre')}</p>
+          <h2 data-anime="lignes">${c.t('chambres.tarifs.titre')}</h2>
+        </div>
+      <svg class="cle" viewBox="0 0 120 230" role="img" aria-label="${c.s('chambres.tarifs.cle')}" data-effet="cle">
+        <g class="cle-pendule">
+          <circle cx="60" cy="14" r="7" class="cle-clou"/>
+          <path d="M60 18 V 52" class="cle-fil"/>
+          <circle cx="60" cy="62" r="12" class="cle-anneau"/>
+          <path d="M60 74 V 150 M60 128 H 76 M60 140 H 72" class="cle-tige"/>
+          <path d="M30 150 H 90 L 98 175 L 60 222 L 22 175 Z" class="cle-tag"/>
+          <text x="60" y="190" text-anchor="middle" class="cle-num">17</text>
+        </g>
+      </svg>
+      </div>
       <div class="saison" role="group" aria-label="${c.s('chambres.tarifs.choix')}" data-anime>
         <button type="button" class="saison-btn" aria-pressed="true" data-saison="basse">${c.t('chambres.tarifs.basse')}</button>
         <button type="button" class="saison-btn" aria-pressed="false" data-saison="haute">${c.t('chambres.tarifs.haute')}</button>

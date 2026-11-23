@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="1">
+<html lang="en" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f0e4">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -117,7 +117,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="surtitre ouv-anim">The table at the Relais</p>
     <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">Gascon cooking,</span></span> <span class="l"><span class="li"><em>in season</em></span></span></h1>
     <p class="ouv-intro ouv-anim masque-ecran-tres-bas">Seasonal soup with every menu, duck, fish from the market and the chef&#39;s suggestions with the produce of the moment.</p>
-    <p class="ouv-prix ouv-anim" data-info-cle><span>Menus from</span> <strong data-prix>€16.50</strong> <span>to</span> <strong data-prix>€33</strong></p>
+    <p class="ouv-prix ouv-anim" data-info-cle><span class="ouv-prix-libelle">Menus from</span> <strong data-prix>€16.50</strong> <span class="ouv-prix-a">to</span> <strong data-prix>€33</strong></p>
     <p class="ouv-actions ouv-anim">
       <a href="/en/reserver?objet=table#demande" class="bouton" data-libelle="Book &amp; find us" data-action-principale data-survol="magnetique">Book a table</a>
       <a class="bouton bouton--contour" href="tel:+33553657988">Call</a>
@@ -134,14 +134,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div>
       <p class="surtitre" data-anime>The menus</p>
       <h2 data-anime="lignes">Four menus, from lunch to dinner</h2>
-      <p data-anime>A seasonal soup opens every menu.</p>
+      <p data-anime>A seasonal soup opens every menu. Build your menu: tap a starter and a main course.</p>
     </div>
     <svg class="soupiere" viewBox="0 0 220 150" aria-hidden="true" data-fx="trace" data-visuel>
       <path data-fx-trait d="M78 40 C 72 26, 88 22, 82 8 M110 36 C 104 22, 120 18, 114 4 M142 40 C 136 26, 152 22, 146 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
       <path data-fx-trait d="M30 70 C 30 120, 70 138, 110 138 C 150 138, 190 120, 190 70 Z M24 70 H 196 M70 62 C 70 50, 150 50, 150 62 M102 50 C 102 42, 118 42, 118 50 M30 82 C 12 82, 10 100, 26 102 M190 82 C 208 82, 210 100, 194 102 M80 138 L 76 146 H 144 L 140 138" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <div class="menus" data-anime="cascade">
+  <div class="menus" data-grille="manipuler">
     <article class="menu-carte" id="menu-jour">
       <p class="menu-prix" data-prix>€16.50</p>
       <h3>Menu of the day</h3>
@@ -152,19 +152,29 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3>Small evening menu</h3>
       <ol class="menu-plats" data-effet="menu-trace"><li>Soup, depending on the season</li><li>Starter</li><li>Main course</li><li>Dessert</li></ol>
       <p class="menu-note">In the evening</p>
-    </article><article class="menu-carte" id="menu-m26">
+    </article><article class="menu-carte menu-carte--choix" id="menu-m26" data-composer data-prix-menu="€26">
       <p class="menu-prix" data-prix>€26</p>
       <h3>The €26 menu</h3>
-      <ol class="menu-plats" data-effet="menu-trace"><li>Seasonal soup</li><li>Starter of the day, gizzard salad or fine duck plate</li><li>Grilled beef, chicken supreme with cream or fish from the market</li><li>Vegetables</li><li>Dessert</li></ol>
+      <ol class="menu-plats" data-effet="menu-trace"><li>Seasonal soup</li><li class="plat-choix"><span class="plat-cours">Starter of your choice</span><span class="puces" role="group" aria-label="Starter of your choice"><button type="button" class="puce" aria-pressed="true" data-choix="Starter of the day">Starter of the day</button><button type="button" class="puce" aria-pressed="false" data-choix="Gizzard salad">Gizzard salad</button><button type="button" class="puce" aria-pressed="false" data-choix="Fine duck plate">Fine duck plate</button></span></li><li class="plat-choix"><span class="plat-cours">Main course of your choice</span><span class="puces" role="group" aria-label="Main course of your choice"><button type="button" class="puce" aria-pressed="true" data-choix="Grilled beef">Grilled beef</button><button type="button" class="puce" aria-pressed="false" data-choix="Chicken supreme with cream">Chicken supreme with cream</button><button type="button" class="puce" aria-pressed="false" data-choix="Fish from the market">Fish from the market</button></span></li><li>Vegetables</li><li>Dessert</li></ol>
+      <div class="menu-ticket" data-ticket>
+        <p class="ticket-titre">Your menu · <span data-prix>€26</span></p>
+        <p class="ticket-choix" data-ticket-choix aria-live="polite">Starter of the day · Grilled beef</p>
+        <a href="/en/reserver?objet=table&amp;message=%E2%82%AC26%20menu%3A%20Starter%20of%20the%20day%2C%20Grilled%20beef#demande" class="bouton bouton--petit" data-libelle="Book &amp; find us" data-ticket-lien data-message-modele="{prix} menu: {choix}">Book with this menu</a>
+      </div>
       <p class="menu-note">Fish fresh from the market</p>
-    </article><article class="menu-carte" id="menu-m33">
+    </article><article class="menu-carte menu-carte--choix" id="menu-m33" data-composer data-prix-menu="€33">
       <p class="menu-prix" data-prix>€33</p>
       <h3>The €33 menu</h3>
-      <ol class="menu-plats" data-effet="menu-trace"><li>Seasonal soup</li><li>Seafood gratin, Gascon salad, starter of the day or suggestions</li><li>Duck confit, half duck breast of the moment or beef</li><li>Vegetables</li><li>Dessert</li></ol>
+      <ol class="menu-plats" data-effet="menu-trace"><li>Seasonal soup</li><li class="plat-choix"><span class="plat-cours">Starter of your choice</span><span class="puces" role="group" aria-label="Starter of your choice"><button type="button" class="puce" aria-pressed="true" data-choix="Seafood gratin">Seafood gratin</button><button type="button" class="puce" aria-pressed="false" data-choix="Gascon salad">Gascon salad</button><button type="button" class="puce" aria-pressed="false" data-choix="Starter of the day">Starter of the day</button><button type="button" class="puce" aria-pressed="false" data-choix="Chef&#39;s suggestions">Chef&#39;s suggestions</button></span></li><li class="plat-choix"><span class="plat-cours">Main course of your choice</span><span class="puces" role="group" aria-label="Main course of your choice"><button type="button" class="puce" aria-pressed="true" data-choix="Duck confit">Duck confit</button><button type="button" class="puce" aria-pressed="false" data-choix="Half duck breast of the moment">Half duck breast of the moment</button><button type="button" class="puce" aria-pressed="false" data-choix="Beef">Beef</button></span></li><li>Vegetables</li><li>Dessert</li></ol>
+      <div class="menu-ticket" data-ticket>
+        <p class="ticket-titre">Your menu · <span data-prix>€33</span></p>
+        <p class="ticket-choix" data-ticket-choix aria-live="polite">Seafood gratin · Duck confit</p>
+        <a href="/en/reserver?objet=table&amp;message=%E2%82%AC33%20menu%3A%20Seafood%20gratin%2C%20Duck%20confit#demande" class="bouton bouton--petit" data-libelle="Book &amp; find us" data-ticket-lien data-message-modele="{prix} menu: {choix}">Book with this menu</a>
+      </div>
       <p class="menu-note">Chef&#39;s suggestion with seasonal produce</p>
     </article>
   </div>
-  <ul class="menus-enfant" data-anime="cascade">
+  <ul class="menus-enfant" id="menus-enfant" data-anime="cascade">
     <li><strong data-prix>€11.80</strong> Children&#39;s menu · Dish of the day and dessert</li>
     <li><strong data-prix>€4.50</strong> Child&#39;s place setting without a meal</li>
   </ul>

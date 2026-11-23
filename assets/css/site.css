@@ -479,3 +479,96 @@ address a, .ouv-info a { display: inline-flex; align-items: center; min-height: 
   .ouv-tel a { font-size: 2.4rem; }
   .ouv-titre { font-size: clamp(2.1rem, min(4.6vw, 8.6vh), 4rem); }
 }
+
+/* ===== v2 ===== */
+/* Images d'ouverture des pages intérieures : même dérive lente que l'accueil. */
+html.pret :is(.ouv-image, .ouv-bande, .ouv--404 .ouv-fond) img { animation: derive 20s ease-in-out infinite alternate; transform-origin: 50% 55%; }
+
+/* Ardoise de l'accueil : chaque ligne mène au menu. */
+.ardoise-ligne { display: flex; align-items: baseline; gap: .6em; min-height: 44px; padding-block: 4px; text-decoration: none; color: inherit; border-radius: 6px; transition: background-color .25s; }
+.ardoise-ligne:hover .ardoise-nom { color: var(--bleu-logo); text-decoration: underline; text-underline-offset: .25em; }
+.ardoise li { display: block; }
+.prefixe { font-size: .42em; font-family: var(--police-texte); font-weight: 600; letter-spacing: .04em; vertical-align: .35em; margin-right: .15em; }
+
+/* La table : ouverture et composeur de menu. */
+.ouv-prix-libelle, .ouv-prix-a { font-size: 1.05rem; color: var(--texte); }
+.ouv-prix-a { margin-inline: .1em; }
+.menus { align-items: start; }
+.plat-choix { display: grid; gap: 8px; }
+.plat-cours { font-weight: 600; font-size: .9rem; color: var(--bleu-logo); }
+.puces { display: flex; flex-wrap: wrap; gap: 6px; }
+.puce { min-height: 44px; padding: 6px 12px; border: 0; border-radius: 999px; background: var(--fond); color: var(--texte); font: 600 .9rem/1.2 var(--police-texte); text-align: left; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--texte) 22%, var(--fond)); transition: background-color .25s, color .25s, box-shadow .25s; }
+.puce:hover { box-shadow: inset 0 0 0 2px var(--bleu); }
+.puce[aria-pressed="true"] { background: var(--bleu); color: var(--fond); box-shadow: none; }
+.menu-ticket { margin: 6px 0 14px; padding: 14px 16px 16px; border-radius: 10px; background: var(--sable); position: relative; }
+.menu-ticket::before { content: ''; position: absolute; left: 12px; right: 12px; top: -1px; height: 2px; background-image: linear-gradient(90deg, var(--blanc) 50%, transparent 50%); background-size: 10px 2px; }
+.ticket-titre { margin: 0 0 4px; font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bleu-logo); }
+.ticket-choix { margin: 0 0 12px; font-family: var(--police-titres); font-size: 1.15rem; line-height: 1.3; }
+.bouton--petit { min-height: 44px; padding: .5em 1.1em; font-size: .95rem; }
+.menu-carte--choix .menu-plats > li:not(.plat-choix) { font-size: .95rem; }
+
+/* Accueil : panneau indicateur des distances. */
+.panneau { position: relative; margin: 0; padding: 70px 0 30px; min-height: 360px; }
+.panneau-mat { position: absolute; left: 50%; top: 18px; bottom: 0; width: 16px; margin-left: -8px; border-radius: 6px 6px 2px 2px; background: linear-gradient(90deg, #7a5a3c, #a07a52 45%, #6b4e33); }
+.panneau-chapeau { position: absolute; left: 50%; top: 0; transform: translateX(-50%); padding: 6px 16px; border-radius: 8px; background: var(--bleu); color: var(--fond); font: italic 600 1.2rem var(--police-titres); box-shadow: var(--ombre); white-space: nowrap; }
+.panneau-lames { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; position: relative; overflow: visible; background: none; border: 0; }
+.panneau .lame { position: relative; width: min(100%, 300px); padding: 14px 22px; border: 0; display: grid; gap: 2px; box-shadow: 0 10px 20px -14px rgba(28,36,51,.6); }
+.panneau .lame strong { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem); line-height: 1.05; color: inherit; }
+.lame--d { justify-self: start; margin-left: 50%; clip-path: polygon(0 0, calc(100% - 26px) 0, 100% 50%, calc(100% - 26px) 100%, 0 100%); padding-right: 40px; transform-origin: 0 50%; }
+.lame--g { justify-self: end; margin-right: 50%; clip-path: polygon(26px 0, 100% 0, 100% 100%, 26px 100%, 0 50%); padding-left: 40px; transform-origin: 100% 50%; text-align: right; }
+.lame--bleu { background: var(--bleu); color: var(--fond); }
+.lame--rouge { background: var(--accent); color: var(--blanc); }
+.lame--sable { background: var(--sable); color: var(--texte); }
+.lame--clair { background: var(--blanc); color: var(--texte); }
+.lame--sable strong, .lame--clair strong { color: var(--bleu); }
+@media (max-width: 760px) {
+  .panneau { min-height: 0; }
+  .panneau .lame { width: min(78%, 280px); }
+  .lame--d { margin-left: calc(50% - 8px); }
+  .lame--g { margin-right: calc(50% - 8px); }
+  .panneau .lame strong { font-size: 1.6rem; }
+}
+
+/* Accueil : la maison, photos à passer devant. */
+.polaroid { cursor: pointer; }
+.polaroids-astuce { position: absolute; left: 0; bottom: -2.2em; margin: 0; font-size: .9rem; color: var(--texte-doux); }
+@media (hover: hover) and (pointer: fine) { .polaroids-astuce { display: none; } }
+
+/* Le pays : mots empilés, dans l'image dès le départ. */
+.pays-mots { flex-direction: column; gap: 0; font-size: clamp(2.2rem, 4.4vw, 4.6rem); line-height: 1.1; }
+.pays-mots span { display: block; }
+
+/* Les chambres : équipements sur une rangée, clé qui se balance. */
+.equipements { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .equipements { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.equipements li { padding: 20px 8px; }
+.tarifs-tete { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+.cle { flex: none; width: clamp(64px, 7vw, 92px); height: auto; margin-top: -8px; overflow: visible; }
+.cle-pendule { transform-origin: 60px 14px; transform-box: view-box; }
+.cle-clou { fill: var(--bleu); }
+.cle-fil { stroke: var(--bleu); stroke-width: 2.5; fill: none; }
+.cle-anneau { fill: none; stroke: #b08a3e; stroke-width: 6; }
+.cle-tige { stroke: #b08a3e; stroke-width: 7; stroke-linecap: round; fill: none; }
+.cle-tag { fill: var(--accent); }
+.cle-num { font: 600 30px var(--police-titres); fill: var(--blanc); }
+
+/* Groupes : schéma de salle dont les couverts s'allument. */
+.plan-salle { margin: 28px 0 0; padding: 18px; border-radius: 14px; background: var(--blanc); box-shadow: 0 1px 0 var(--ligne); }
+.plan-salle svg { width: 100%; height: auto; }
+.plan-table { fill: color-mix(in srgb, var(--texte) 14%, var(--blanc)); }
+.plan-place { fill: var(--accent); transform-box: fill-box; transform-origin: center; }
+.plan-salle figcaption { margin-top: 10px; font-size: .95rem; color: var(--texte-doux); }
+.plan-salle figcaption strong { font-family: var(--police-titres); font-size: 1.6rem; color: var(--accent); font-variant-numeric: tabular-nums; display: inline-block; min-width: 3ch; }
+
+/* Réserver : tampon posé sur le récapitulatif à l'envoi. */
+.recap { position: relative; }
+.tampon { position: absolute; right: 18px; bottom: 18px; margin: 0; width: 132px; height: 132px; border-radius: 50%; display: grid; place-items: center; text-align: center; border: 4px double var(--abricot); color: var(--abricot); font: 600 1rem/1.15 var(--police-titres); text-transform: uppercase; letter-spacing: .06em; padding: 12px; opacity: 0; visibility: hidden; pointer-events: none; rotate: -12deg; }
+.recap.recu .tampon { visibility: visible; animation: tampon .55s cubic-bezier(.2, 1.6, .4, 1) forwards; }
+@keyframes tampon { from { opacity: 0; scale: 2.2; } 60% { opacity: 1; } to { opacity: 1; scale: 1; } }
+@media (max-width: 900px) { .tampon { width: 110px; height: 110px; font-size: .9rem; right: 14px; bottom: 14px; } }
+.panneau-lames { grid-template-columns: minmax(0, 1fr); }
+.panneau .lame { width: min(calc(50% + 14px), 320px); }
+.lame--d { margin-left: calc(50% - 14px); }
+.lame--g { margin-right: calc(50% - 14px); }
+@media (max-width: 760px) { .panneau .lame { width: calc(50% + 70px); } .lame--d { margin-left: calc(50% - 70px); } .lame--g { margin-right: calc(50% - 70px); } }
+.panneau .lame strong { font-family: var(--police-titres); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }

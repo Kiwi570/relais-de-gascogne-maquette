@@ -131,7 +131,9 @@
       "nuit": "a night",
       "etape": "Overnight stopover",
       "petitdej": "Breakfast",
-      "lien": "Rates and packages"
+      "lien": "Rates and packages",
+      "nuitDes": "a night",
+      "prefixe": "from"
     },
     "maison": {
       "surtitre": "The house",
@@ -141,7 +143,8 @@
       "terrasse": "covers or so on the terrace, on sunny days",
       "chambres": "rooms",
       "reception": "seats in the function room",
-      "lien": "How to get here"
+      "lien": "How to get here",
+      "astuce": "Tap a photo to bring it to the front."
     },
     "pays": {
       "g": "In Armagnac",
@@ -154,7 +157,8 @@
       "lourdes": "to Lourdes",
       "km": "km",
       "visites": "Cork museum in Mézin · Henri IV castle in Nérac · Flaran Abbey · Séviac Gallo-Roman villa · Armagnac museum in Condom · The Way of St James",
-      "lien": "Ideas for visits and group days"
+      "lien": "Ideas for visits and group days",
+      "panneau": "Distances from Mézin"
     },
     "groupes": {
       "surtitre": "Groups & functions",
@@ -177,7 +181,11 @@
       "enfantNom": "Children's menu",
       "enfantTexte": "Dish of the day and dessert",
       "couvertNom": "Child's place setting without a meal",
-      "potage": "A seasonal soup opens every menu."
+      "potage": "A seasonal soup opens every menu.",
+      "composer": "Build your menu: tap a starter and a main course.",
+      "ticket": "Your menu",
+      "reserverMenu": "Book with this menu",
+      "messageMenu": "{prix} menu: {choix}"
     },
     "specialites": {
       "surtitre": "Depending on the season",
@@ -235,7 +243,8 @@
       "estimPetitdej": "With breakfast (€8.50 per person)",
       "estimTotal": "Estimated total",
       "estimNote": "Indicative estimate, excluding tourist tax. Low and high season dates are given by phone.",
-      "estimAction": "Ask for these dates"
+      "estimAction": "Ask for these dates",
+      "cle": "Room key"
     },
     "formules": {
       "surtitre": "Packages",
@@ -268,7 +277,9 @@
       "e5": "Seminars",
       "e6": "Birthdays",
       "e7": "Weddings",
-      "e8": "Christenings"
+      "e8": "Christenings",
+      "planTitre": "Indicative diagram: 120 seats",
+      "couverts": "covers"
     },
     "journee": {
       "surtitre": "Coach day trip",
@@ -342,7 +353,8 @@
       "envoyer": "Send the request",
       "recapTitre": "Summary",
       "recapVide": "Choose what you would like to book.",
-      "envoye": "Simulated request: nothing has been sent. On the final site, it will go to the Relais, who will call you back."
+      "envoye": "Simulated request: nothing has been sent. On the final site, it will go to the Relais, who will call you back.",
+      "tampon": "Simulated request"
     },
     "acces": {
       "surtitre": "Getting here",

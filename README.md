@@ -1,4 +1,4 @@
-# Le Relais de Gascogne — maquette v1
+# Le Relais de Gascogne — maquette v2
 
 Maquette du nouveau site de l'hôtel-restaurant **Le Relais de Gascogne** (Avenue Max Grosselle, 47170 Mézin), réalisée à partir du site actuel (relaisdegascogne.wixsite.com/47170).
 
@@ -46,6 +46,8 @@ Maquette du nouveau site de l'hôtel-restaurant **Le Relais de Gascogne** (Avenu
 - La demande de réservation en trois étapes (table, chambre, groupe) : rien n'est envoyé, le message le dit.
 - L'estimateur de séjour : estimation indicative à partir des tarifs « à partir de ».
 - Le schéma d'accès : schéma indicatif dessiné, distances données par le Relais.
+- Le schéma de la salle de réception (Groupes & réceptions) : disposition indicative de 120 places, la vraie disposition des tables n'étant pas connue.
+- Le composeur de menu (La table) : les choix sont ceux de la carte du site actuel ; le bouton prépare une demande de table, rien n'est commandé.
 
 ## À la mise en ligne définitive
 

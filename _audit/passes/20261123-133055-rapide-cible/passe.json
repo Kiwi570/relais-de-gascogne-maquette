@@ -1,0 +1,13 @@
+{
+ "id": "20261123-133055-rapide-cible",
+ "date": "2026-11-23T13:40:45.784Z",
+ "niveau": "rapide",
+ "pages": "/,/la-table,/chambres,/groupes,/reserver",
+ "etapes": "toutes",
+ "version": "2",
+ "echecs": 15,
+ "aRegarder": 11,
+ "nonLances": 5,
+ "manquants": 4,
+ "statut": "échecs"
+}

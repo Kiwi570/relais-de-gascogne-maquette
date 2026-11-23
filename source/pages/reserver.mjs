@@ -80,6 +80,7 @@ export default (c) => {
       <aside class="recap" aria-labelledby="recap-titre" data-anime>
         <h3 id="recap-titre">${d('recapTitre')}</h3>
         <dl data-recap><div><dt>${d('objetTitre')}</dt><dd>${d('table')}</dd></div></dl>
+        <p class="tampon" aria-hidden="true" data-grille="retour"><span>${d('tampon')}</span></p>
         <p class="recap-tel"><a href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
       </aside>
     </div>
@@ -122,7 +123,7 @@ export default (c) => {
         <g class="carte-mezin">
           <circle cx="300" cy="250" r="22" class="carte-halo"/>
           <circle cx="300" cy="250" r="11" class="carte-point" data-repere/>
-          <text class="carte-texte carte-texte--mezin" x="188" y="230">Mézin</text>
+          <text class="carte-texte carte-texte--mezin" x="330" y="238">Mézin</text>
         </g>
       </svg>
       <figcaption class="note-douce">${c.t('reserver.acces.carteNote')}</figcaption>

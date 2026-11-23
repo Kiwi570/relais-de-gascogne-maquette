@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f0e4">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -135,8 +135,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 data-anime="lignes">Une cuisine de Gascogne qui suit les saisons</h2>
     <p data-anime>Salade gasconne, assiette gourmande, magret et confit de canard selon la saison, potage à chaque menu et poisson « retour de marché ».</p>
     <ul class="ardoise" data-effet="menu-trace">
-      <li><span class="ardoise-nom">Menu du jour</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>16,50 €</span></li><li><span class="ardoise-nom">Petit menu du soir</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>18,50 €</span></li><li><span class="ardoise-nom">Menu, entrée et plat au choix</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>26 €</span></li><li><span class="ardoise-nom">Menu gascon : confit, magret ou bœuf</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>33 €</span></li>
-      <li><span class="ardoise-nom">Menu enfant</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>11,80 €</span></li>
+      <li><a href="/la-table#menu-jour" class="ardoise-ligne" data-libelle="La table"><span class="ardoise-nom">Menu du jour</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>16,50 €</span></a></li><li><a href="/la-table#menu-soir" class="ardoise-ligne" data-libelle="La table"><span class="ardoise-nom">Petit menu du soir</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>18,50 €</span></a></li><li><a href="/la-table#menu-m26" class="ardoise-ligne" data-libelle="La table"><span class="ardoise-nom">Menu, entrée et plat au choix</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>26 €</span></a></li><li><a href="/la-table#menu-m33" class="ardoise-ligne" data-libelle="La table"><span class="ardoise-nom">Menu gascon : confit, magret ou bœuf</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>33 €</span></a></li>
+      <li><a href="/la-table#menus-enfant" class="ardoise-ligne" data-libelle="La table"><span class="ardoise-nom">Menu enfant</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>11,80 €</span></a></li>
     </ul>
     <p data-anime><a href="/la-table#menus" class="lien-fleche" data-libelle="La table">Voir les menus en détail</a></p>
   </div>
@@ -173,7 +173,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p data-anime>17 chambres équipées pour l&#39;étape ou le séjour, en chambre seule, demi-pension ou pension.</p>
       <dl class="chiffres-cles" data-anime="cascade">
         <div><dt><strong class="grand-chiffre" data-compteur="17">17</strong></dt><dd>chambres</dd></div>
-        <div><dt><strong class="grand-chiffre" data-prix>53 €</strong></dt><dd>dès · la nuit</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix><small class="prefixe">dès</small> 53 €</strong></dt><dd>la nuit</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>80 €</strong></dt><dd>Soirée étape</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>8,50 €</strong></dt><dd>Petit-déjeuner</dd></div>
       </dl>
@@ -194,7 +194,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ul>
       <p data-anime><a href="/reserver#acces" class="lien-fleche" data-libelle="Réserver &amp; venir">Comment venir</a></p>
     </div>
-    <div class="polaroids">
+    <div class="polaroids" data-polaroids>
       <figure class="media polaroid polaroid--1" data-fx="vitesse" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/maison-facade-321.webp" srcset="/assets/images/maison-facade-321.webp 321w" sizes="(max-width: 760px) 70vw, 26vw" alt="Façade du Relais de Gascogne, volets bleus et géraniums" width="321" height="401" loading="lazy" decoding="async">
@@ -210,6 +210,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/salle-560.webp" srcset="/assets/images/salle-560.webp 560w" sizes="(max-width: 760px) 50vw, 18vw" alt="La salle du restaurant, nappes bleues" width="560" height="420" loading="lazy" decoding="async">
   </picture>
 </figure>
+      <p class="polaroids-astuce" aria-hidden="true">Touchez une photo pour la passer devant.</p>
     </div>
   </div>
 </section>
@@ -220,7 +221,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/grok/accueil-terroir-1280.webp" srcset="/assets/images/grok/accueil-terroir-640.webp 640w, /assets/images/grok/accueil-terroir-1280.webp 1280w, /assets/images/grok/accueil-terroir-1920.webp 1920w" sizes="100vw" alt="Collines de vignes d&#39;automne en Gascogne" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">Au pays</span> <span data-fx-ecarte="d">de l&#39;Armagnac</span></p>
+    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">Au pays</span><span data-fx-ecarte="d">de l&#39;Armagnac</span></p>
   </div>
 </section>
 <section class="sec pays-suite conteneur" id="autour">
@@ -230,12 +231,16 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="visites" data-anime>Musée du liège à Mézin · Château Henri IV à Nérac · Abbaye de Flaran · Villa gallo-romaine de Séviac · Musée de l&#39;Armagnac à Condom · Chemin de Saint-Jacques-de-Compostelle</p>
     <p data-anime><a href="/groupes#autour" class="lien-fleche" data-libelle="Groupes &amp; réceptions">Idées de visites et journées de groupe</a></p>
   </div>
-  <ul class="distances" data-effet="distances">
-    <li><strong><span data-compteur="10">10</span> km</strong> du Gers</li>
-    <li><strong><span data-compteur="10">10</span> km</strong> des Landes</li>
-    <li><strong><span data-compteur="120">120</span> km</strong> de l&#39;océan</li>
-    <li><strong><span data-compteur="120">120</span> km</strong> de Lourdes</li>
-  </ul>
+  <figure class="panneau" data-effet="panneau" data-visuel aria-label="Distances depuis Mézin">
+    <span class="panneau-mat" aria-hidden="true"></span>
+    <span class="panneau-chapeau" aria-hidden="true">Mézin</span>
+    <ul class="panneau-lames">
+      <li class="lame lame--d lame--bleu"><strong><span data-compteur="10">10</span> km</strong> du Gers</li>
+      <li class="lame lame--g lame--rouge"><strong><span data-compteur="10">10</span> km</strong> des Landes</li>
+      <li class="lame lame--g lame--sable"><strong><span data-compteur="120">120</span> km</strong> de l&#39;océan</li>
+      <li class="lame lame--d lame--clair"><strong><span data-compteur="120">120</span> km</strong> de Lourdes</li>
+    </ul>
+  </figure>
 </section>
 <section class="sec sec--salle conteneur" id="salle">
   <div class="salle-chiffre" aria-hidden="true" data-visuel><span data-compteur="120">120</span></div>

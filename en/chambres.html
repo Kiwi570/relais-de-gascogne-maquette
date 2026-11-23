@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="1">
+<html lang="en" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f0e4">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -165,8 +165,22 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="sec sec--sable" id="tarifs">
   <div class="conteneur tarifs-grille">
     <div>
-      <p class="surtitre" data-anime>Rates</p>
-      <h2 data-anime="lignes">The price of a night, season by season</h2>
+      <div class="tarifs-tete">
+        <div>
+          <p class="surtitre" data-anime>Rates</p>
+          <h2 data-anime="lignes">The price of a night, season by season</h2>
+        </div>
+      <svg class="cle" viewBox="0 0 120 230" role="img" aria-label="Room key" data-effet="cle">
+        <g class="cle-pendule">
+          <circle cx="60" cy="14" r="7" class="cle-clou"/>
+          <path d="M60 18 V 52" class="cle-fil"/>
+          <circle cx="60" cy="62" r="12" class="cle-anneau"/>
+          <path d="M60 74 V 150 M60 128 H 76 M60 140 H 72" class="cle-tige"/>
+          <path d="M30 150 H 90 L 98 175 L 60 222 L 22 175 Z" class="cle-tag"/>
+          <text x="60" y="190" text-anchor="middle" class="cle-num">17</text>
+        </g>
+      </svg>
+      </div>
       <div class="saison" role="group" aria-label="Season shown" data-anime>
         <button type="button" class="saison-btn" aria-pressed="true" data-saison="basse">Low season</button>
         <button type="button" class="saison-btn" aria-pressed="false" data-saison="haute">High season</button>

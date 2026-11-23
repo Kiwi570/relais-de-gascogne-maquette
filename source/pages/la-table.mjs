@@ -13,7 +13,7 @@ export default (c) => {
     <p class="surtitre ouv-anim">${c.t('ouvertures.table.surtitre')}</p>
     ${titre(c, 'ouvertures.table')}
     <p class="ouv-intro ouv-anim masque-ecran-tres-bas">${c.t('ouvertures.table.texte')}</p>
-    <p class="ouv-prix ouv-anim" data-info-cle><span>${c.t('ouvertures.table.prixDe')}</span> <strong data-prix>${prix(c, '16,50')}</strong> <span>${c.t('ouvertures.table.prixA')}</span> <strong data-prix>${prix(c, 33)}</strong></p>
+    <p class="ouv-prix ouv-anim" data-info-cle><span class="ouv-prix-libelle">${c.t('ouvertures.table.prixDe')}</span> <strong data-prix>${prix(c, '16,50')}</strong> <span class="ouv-prix-a">${c.t('ouvertures.table.prixA')}</span> <strong data-prix>${prix(c, 33)}</strong></p>
     <p class="ouv-actions ouv-anim">
       ${c.lien('reserver', { ancre: 'demande', params: 'objet=table', classe: 'bouton', texte: c.t('ouvertures.table.action'), attrs: 'data-action-principale data-survol="magnetique"' })}
       <a class="bouton bouton--contour" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')}</a>
@@ -27,22 +27,32 @@ export default (c) => {
     <div>
       <p class="surtitre" data-anime>${c.t('table.menus.surtitre')}</p>
       <h2 data-anime="lignes">${c.t('table.menus.titre')}</h2>
-      <p data-anime>${c.t('table.menus.potage')}</p>
+      <p data-anime>${c.t('table.menus.potage')} ${c.t('table.menus.composer')}</p>
     </div>
     <svg class="soupiere" viewBox="0 0 220 150" aria-hidden="true" data-fx="trace" data-visuel>
       <path data-fx-trait d="M78 40 C 72 26, 88 22, 82 8 M110 36 C 104 22, 120 18, 114 4 M142 40 C 136 26, 152 22, 146 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
       <path data-fx-trait d="M30 70 C 30 120, 70 138, 110 138 C 150 138, 190 120, 190 70 Z M24 70 H 196 M70 62 C 70 50, 150 50, 150 62 M102 50 C 102 42, 118 42, 118 50 M30 82 C 12 82, 10 100, 26 102 M190 82 C 208 82, 210 100, 194 102 M80 138 L 76 146 H 144 L 140 138" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <div class="menus" data-anime="cascade">
-    ${menus.map((m) => html`<article class="menu-carte" id="menu-${m.id}">
+  <div class="menus" data-grille="manipuler">
+    ${menus.map((m) => {
+      const choix = m.plats.filter((p) => typeof p !== 'string');
+      const premiers = choix.map((p) => p.choix[0]).join(', ');
+      const message = c.s('table.menus.messageMenu', { prix: prix(c, m.prix), choix: premiers });
+      return html`<article class="menu-carte${choix.length ? ' menu-carte--choix' : ''}" id="menu-${m.id}"${choix.length ? html` data-composer data-prix-menu="${prix(c, m.prix)}"` : ''}>
       <p class="menu-prix" data-prix>${prix(c, m.prix)}</p>
       <h3>${m.nom}</h3>
-      <ol class="menu-plats" data-effet="menu-trace">${m.plats.map((p) => html`<li>${p}</li>`)}</ol>
+      <ol class="menu-plats" data-effet="menu-trace">${m.plats.map((p) => typeof p === 'string' ? html`<li>${p}</li>` : html`<li class="plat-choix"><span class="plat-cours">${p.cours}</span><span class="puces" role="group" aria-label="${p.cours}">${p.choix.map((x, i) => html`<button type="button" class="puce" aria-pressed="${i === 0 ? 'true' : 'false'}" data-choix="${x}">${x}</button>`)}</span></li>`)}</ol>
+      ${choix.length ? html`<div class="menu-ticket" data-ticket>
+        <p class="ticket-titre">${c.t('table.menus.ticket')} · <span data-prix>${prix(c, m.prix)}</span></p>
+        <p class="ticket-choix" data-ticket-choix aria-live="polite">${choix.map((p) => p.choix[0]).join(' · ')}</p>
+        ${c.lien('reserver', { ancre: 'demande', params: 'objet=table&message=' + encodeURIComponent(message), classe: 'bouton bouton--petit', texte: c.t('table.menus.reserverMenu'), attrs: 'data-ticket-lien data-message-modele="' + c.s('table.menus.messageMenu').replace(/"/g, '&quot;') + '"' })}
+      </div>` : ''}
       <p class="menu-note">${m.note}</p>
-    </article>`)}
+    </article>`;
+    })}
   </div>
-  <ul class="menus-enfant" data-anime="cascade">
+  <ul class="menus-enfant" id="menus-enfant" data-anime="cascade">
     <li><strong data-prix>${prix(c, '11,80')}</strong> ${c.t('table.menus.enfantNom')} · ${c.t('table.menus.enfantTexte')}</li>
     <li><strong data-prix>${prix(c, '4,50')}</strong> ${c.t('table.menus.couvertNom')}</li>
   </ul>

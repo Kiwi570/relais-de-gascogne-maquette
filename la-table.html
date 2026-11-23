@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f0e4">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -117,7 +117,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="surtitre ouv-anim">La table du Relais</p>
     <h1 class="ouv-titre" data-anime="gsap"><span class="l"><span class="li">Cuisine gasconne,</span></span> <span class="l"><span class="li"><em>de saison</em></span></span></h1>
     <p class="ouv-intro ouv-anim masque-ecran-tres-bas">Potage de saison à chaque menu, canard, poisson du marché et suggestions du chef selon les produits du moment.</p>
-    <p class="ouv-prix ouv-anim" data-info-cle><span>Menus de</span> <strong data-prix>16,50 €</strong> <span>à</span> <strong data-prix>33 €</strong></p>
+    <p class="ouv-prix ouv-anim" data-info-cle><span class="ouv-prix-libelle">Menus de</span> <strong data-prix>16,50 €</strong> <span class="ouv-prix-a">à</span> <strong data-prix>33 €</strong></p>
     <p class="ouv-actions ouv-anim">
       <a href="/reserver?objet=table#demande" class="bouton" data-libelle="Réserver &amp; venir" data-action-principale data-survol="magnetique">Réserver une table</a>
       <a class="bouton bouton--contour" href="tel:+33553657988">Appeler</a>
@@ -134,14 +134,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div>
       <p class="surtitre" data-anime>Les menus</p>
       <h2 data-anime="lignes">Quatre menus, du déjeuner au dîner</h2>
-      <p data-anime>Un potage de saison ouvre chaque menu.</p>
+      <p data-anime>Un potage de saison ouvre chaque menu. Composez votre menu : touchez une entrée et un plat.</p>
     </div>
     <svg class="soupiere" viewBox="0 0 220 150" aria-hidden="true" data-fx="trace" data-visuel>
       <path data-fx-trait d="M78 40 C 72 26, 88 22, 82 8 M110 36 C 104 22, 120 18, 114 4 M142 40 C 136 26, 152 22, 146 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
       <path data-fx-trait d="M30 70 C 30 120, 70 138, 110 138 C 150 138, 190 120, 190 70 Z M24 70 H 196 M70 62 C 70 50, 150 50, 150 62 M102 50 C 102 42, 118 42, 118 50 M30 82 C 12 82, 10 100, 26 102 M190 82 C 208 82, 210 100, 194 102 M80 138 L 76 146 H 144 L 140 138" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <div class="menus" data-anime="cascade">
+  <div class="menus" data-grille="manipuler">
     <article class="menu-carte" id="menu-jour">
       <p class="menu-prix" data-prix>16,50 €</p>
       <h3>Menu du jour</h3>
@@ -152,19 +152,29 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3>Petit menu du soir</h3>
       <ol class="menu-plats" data-effet="menu-trace"><li>Potage selon la saison</li><li>Entrée</li><li>Plat</li><li>Dessert</li></ol>
       <p class="menu-note">Le soir</p>
-    </article><article class="menu-carte" id="menu-m26">
+    </article><article class="menu-carte menu-carte--choix" id="menu-m26" data-composer data-prix-menu="26 €">
       <p class="menu-prix" data-prix>26 €</p>
       <h3>Le menu à 26 €</h3>
-      <ol class="menu-plats" data-effet="menu-trace"><li>Potage de saison</li><li>Entrée du jour, salade de gésiers ou assiette fine de canard</li><li>Pièce de bœuf grillée, suprême de volaille à la crème ou poisson du marché</li><li>Légumes</li><li>Dessert</li></ol>
+      <ol class="menu-plats" data-effet="menu-trace"><li>Potage de saison</li><li class="plat-choix"><span class="plat-cours">Entrée au choix</span><span class="puces" role="group" aria-label="Entrée au choix"><button type="button" class="puce" aria-pressed="true" data-choix="Entrée du jour">Entrée du jour</button><button type="button" class="puce" aria-pressed="false" data-choix="Salade de gésiers">Salade de gésiers</button><button type="button" class="puce" aria-pressed="false" data-choix="Assiette fine de canard">Assiette fine de canard</button></span></li><li class="plat-choix"><span class="plat-cours">Plat au choix</span><span class="puces" role="group" aria-label="Plat au choix"><button type="button" class="puce" aria-pressed="true" data-choix="Pièce de bœuf grillée">Pièce de bœuf grillée</button><button type="button" class="puce" aria-pressed="false" data-choix="Suprême de volaille à la crème">Suprême de volaille à la crème</button><button type="button" class="puce" aria-pressed="false" data-choix="Poisson du marché">Poisson du marché</button></span></li><li>Légumes</li><li>Dessert</li></ol>
+      <div class="menu-ticket" data-ticket>
+        <p class="ticket-titre">Votre menu · <span data-prix>26 €</span></p>
+        <p class="ticket-choix" data-ticket-choix aria-live="polite">Entrée du jour · Pièce de bœuf grillée</p>
+        <a href="/reserver?objet=table&amp;message=Menu%20%C3%A0%2026%20%E2%82%AC%20%3A%20Entr%C3%A9e%20du%20jour%2C%20Pi%C3%A8ce%20de%20b%C5%93uf%20grill%C3%A9e#demande" class="bouton bouton--petit" data-libelle="Réserver &amp; venir" data-ticket-lien data-message-modele="Menu à {prix} : {choix}">Réserver avec ce menu</a>
+      </div>
       <p class="menu-note">Poisson « retour de marché »</p>
-    </article><article class="menu-carte" id="menu-m33">
+    </article><article class="menu-carte menu-carte--choix" id="menu-m33" data-composer data-prix-menu="33 €">
       <p class="menu-prix" data-prix>33 €</p>
       <h3>Le menu à 33 €</h3>
-      <ol class="menu-plats" data-effet="menu-trace"><li>Potage de saison</li><li>Gratin de fruits de mer, salade gasconne, entrée du jour ou suggestions</li><li>Confit de canard, demi-magret du moment ou pièce de bœuf</li><li>Légumes</li><li>Dessert</li></ol>
+      <ol class="menu-plats" data-effet="menu-trace"><li>Potage de saison</li><li class="plat-choix"><span class="plat-cours">Entrée au choix</span><span class="puces" role="group" aria-label="Entrée au choix"><button type="button" class="puce" aria-pressed="true" data-choix="Gratin de fruits de mer">Gratin de fruits de mer</button><button type="button" class="puce" aria-pressed="false" data-choix="Salade gasconne">Salade gasconne</button><button type="button" class="puce" aria-pressed="false" data-choix="Entrée du jour">Entrée du jour</button><button type="button" class="puce" aria-pressed="false" data-choix="Suggestions du chef">Suggestions du chef</button></span></li><li class="plat-choix"><span class="plat-cours">Plat au choix</span><span class="puces" role="group" aria-label="Plat au choix"><button type="button" class="puce" aria-pressed="true" data-choix="Confit de canard">Confit de canard</button><button type="button" class="puce" aria-pressed="false" data-choix="Demi-magret du moment">Demi-magret du moment</button><button type="button" class="puce" aria-pressed="false" data-choix="Pièce de bœuf">Pièce de bœuf</button></span></li><li>Légumes</li><li>Dessert</li></ol>
+      <div class="menu-ticket" data-ticket>
+        <p class="ticket-titre">Votre menu · <span data-prix>33 €</span></p>
+        <p class="ticket-choix" data-ticket-choix aria-live="polite">Gratin de fruits de mer · Confit de canard</p>
+        <a href="/reserver?objet=table&amp;message=Menu%20%C3%A0%2033%20%E2%82%AC%20%3A%20Gratin%20de%20fruits%20de%20mer%2C%20Confit%20de%20canard#demande" class="bouton bouton--petit" data-libelle="Réserver &amp; venir" data-ticket-lien data-message-modele="Menu à {prix} : {choix}">Réserver avec ce menu</a>
+      </div>
       <p class="menu-note">Suggestion du chef selon les produits de saison</p>
     </article>
   </div>
-  <ul class="menus-enfant" data-anime="cascade">
+  <ul class="menus-enfant" id="menus-enfant" data-anime="cascade">
     <li><strong data-prix>11,80 €</strong> Menu enfant · Plat du jour et dessert</li>
     <li><strong data-prix>4,50 €</strong> Couvert enfant sans repas</li>
   </ul>

@@ -1,7 +1,7 @@
 /* Le Relais de Gascogne : intro des volets, arrivée des ouvertures, effets propres au Relais.
    Effets du plan (data-effet) : volets, menu-trace, estimateur, journee, carte, distances.
    Le socle gère l'ouverture, le voile (rideau aux volets), l'en-tête, le menu, les mesures et la bibliothèque d'effets. */
-import { demarrer, boucle, etat, quand } from './socle/index.js?v=1';
+import { demarrer, boucle, etat, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = () => window.ScrollTrigger;
@@ -242,6 +242,101 @@ function demande() {
   /* Le socle refuse l'envoi si un champ est à revoir : il revient sur l'étape des coordonnées (déjà affichée). */
 }
 
+
+/* ---------- v2 : composeur de menu (La table) ---------- */
+function composeur() {
+  $$('[data-composer]').forEach((carte) => {
+    const ticket = $('[data-ticket-choix]', carte), lien = $('[data-ticket-lien]', carte);
+    const prixMenu = carte.dataset.prixMenu, modele = lien ? lien.dataset.messageModele : '';
+    const maj = (anime) => {
+      const choisis = $$('.puces', carte).map((g) => { const b = $('.puce[aria-pressed="true"]', g); return b ? b.dataset.choix : ''; }).filter(Boolean);
+      ticket.textContent = choisis.join(' · ');
+      if (lien && modele) {
+        const u = new URL(lien.getAttribute('href'), location.href);
+        u.searchParams.set('message', modele.replace('{prix}', prixMenu).replace('{choix}', choisis.join(', ')));
+        lien.setAttribute('href', u.pathname + u.search + u.hash);
+      }
+      if (anime && gsap) gsap.fromTo(ticket, { y: 6, scale: 0.98 }, { y: 0, scale: 1, duration: 0.45, ease: 'back.out(2.2)', clearProps: 'transform' });
+    };
+    carte.addEventListener('click', (e) => {
+      const b = e.target.closest('.puce');
+      if (!b) return;
+      $$('.puce', b.parentElement).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      if (gsap) gsap.fromTo(b, { scale: 0.92 }, { scale: 1, duration: 0.4, ease: 'back.out(3)', clearProps: 'transform' });
+      maj(true);
+    });
+    maj(false);
+  });
+}
+
+/* ---------- v2 : panneau indicateur (accueil) : les lames pivotent en place au défilement ---------- */
+function panneau() {
+  const fig = $('[data-effet="panneau"]');
+  if (!fig || !gsap || !ST()) return;
+  const lames = $$('.lame', fig);
+  /* Joué une fois à l'entrée dans l'écran (pas lié au défilement) : les lames ne restent jamais à mi-course,
+     là où elles se croiseraient. */
+  const tl = gsap.timeline({ paused: true });
+  lames.forEach((l, i) => {
+    const droite = l.classList.contains('lame--d');
+    const fin = [-1.5, 1.5, -1, 1][i % 4];
+    tl.fromTo(l, { rotation: droite ? -28 : 28, x: droite ? -16 : 16 }, { rotation: fin, x: 0, duration: 1.1, ease: 'elastic.out(1, 0.55)' }, i * 0.16);
+  });
+  tl.fromTo($('.panneau-chapeau', fig), { y: -12 }, { y: 0, duration: 0.6, ease: 'power2.out' }, 0);
+  ST().create({ trigger: fig, start: 'top 80%', once: true, onEnter: () => tl.play() });
+  quand('retour', () => tl.progress(1));
+}
+
+/* ---------- v2 : la maison, une photo touchée passe devant ---------- */
+function polaroids() {
+  const pile = $('[data-polaroids]');
+  if (!pile) return;
+  let z = 10;
+  pile.addEventListener('click', (e) => {
+    const f = e.target.closest('.polaroid');
+    if (!f) return;
+    f.style.zIndex = String(++z);
+    if (f.animate) f.animate([{ scale: '1' }, { scale: '1.06' }, { scale: '1' }], { duration: 420, easing: 'cubic-bezier(.3,1.4,.5,1)' });
+  });
+}
+
+/* ---------- v2 : clé de chambre qui se balance selon la vitesse du défilement ---------- */
+function cle() {
+  const svg = $('[data-effet="cle"]');
+  if (!svg) return;
+  const g = $('.cle-pendule', svg);
+  let a = 0, v = 0, y0 = window.scrollY;
+  boucle(svg, (dt, t) => {
+    const y = window.scrollY, vit = (y - y0) / Math.max(dt, 0.008); y0 = y;
+    const cible = Math.max(-22, Math.min(22, -vit * 0.012)) + Math.sin(t * 1.6) * 2.5;
+    v += ((cible - a) * 38 - v * 6.5) * dt;
+    a += v * dt;
+    g.style.transform = `rotate(${a.toFixed(2)}deg)`;
+  });
+}
+
+/* ---------- v2 : schéma de salle, les 120 couverts s'allument ---------- */
+function planSalle() {
+  const fig = $('[data-effet="plan-salle"]');
+  if (!fig || !gsap || !ST()) return;
+  const places = $$('.plan-place', fig), compte = $('[data-plan-compte]', fig);
+  gsap.set(places, { scale: 0, transformOrigin: '50% 50%' });
+  const etat = { n: 0 };
+  gsap.timeline({ scrollTrigger: { trigger: fig, start: 'top 85%', end: 'bottom 60%', scrub: 0.6 } })
+    .to(places, { scale: 1, duration: 0.3, stagger: { each: 0.02, from: 'start' }, ease: 'back.out(2)' }, 0)
+    .to(etat, { n: places.length, duration: places.length * 0.02 + 0.3, ease: 'none', onUpdate: () => { compte.textContent = String(Math.round(etat.n)); } }, 0);
+}
+
+/* ---------- v2 : tampon « demande simulée » sur le récapitulatif ---------- */
+function tampon() {
+  const form = $('form.demande'), recap = $('.recap');
+  if (!form || !recap) return;
+  form.addEventListener('submit', () => setTimeout(() => {
+    const envoi = $('[data-etape-envoi]', form);
+    if (envoi && envoi.disabled) recap.classList.add('recu');
+  }, 30));
+}
+
 /* ---------- Démarrage ---------- */
 demarrer({
   preparer() {
@@ -252,6 +347,12 @@ demarrer({
     journee();
     carte();
     demande();
+    composeur();
+    panneau();
+    polaroids();
+    cle();
+    planSalle();
+    tampon();
   },
   jouer,
   etatFinal() {

@@ -29,8 +29,8 @@ export default (c) => {
     <h2 data-anime="lignes">${c.t('accueil.table.titre')}</h2>
     <p data-anime>${c.t('accueil.table.texte')}</p>
     <ul class="ardoise" data-effet="menu-trace">
-      ${menus.map((m) => html`<li><span class="ardoise-nom">${m.court}</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>${prix(m.prix)}</span></li>`)}
-      <li><span class="ardoise-nom">${c.t('accueil.table.enfant')}</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>${prix('11,80')}</span></li>
+      ${menus.map((m) => html`<li>${c.lien('la-table', { ancre: 'menu-' + m.id, classe: 'ardoise-ligne', texte: html`<span class="ardoise-nom">${m.court}</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>${prix(m.prix)}</span>` })}</li>`)}
+      <li>${c.lien('la-table', { ancre: 'menus-enfant', classe: 'ardoise-ligne', texte: html`<span class="ardoise-nom">${c.t('accueil.table.enfant')}</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>${prix('11,80')}</span>` })}</li>
     </ul>
     <p data-anime>${c.lien('la-table', { ancre: 'menus', classe: 'lien-fleche', texte: c.t('accueil.table.lien') })}</p>
   </div>
@@ -57,7 +57,7 @@ export default (c) => {
       <p data-anime>${c.t('accueil.chambres.texte')}</p>
       <dl class="chiffres-cles" data-anime="cascade">
         <div><dt><strong class="grand-chiffre" data-compteur="17">17</strong></dt><dd>${c.t('accueil.chambres.chiffre')}</dd></div>
-        <div><dt><strong class="grand-chiffre" data-prix>${prix(T.chambres[0].basse)}</strong></dt><dd>${c.t('accueil.chambres.des')} · ${c.t('accueil.chambres.nuit')}</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix><small class="prefixe">${c.t('accueil.chambres.prefixe')}</small> ${prix(T.chambres[0].basse)}</strong></dt><dd>${c.t('accueil.chambres.nuitDes')}</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>${prix(T.soireeEtape)}</strong></dt><dd>${c.t('accueil.chambres.etape')}</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>${prix('8,50')}</strong></dt><dd>${c.t('accueil.chambres.petitdej')}</dd></div>
       </dl>
@@ -79,10 +79,11 @@ export default (c) => {
       </ul>
       <p data-anime>${c.lien('reserver', { ancre: 'acces', classe: 'lien-fleche', texte: c.t('accueil.maison.lien') })}</p>
     </div>
-    <div class="polaroids">
+    <div class="polaroids" data-polaroids>
       ${c.media({ nom: 'maison-facade', alt: c.s('alts.maison-facade'), classe: 'polaroid polaroid--1', sizes: '(max-width: 760px) 70vw, 26vw', attrs: 'data-fx="vitesse"' })}
       ${c.media({ nom: 'maison-balcon', alt: c.s('alts.maison-balcon'), classe: 'polaroid polaroid--2', sizes: '(max-width: 760px) 50vw, 18vw', attrs: 'data-fx="vitesse" data-fx-force="4"' })}
       ${c.media({ nom: 'salle', alt: c.s('alts.salle'), classe: 'polaroid polaroid--3', sizes: '(max-width: 760px) 50vw, 18vw', attrs: 'data-fx="vitesse" data-fx-force="2"' })}
+      <p class="polaroids-astuce" aria-hidden="true">${c.t('accueil.maison.astuce')}</p>
     </div>
   </div>
 </section>
@@ -90,7 +91,7 @@ export default (c) => {
 <section class="pays" id="pays" data-fx="plein-ecran" data-entete-cache>
   <div data-collant>
     ${c.media({ nom: 'grok/accueil-terroir', alt: c.s('alts.accueil-terroir'), cadrage: '50% 55%', sizes: '100vw' })}
-    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">${c.t('accueil.pays.g')}</span> <span data-fx-ecarte="d">${c.t('accueil.pays.d')}</span></p>
+    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">${c.t('accueil.pays.g')}</span><span data-fx-ecarte="d">${c.t('accueil.pays.d')}</span></p>
   </div>
 </section>
 <section class="sec pays-suite conteneur" id="autour">
@@ -100,12 +101,16 @@ export default (c) => {
     <p class="visites" data-anime>${c.t('accueil.pays.visites')}</p>
     <p data-anime>${c.lien('groupes', { ancre: 'autour', classe: 'lien-fleche', texte: c.t('accueil.pays.lien') })}</p>
   </div>
-  <ul class="distances" data-effet="distances">
-    <li><strong><span data-compteur="10">10</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.gers')}</li>
-    <li><strong><span data-compteur="10">10</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.landes')}</li>
-    <li><strong><span data-compteur="120">120</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.ocean')}</li>
-    <li><strong><span data-compteur="120">120</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.lourdes')}</li>
-  </ul>
+  <figure class="panneau" data-effet="panneau" data-visuel aria-label="${c.s('accueil.pays.panneau')}">
+    <span class="panneau-mat" aria-hidden="true"></span>
+    <span class="panneau-chapeau" aria-hidden="true">Mézin</span>
+    <ul class="panneau-lames">
+      <li class="lame lame--d lame--bleu"><strong><span data-compteur="10">10</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.gers')}</li>
+      <li class="lame lame--g lame--rouge"><strong><span data-compteur="10">10</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.landes')}</li>
+      <li class="lame lame--g lame--sable"><strong><span data-compteur="120">120</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.ocean')}</li>
+      <li class="lame lame--d lame--clair"><strong><span data-compteur="120">120</span> ${c.t('accueil.pays.km')}</strong> ${c.t('accueil.pays.lourdes')}</li>
+    </ul>
+  </figure>
 </section>
 
 <section class="sec sec--salle conteneur" id="salle">

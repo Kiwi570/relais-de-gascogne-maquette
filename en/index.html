@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="1">
+<html lang="en" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f0e4">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -135,8 +135,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 data-anime="lignes">Gascon cooking that follows the seasons</h2>
     <p data-anime>Gascon salad, the gourmet plate, duck breast and duck confit depending on the season, soup with every menu and fish fresh from the market.</p>
     <ul class="ardoise" data-effet="menu-trace">
-      <li><span class="ardoise-nom">Menu of the day</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€16.50</span></li><li><span class="ardoise-nom">Small evening menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€18.50</span></li><li><span class="ardoise-nom">Menu, choice of starter and main</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€26</span></li><li><span class="ardoise-nom">Gascon menu: confit, duck breast or beef</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€33</span></li>
-      <li><span class="ardoise-nom">Children&#39;s menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€11.80</span></li>
+      <li><a href="/en/la-table#menu-jour" class="ardoise-ligne" data-libelle="The table"><span class="ardoise-nom">Menu of the day</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€16.50</span></a></li><li><a href="/en/la-table#menu-soir" class="ardoise-ligne" data-libelle="The table"><span class="ardoise-nom">Small evening menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€18.50</span></a></li><li><a href="/en/la-table#menu-m26" class="ardoise-ligne" data-libelle="The table"><span class="ardoise-nom">Menu, choice of starter and main</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€26</span></a></li><li><a href="/en/la-table#menu-m33" class="ardoise-ligne" data-libelle="The table"><span class="ardoise-nom">Gascon menu: confit, duck breast or beef</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€33</span></a></li>
+      <li><a href="/en/la-table#menus-enfant" class="ardoise-ligne" data-libelle="The table"><span class="ardoise-nom">Children&#39;s menu</span><span class="ardoise-points" aria-hidden="true"></span><span class="ardoise-prix" data-prix>€11.80</span></a></li>
     </ul>
     <p data-anime><a href="/en/la-table#menus" class="lien-fleche" data-libelle="The table">See the menus in detail</a></p>
   </div>
@@ -173,7 +173,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p data-anime>17 equipped rooms for a stopover or a stay, room only, half board or full board.</p>
       <dl class="chiffres-cles" data-anime="cascade">
         <div><dt><strong class="grand-chiffre" data-compteur="17">17</strong></dt><dd>rooms</dd></div>
-        <div><dt><strong class="grand-chiffre" data-prix>€53</strong></dt><dd>from · a night</dd></div>
+        <div><dt><strong class="grand-chiffre" data-prix><small class="prefixe">from</small> €53</strong></dt><dd>a night</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>€80</strong></dt><dd>Overnight stopover</dd></div>
         <div><dt><strong class="grand-chiffre" data-prix>€8.50</strong></dt><dd>Breakfast</dd></div>
       </dl>
@@ -194,7 +194,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ul>
       <p data-anime><a href="/en/reserver#acces" class="lien-fleche" data-libelle="Book &amp; find us">How to get here</a></p>
     </div>
-    <div class="polaroids">
+    <div class="polaroids" data-polaroids>
       <figure class="media polaroid polaroid--1" data-fx="vitesse" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/maison-facade-321.webp" srcset="/assets/images/maison-facade-321.webp 321w" sizes="(max-width: 760px) 70vw, 26vw" alt="Front of the Relais de Gascogne, blue shutters and geraniums" width="321" height="401" loading="lazy" decoding="async">
@@ -210,6 +210,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/salle-560.webp" srcset="/assets/images/salle-560.webp 560w" sizes="(max-width: 760px) 50vw, 18vw" alt="The restaurant dining room, blue tablecloths" width="560" height="420" loading="lazy" decoding="async">
   </picture>
 </figure>
+      <p class="polaroids-astuce" aria-hidden="true">Tap a photo to bring it to the front.</p>
     </div>
   </div>
 </section>
@@ -220,7 +221,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/grok/accueil-terroir-1280.webp" srcset="/assets/images/grok/accueil-terroir-640.webp 640w, /assets/images/grok/accueil-terroir-1280.webp 1280w, /assets/images/grok/accueil-terroir-1920.webp 1920w" sizes="100vw" alt="Autumn vineyard hills in Gascony" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
 </figure>
-    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">In Armagnac</span> <span data-fx-ecarte="d">country</span></p>
+    <p class="pays-mots" aria-hidden="true" data-audit-ignorer><span data-fx-ecarte="g">In Armagnac</span><span data-fx-ecarte="d">country</span></p>
   </div>
 </section>
 <section class="sec pays-suite conteneur" id="autour">
@@ -230,12 +231,16 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="visites" data-anime>Cork museum in Mézin · Henri IV castle in Nérac · Flaran Abbey · Séviac Gallo-Roman villa · Armagnac museum in Condom · The Way of St James</p>
     <p data-anime><a href="/en/groupes#autour" class="lien-fleche" data-libelle="Groups &amp; functions">Ideas for visits and group days</a></p>
   </div>
-  <ul class="distances" data-effet="distances">
-    <li><strong><span data-compteur="10">10</span> km</strong> to the Gers</li>
-    <li><strong><span data-compteur="10">10</span> km</strong> to the Landes</li>
-    <li><strong><span data-compteur="120">120</span> km</strong> to the ocean</li>
-    <li><strong><span data-compteur="120">120</span> km</strong> to Lourdes</li>
-  </ul>
+  <figure class="panneau" data-effet="panneau" data-visuel aria-label="Distances from Mézin">
+    <span class="panneau-mat" aria-hidden="true"></span>
+    <span class="panneau-chapeau" aria-hidden="true">Mézin</span>
+    <ul class="panneau-lames">
+      <li class="lame lame--d lame--bleu"><strong><span data-compteur="10">10</span> km</strong> to the Gers</li>
+      <li class="lame lame--g lame--rouge"><strong><span data-compteur="10">10</span> km</strong> to the Landes</li>
+      <li class="lame lame--g lame--sable"><strong><span data-compteur="120">120</span> km</strong> to the ocean</li>
+      <li class="lame lame--d lame--clair"><strong><span data-compteur="120">120</span> km</strong> to Lourdes</li>
+    </ul>
+  </figure>
 </section>
 <section class="sec sec--salle conteneur" id="salle">
   <div class="salle-chiffre" aria-hidden="true" data-visuel><span data-compteur="120">120</span></div>

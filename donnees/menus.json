@@ -88,12 +88,44 @@
     "en": "Seasonal soup"
    },
    {
-    "fr": "Entrée du jour, salade de gésiers ou assiette fine de canard",
-    "en": "Starter of the day, gizzard salad or fine duck plate"
+    "cours": {
+     "fr": "Entrée au choix",
+     "en": "Starter of your choice"
+    },
+    "choix": [
+     {
+      "fr": "Entrée du jour",
+      "en": "Starter of the day"
+     },
+     {
+      "fr": "Salade de gésiers",
+      "en": "Gizzard salad"
+     },
+     {
+      "fr": "Assiette fine de canard",
+      "en": "Fine duck plate"
+     }
+    ]
    },
    {
-    "fr": "Pièce de bœuf grillée, suprême de volaille à la crème ou poisson du marché",
-    "en": "Grilled beef, chicken supreme with cream or fish from the market"
+    "cours": {
+     "fr": "Plat au choix",
+     "en": "Main course of your choice"
+    },
+    "choix": [
+     {
+      "fr": "Pièce de bœuf grillée",
+      "en": "Grilled beef"
+     },
+     {
+      "fr": "Suprême de volaille à la crème",
+      "en": "Chicken supreme with cream"
+     },
+     {
+      "fr": "Poisson du marché",
+      "en": "Fish from the market"
+     }
+    ]
    },
    {
     "fr": "Légumes",
@@ -126,12 +158,48 @@
     "en": "Seasonal soup"
    },
    {
-    "fr": "Gratin de fruits de mer, salade gasconne, entrée du jour ou suggestions",
-    "en": "Seafood gratin, Gascon salad, starter of the day or suggestions"
+    "cours": {
+     "fr": "Entrée au choix",
+     "en": "Starter of your choice"
+    },
+    "choix": [
+     {
+      "fr": "Gratin de fruits de mer",
+      "en": "Seafood gratin"
+     },
+     {
+      "fr": "Salade gasconne",
+      "en": "Gascon salad"
+     },
+     {
+      "fr": "Entrée du jour",
+      "en": "Starter of the day"
+     },
+     {
+      "fr": "Suggestions du chef",
+      "en": "Chef's suggestions"
+     }
+    ]
    },
    {
-    "fr": "Confit de canard, demi-magret du moment ou pièce de bœuf",
-    "en": "Duck confit, half duck breast of the moment or beef"
+    "cours": {
+     "fr": "Plat au choix",
+     "en": "Main course of your choice"
+    },
+    "choix": [
+     {
+      "fr": "Confit de canard",
+      "en": "Duck confit"
+     },
+     {
+      "fr": "Demi-magret du moment",
+      "en": "Half duck breast of the moment"
+     },
+     {
+      "fr": "Pièce de bœuf",
+      "en": "Beef"
+     }
+    ]
    },
    {
     "fr": "Légumes",
